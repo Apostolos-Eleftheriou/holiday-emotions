@@ -58,7 +58,7 @@
   }
 
   .location-pin-right {
-    padding-left: 100px;
+    padding-left: 10px;
 }
 
   .fa-facebook-f:hover, .fa-instagram:hover, .fa-linkedin-in:hover, .fa-youtube:hover, .fa-twitter:hover {
@@ -109,10 +109,7 @@ textarea:focus, input:focus{
       padding: 20px;
       height: 250px;
       width: 200px;
-      margin-top: 150px;
-      /* position: absolute;
-      top: 350px; */
-    
+      margin-top: 210px;    
   }
 
 .celsius {
@@ -131,7 +128,7 @@ textarea:focus, input:focus{
 
 .title-container {
     width: 700px;
-    margin: 50px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,16 +165,33 @@ textarea:focus, input:focus{
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    height: 200px;
+    height: 250px;
     width: 200px;
     /* text-align: right; */
-    margin-top: 150px;
+    /* margin-top: 150px; */
     font-size: 16px;
     color: #fff;
     font-weight: 400;
     list-style-type: none;
+    text-align: right;
 }
 
 .list-right {
-    padding: 10px;
+    padding: 7px;
+}
+
+.side-locations-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 210px;
+}
+
+.side-locations-links {
+    text-decoration: none;
+    color: #fff;
+}
+
+.side-locations-links:hover {
+    color: #EFA00B;
 }
