@@ -160,6 +160,10 @@ textarea:focus, input:focus{
    border-radius: 20px;
 }
 
+.title-btn:hover {
+    background-color: #b37606;
+}
+
 .side-locations {
     display: flex;
     flex-direction: column;
@@ -167,8 +171,6 @@ textarea:focus, input:focus{
     align-items: flex-end;
     height: 250px;
     width: 200px;
-    /* text-align: right; */
-    /* margin-top: 150px; */
     font-size: 16px;
     color: #fff;
     font-weight: 400;
