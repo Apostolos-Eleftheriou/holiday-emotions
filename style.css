@@ -47,11 +47,19 @@
     color: #EFA00B;
 }
 
-.fa-facebook-f, .fa-instagram, .fa-linkedin-in, .fa-youtube, .fa-twitter, .fa-location-pin {
+.fa-facebook-f, .fa-instagram, .fa-linkedin-in, .fa-youtube, .fa-twitter {
     color: #f9faf8;
     font-size: 16px;
     padding-right: 12px !important;
   }
+
+  .location-pin {
+      padding-right: 7px;
+  }
+
+  .location-pin-right {
+    padding-left: 100px;
+}
 
   .fa-facebook-f:hover, .fa-instagram:hover, .fa-linkedin-in:hover, .fa-youtube:hover, .fa-twitter:hover {
     color: #EFA00B;
@@ -159,13 +167,17 @@ textarea:focus, input:focus{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     height: 200px;
     width: 200px;
-    text-align: center;
+    /* text-align: right; */
     margin-top: 150px;
     font-size: 16px;
     color: #fff;
     font-weight: 400;
     list-style-type: none;
+}
+
+.list-right {
+    padding: 10px;
 }
