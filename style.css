@@ -207,6 +207,7 @@ textarea:focus, input:focus{
     align-items: center;
     color: white;
     font-size: 18px;
+    font-weight: 500;
 }
 
 .hotels:hover, .cars:hover, .stay:hover, .emotions:hover {
@@ -270,7 +271,8 @@ textarea:focus, input:focus{
 .bottom-more {
     text-decoration: none;
     color: #fff;
-    font-size: 16px;
+    font-size: 17px;
+    padding: 2px;
 }
 
 .bottom-more:hover {
@@ -278,7 +280,7 @@ textarea:focus, input:focus{
 }
 
 .discover-more-container {
-    width: 125px;
+    width: 135px;
 }
 
 .bottom-image-container {
