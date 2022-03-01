@@ -158,6 +158,8 @@ textarea:focus, input:focus{
    border: none;
    padding: 6px 35px;
    border-radius: 20px;
+   font-size: 16px;
+   font-weight: 600;
 }
 
 .title-btn:hover, .nav-submit:hover {
@@ -265,3 +267,41 @@ textarea:focus, input:focus{
     color: #EFA00B !important;
 }
 
+.bottom-more {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.bottom-more:hover {
+    color: #EFA00B;
+}
+
+.discover-more-container {
+    width: 125px;
+}
+
+.bottom-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-image {
+    width: 100%;
+}
+
+.utilities {
+    padding-top: 20px;
+}
+
+.height-fix {
+    /* height: 80px;
+    padding: 0;
+    margin-top: 2%; */
+    height: 70px;
+    position: relative;
+    top: 100%;
+    transform: translateY(-100%);
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.85))
+}
