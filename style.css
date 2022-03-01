@@ -53,11 +53,6 @@
     padding-right: 12px !important;
   }
 
-  .fa-hotel {
-      color: #f9faf8;
-      font-size: 22px;
-  }
-
   .location-pin {
       padding-right: 7px;
   }
@@ -66,7 +61,7 @@
     padding-left: 10px;
 }
 
-  .fa-facebook-f:hover, .fa-instagram:hover, .fa-linkedin-in:hover, .fa-youtube:hover, .fa-twitter:hover, .fa-hotel:hover {
+  .fa-facebook-f:hover, .fa-instagram:hover, .fa-linkedin-in:hover, .fa-youtube:hover, .fa-twitter:hover {
     color: #EFA00B;
   }
 
@@ -165,7 +160,7 @@ textarea:focus, input:focus{
    border-radius: 20px;
 }
 
-.title-btn:hover {
+.title-btn:hover, .nav-submit:hover {
     background-color: #b37606;
 }
 
@@ -203,22 +198,22 @@ textarea:focus, input:focus{
     color: #EFA00B;
 }
 
-.hotels {
+.hotels, .cars, .stay, .emotions {
     background-color: transparent !important;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 
-.hotels:hover, .hotels:active {
-    color: #EFA00B !important;
+.hotels:hover, .cars:hover, .stay:hover, .emotions:hover {
+    color: #EFA00B;
 }
 
 .bottom-search-nav {
     border-radius: 50px;
     background-color: #000000;
-    /* padding: 20px; */
-    max-width: 1114px;
+    max-width: 1200px;
 }
 
 .bottom-nav-buttons {
@@ -227,8 +222,12 @@ textarea:focus, input:focus{
     color: #EFA00B;
 }
 
+.bottom-nav-buttons:hover {
+    color: #b37606;
+}
+
 .fa-location-pin {
-    margin-left: 20px;
+    margin-left: 40px;
     color: #EFA00B;
 }
 
@@ -240,7 +239,23 @@ textarea:focus, input:focus{
     background-color: #EFA00B;
     color: #000000;
     padding: 27px;
-    border: solid 2px #EFA00B;
+    border: none;
     border-radius: 0 50px 50px 0;
     width: 210px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.search-span {
+    margin-right: 10px;
+}
+
+.dropdown-menu.show {
+    background-color: #EFA00B;
+}
+
+.bottom-nav-list {
+    list-style-type: none;
+    font-size: 18px;
+    text-align: left;
 }
