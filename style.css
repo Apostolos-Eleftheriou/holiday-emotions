@@ -1,5 +1,6 @@
 .background-img {
-    background: url('../holiday-emotions/images/lady-on-sea.png') 0% 0% no-repeat padding-box;
+    background: linear-gradient(180deg, rgba(0,0,0,.75) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 50%, rgba(0,0,0,.75) 100%),
+                    url('../holiday-emotions/images/lady-on-sea.png') 0% 0% no-repeat padding-box;
     opacity: 1;
     background-position: center;
     background-size: cover;
@@ -7,6 +8,7 @@
     height: 100vh;
     margin: 0;
     padding: 0;
+    
 }
 
 .logo {
@@ -64,10 +66,6 @@
   .fa-facebook-f:hover, .fa-instagram:hover, .fa-linkedin-in:hover, .fa-youtube:hover, .fa-twitter:hover {
     color: #EFA00B;
   }
-
-.top-menu {
-    background: linear-gradient(0deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.85))
-}
 
 .search-txt, .nav-location-txt, .nav-checkin-txt {
     background-color: transparent;
@@ -298,12 +296,8 @@ textarea:focus, input:focus{
 }
 
 .height-fix {
-    /* height: 80px;
-    padding: 0;
-    margin-top: 2%; */
     height: 70px;
     position: relative;
-    top: 100%;
-    transform: translateY(-100%);
-    background: linear-gradient(180deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.85))
+    bottom: 0;
+    margin-top: 50px;
 }
