@@ -420,6 +420,7 @@ textarea:focus, input:focus{
     background-size: cover;
     width: 888px;
     height: 307px;
+    margin-right: 10px;
 }
 
 .section-image-right-container {
@@ -427,7 +428,6 @@ textarea:focus, input:focus{
     background-position: center;
     background-size: cover;
     width: 436px;
-
 }
 
 .cta-offers {
@@ -446,4 +446,33 @@ textarea:focus, input:focus{
 
 .cta-right-btn:hover {
     background-color: #63a1a5;
+}
+
+.cta-container {
+    text-align: center;
+    padding-top: 30px;
+    padding-right: 80px;
+}
+
+.cta-header {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 38px;
+    font-weight: 300;
+    width: 300px;
+    padding: 10px;
+}
+
+.cta-left-btn {
+    background-color: #EFA00B;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 50px 5px 50px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.cta-left-btn:hover {
+    background-color: #b37606;
 }
