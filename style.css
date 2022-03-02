@@ -1,3 +1,7 @@
+body {
+    scroll-behavior: smooth;
+}
+
 .background-img {
     background: linear-gradient(180deg, rgba(0,0,0,.75) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 50%, rgba(0,0,0,.75) 100%),
                     url('../holiday-emotions/images/lady-on-sea.png') 0% 0% no-repeat padding-box;
@@ -299,7 +303,7 @@ textarea:focus, input:focus{
     height: 70px;
     position: relative;
     bottom: 0;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .destinations-icon-container, .activities-icon-container, .dental-holidays-icon-container, .gastronomy-icon-container, .entertainment-icon-container, .shopping-icon-container {
@@ -441,7 +445,8 @@ textarea:focus, input:focus{
     padding: 5px 50px 5px 50px;
     font-size: 15px;
     font-weight: bold;
-    margin: 20px 20px 20px 40px;
+    /* margin: 20px 20px 20px 40px; */
+    transform: translate(30%, -60%);
 }
 
 .cta-right-btn:hover {
