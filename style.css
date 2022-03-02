@@ -481,3 +481,14 @@ textarea:focus, input:focus{
 .cta-left-btn:hover {
     background-color: #b37606;
 }
+
+.tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1.2s;
+  }
+  
+  .tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
