@@ -301,3 +301,17 @@ textarea:focus, input:focus{
     bottom: 0;
     margin-top: 50px;
 }
+
+.destinations-icon-container, .activities-icon-container, .dental-holidays-icon-container, .gastronomy-icon-container, .entertainment-icon-container, .shopping-icon-container {
+    padding-right: 20px;
+}
+
+.second-links {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+}
+
+.second-links:hover {
+    color: #EFA00B;
+}
