@@ -315,3 +315,34 @@ textarea:focus, input:focus{
 .second-links:hover {
     color: #EFA00B;
 }
+
+/* .slick-prev, .slick-next {
+    border: none;
+    background: none;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+} */
+
+.fa-chevron-left, .fa-chevron-right {
+    color: #EFA00B;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 50px;
+}
+
+.fa-chevron-left:hover, .fa-chevron-right:hover {
+    color: #b37606;
+    cursor: pointer;
+}
+
+.carousel-title {
+    text-align: center;
+    font-weight: 400;
+    padding: 50px;
+    font-size: 40px;
+}
+
+.slick-slide {
+    max-width: 400px;
+}
