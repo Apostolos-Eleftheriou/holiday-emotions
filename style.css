@@ -811,3 +811,7 @@ textarea:focus, input:focus{
   .set-btn:hover {
       background-color: #b37606;
   }
+
+  #map {
+      height: 600px;
+  }
