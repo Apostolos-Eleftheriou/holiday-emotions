@@ -711,7 +711,7 @@ textarea:focus, input:focus{
         height: 40px;
         z-index: 0;
         border-radius: 70%;
-        bottom: 70px;
+        bottom: 90px;
         right: 0;
         margin-right: -6px;
         transform: scale(1.4, 1.4);
@@ -736,8 +736,43 @@ textarea:focus, input:focus{
     height: 40px;
     z-index: 0;
     border-radius: 70%;
-    top: 120px;
+    top: 130px;
     left: 0;
     margin-left: -7px;
     transform: scale(1.4, 1.4);
 }
+
+@media only screen and (max-width: 1400px) {
+    .box-title {
+        font-size: 19px;
+    }
+    .box-text {
+        font-size: 12px;
+    }
+    .overlay-right-two::after {
+        content: '';
+        position: absolute;
+        background: #EFA00B;
+        width: 20px;
+        height: 40px;
+        z-index: 0;
+        border-radius: 70%;
+        bottom: 90px;
+        right: 0;
+        margin-right: -6px;
+        transform: scale(1.4, 1.4);
+    }
+    .overlay-left-two::after {
+        content: '';
+        position: absolute;
+        background: #EFA00B;
+        width: 20px;
+        height: 40px;
+        z-index: 0;
+        border-radius: 70%;
+        top: 100px;
+        left: 0;
+        margin-left: -7px;
+        transform: scale(1.4, 1.4);
+    }
+  }
