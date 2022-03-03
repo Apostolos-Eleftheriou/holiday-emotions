@@ -676,6 +676,10 @@ textarea:focus, input:focus{
     font-weight: bold;
 }
 
+.boxes-btn:hover {
+    background-color: rgb(219, 219, 219);
+}
+
 .card-color {
     background-color: #EFA00B;
 }
@@ -711,7 +715,7 @@ textarea:focus, input:focus{
         height: 40px;
         z-index: 0;
         border-radius: 70%;
-        bottom: 50px;
+        bottom: 80px;
         right: 0;
         margin-right: -6px;
         transform: scale(1.4, 1.4);
@@ -757,7 +761,7 @@ textarea:focus, input:focus{
         height: 40px;
         z-index: 0;
         border-radius: 70%;
-        bottom: 60px;
+        bottom: 80px;
         right: 0;
         margin-right: -6px;
         transform: scale(1.4, 1.4);
@@ -775,4 +779,35 @@ textarea:focus, input:focus{
         margin-left: -7px;
         transform: scale(1.4, 1.4);
     }
+  }
+
+  .set-container {
+      max-width: 300px;
+  }
+
+  .set-image-container {
+      width: 50%;
+  }
+
+  .set-image {
+      width: 100%;
+  }
+
+  .para-container {
+      width: 50%;
+      padding: 10px;
+  }
+
+  .set-btn {
+    background-color: #EFA00B;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 50px 5px 50px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 25px;
+  }
+
+  .set-btn:hover {
+      background-color: #b37606;
   }
