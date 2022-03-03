@@ -529,3 +529,14 @@ textarea:focus, input:focus{
     font-weight: bold;
     margin-top: 25px;
 }
+
+.card-btn:hover {
+    background-color: #EFA00B;
+}
+
+.card-group-header {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    font-weight: 400;
+}
