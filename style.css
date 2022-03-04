@@ -817,3 +817,28 @@ textarea:focus, input:focus{
   #map {
       height: 600px;
   }
+
+  .all-time-classic {
+      height: 123px;
+      width: 100%;
+      background-color: #1BABE2;
+  }
+
+  .numbers {
+      font-size: 35px;
+      font-weight: 300;
+      color: #fff;
+      margin-right: 10px;
+      padding: 8px;
+      border-right: 1px solid #fff;     
+  }
+
+  .letters {
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+  }
+
+  .atc-p-right {
+      padding-right: 60px;
+  }
