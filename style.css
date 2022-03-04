@@ -878,3 +878,19 @@ textarea:focus, input:focus{
       font-size: 16px;
       color: #64697A;
   }
+
+  .footer {
+      height: 63px;
+      background-color: #000000;
+      color: #fff;
+  }
+
+  .footer-link {
+      text-decoration: none;
+      color: #fff;
+  }
+
+  .footer-link:hover {
+      cursor: pointer;
+      color: #EFA00B;
+  }
