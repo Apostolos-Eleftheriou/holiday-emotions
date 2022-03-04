@@ -877,13 +877,13 @@ textarea:focus, input:focus{
   }
 
   .img-container-one {
-      background: url(../holiday-emotions/images/kid.png);
+      background: url(../holiday-emotions/images/kid.png) no-repeat;
       background-position: center;
       width: 100%;
   }
 
   .img-container-two {
-      background: url(../holiday-emotions/images/second-kid.png);
+      background: url(../holiday-emotions/images/second-kid.png) no-repeat;
       background-position: top right;
       width: 100%;
   }
