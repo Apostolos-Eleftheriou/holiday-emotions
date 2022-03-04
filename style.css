@@ -842,3 +842,26 @@ textarea:focus, input:focus{
   .atc-p-right {
       padding-right: 60px;
   }
+
+  .insta-image-container {
+      max-width: 1050px;
+  }
+  .insta-image-sub-container {
+      width: 20%;
+      height: 20%;
+  }
+
+  .img-size-fix {
+      width: 210px;
+      height: 210px;
+  }
+
+  .insta-follow-link {
+      text-decoration: none;
+      color: #000000;
+  }
+
+  .insta-follow-link:hover {
+      cursor: pointer;
+      color: #EFA00B;
+  }
