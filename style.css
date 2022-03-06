@@ -15,6 +15,22 @@ body {
     
 }
 
+.top-menu {
+    height: 20%;
+}
+
+.main-height {
+    height: 80%;
+}
+
+.main-height-two {
+    height: 50%;
+}
+
+.utilities {
+    height: 50%;
+}
+
 .logo {
     background: transparent url('../holiday-emotions/images/Group-66.png') 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -114,8 +130,8 @@ textarea:focus, input:focus{
       justify-content: center;
       align-items: center;
       padding: 20px;
-      width: 20%;
-      margin-top: 15%;    
+      width: 20%;   
+      margin-top: 5%;
   }
 
 .celsius {
@@ -148,10 +164,6 @@ textarea:focus, input:focus{
     text-align: center;
     font-weight: 300;
     letter-spacing: 1px;
-}
-
-.main-height {
-    height: 75%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -220,7 +232,7 @@ textarea:focus, input:focus{
     justify-content: center;
     align-items: center;
     width: 20%;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 .side-locations-links {
@@ -325,12 +337,8 @@ textarea:focus, input:focus{
     width: 100%;
 }
 
-.utilities {
-    padding-top: 5%;
-}
-
 .height-fix {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .destinations-icon-container, .activities-icon-container, .dental-holidays-icon-container, .gastronomy-icon-container, .entertainment-icon-container, .shopping-icon-container {
