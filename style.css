@@ -312,6 +312,11 @@ textarea:focus, input:focus{
     color: #EFA00B !important;
 }
 
+.second-background-color {
+    background-color: #FEF9EF;
+    height: 138px;
+}
+
 .bottom-more {
     text-decoration: none;
     color: #fff;
@@ -562,7 +567,6 @@ textarea:focus, input:focus{
     padding: 5px 40px 5px 40px;
     font-size: 15px;
     font-weight: bold;
-    margin-top: 25px;
 }
 
 .card-btn:hover {
@@ -703,7 +707,19 @@ textarea:focus, input:focus{
 }
 
 .btn-container-cards {
-    padding-bottom: 30px;
+    margin-top: 5%;
+}
+
+.cards-title-pad-fix {
+    padding: 20px 20px 0 20px
+}
+
+.cards-text-pad-fix {
+    padding: 0 20px 0 20px;
+}
+
+.mw-fix {
+    max-width: 1350px;
 }
 
 .boxes-btn {
