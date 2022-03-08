@@ -131,7 +131,7 @@
               </li>
           </ul>
           <div class="tab-content d-flex justify-content-center" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-hotels" role="tabpanel" aria-labelledby="pills-hotels-tab">
+            <div class="tab-pane fade show active hotels" id="pills-hotels" role="tabpanel" aria-labelledby="pills-hotels-tab">
                 <div class="nav-container">
                     <div class="d-flex justify-content-between align-items-center bottom-search-nav">
                         <div class="nav-location">
@@ -198,74 +198,85 @@
                     </div>
                   </div>
             </div>
-                <div class="tab-pane fade" id="pills-cars" role="tabpanel" aria-labelledby="pills-cars-tab">
+                <div class="tab-pane fade cars" id="pills-cars" role="tabpanel" aria-labelledby="pills-cars-tab">
                     <div class="nav-container">
                         <div class="d-flex justify-content-between align-items-center bottom-search-nav">
                             <div class="nav-location">
                                 <span><i class="fa-solid fa-location-pin"></i></span>
-                                <input class="nav-location-txt" type="text" name="nav-location-text" placeholder="Location">
+                                <p class="m-0">Pickup Location</p>
                             </div>
-                            <div class="nav-checkin">
-                                <span><i class="fas fa-calendar-alt"></i></span>
-                                <input class="nav-checkin-txt" type="text" name="nav-checkin-text" placeholder="Check in - Check out">
+                            <div class="nav-country">
+                                <select name="country" id="country">
+                                    <option value="Greece">GR</option>
+                                    <option value="Belgium">BE</option>
+                                    <option value="Bulgaria">BG</option>
+                                    <option value="Czech Republic">CZ</option>
+                                    <option value="Denmark">DK</option>
+                                    <option value="Germany">DE</option>
+                                    <option value="Estonia">EE</option>
+                                    <option value="Ireland">IE</option>
+                                    <option value="Spain">ES</option>
+                                    <option value="France">FR</option>
+                                    <option value="Croatia">HR</option>
+                                    <option value="Italy">IT</option>
+                                    <option value="Cyprus">CY</option>
+                                    <option value="Latvia">LV</option>
+                                    <option value="Lithuania">LT</option>
+                                    <option value="Luxembourg">LU</option>
+                                    <option value="Hungary">HU</option>
+                                    <option value="Malta">MT</option>
+                                    <option value="Netherlands">NL</option>
+                                    <option value="Austria">AT</option>
+                                    <option value="Poland">PL</option>
+                                    <option value="Portugal">PT</option>
+                                    <option value="Romania">RO</option>
+                                    <option value="Slovenia">SI</option>
+                                    <option value="Slovensko">SK</option>
+                                    <option value="Finland">FI</option>
+                                    <option value="Sweden">SE</option>
+                                </select>
                             </div>
-                                <div class="btn-group dropup">
-                                        <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Rooms
-                                        </button>
-                                        <div class="dropdown-menu">
-                                        <ul>
-                                            <li class="bottom-nav-list">test</li>
-                                            <li class="bottom-nav-list">test</li>
-                                            <li class="bottom-nav-list">test</li>
-                                            <li class="bottom-nav-list">test</li>
-                                        </ul>
-                                        </div>
+                                <div class="nav-area">
+                                        <select name="area" id="area">
+                                            <option value="" disabled selected>AREA</option>
+                                            <option value="Attica">Attica</option>
+                                            <option value="Thessaloniki">Thessaloniki</option>
+                                            <option value="Volos">Volos</option>
+                                            <option value="Kefalonia">Kefalonia</option>
+                                            <option value="Rethymno">Rethymno</option>
+                                        </select>
                                     </div>
-                                <div class="btn-group dropup">
-                                        <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Adults
-                                        </button>
-                                        <div class="dropdown-menu">
-                                        <ul>
-                                            <li class="bottom-nav-list">test</li>
-                                            <li class="bottom-nav-list">test</li>
-                                            <li class="bottom-nav-list">test</li>
-                                            <li class="bottom-nav-list">test</li>
-                                        </ul>
-                                        </div>
+                                <div class="nav-city">
+                                    <select name="city" id="city">
+                                    <option value="" disabled selected> </option>
+                                        <option value="PH">PH</option>
+                                        <option value="PH">PH</option>
+                                        <option value="PH">PH</option>
+                                        <option value="PH">PH</option>
+                                        <option value="PH">PH</option>
+                                    </select>
                                     </div>
-                                <div class="btn-group dropup">
-                                        <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Children
-                                        </button>
-                                        <div class="dropdown-menu">
-                                        <ul>
-                                            <li class="bottom-nav-list">test</li>
-                                            <li class="bottom-nav-list">test</li>
-                                            <li class="bottom-nav-list">test</li>
-                                            <li class="bottom-nav-list">test</li>
-                                        </ul>
-                                        </div>
+                                    <div class="nav-pickup">
+                                        <span><i class="fas fa-calendar-alt"></i></span>
+                                        <input class="nav-pickup-txt" type="text" name="nav-pickup" placeholder="Pickup">
                                     </div>
-                                <div class="btn-group dropup">
-                                        <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Order by
-                                        </button>
-                                        <div class="dropdown-menu">
-                                        <ul>
-                                            <li class="bottom-nav-list">test</li>
-                                            <li class="bottom-nav-list">test</li>
-                                            <li class="bottom-nav-list">test</li>
-                                            <li class="bottom-nav-list">test</li>
-                                        </ul>
-                                        </div>
+                                    <div class="nav-dropoff">
+                                        <span><i class="fas fa-calendar-alt"></i></span>
+                                        <input class="nav-dropoff-txt" type="text" name="nav-dropoff" placeholder="Drop off">
+                                    </div>
+                                    <div class="dropoff-toanother">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Drop Off to another location
+                                            </label>
+                                          </div>
                                     </div>
                             <button class="nav-submit"><span class="search-span"><img src="../holiday-emotions/images/Icon-awesome-search.png" alt="search-icon"></span>SEARCH</button>
                         </div>
                       </div>
                 </div>
-                <div class="tab-pane fade" id="pills-stay" role="tabpanel" aria-labelledby="pills-stay-tab">
+                <div class="tab-pane fade stay" id="pills-stay" role="tabpanel" aria-labelledby="pills-stay-tab">
                     <div class="nav-container">
                     <div class="d-flex justify-content-between align-items-center bottom-search-nav">
                         <div class="nav-location">
@@ -332,7 +343,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="pills-emotions" role="tabpanel" aria-labelledby="pills-emotions-tab">
+                <div class="tab-pane fade emotions" id="pills-emotions" role="tabpanel" aria-labelledby="pills-emotions-tab">
                     <div class="nav-container">
                         <div class="d-flex justify-content-between align-items-center bottom-search-nav">
                             <div class="nav-location">
