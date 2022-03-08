@@ -179,7 +179,7 @@ textarea:focus, input:focus{
         transform: scale(0.8);
     }
     .nav-submit {
-        padding: 16px;
+        padding: 12px;
     }
     .carousel-container {
         transform: scale(0.8);
@@ -287,7 +287,7 @@ textarea:focus, input:focus{
 .nav-submit {
     background-color: #EFA00B;
     color: #000000;
-    padding: 27px;
+    padding: 22px;
     border: none;
     border-radius: 0 50px 50px 0;
     width: 210px;
@@ -1022,4 +1022,9 @@ textarea:focus, input:focus{
       border: 1px solid #fff;
       border-radius: 20px;
       text-transform: uppercase;
+  }
+
+  .map-btn:hover {
+      border-color: #EFA00B;
+      color: #EFA00B;
   }
