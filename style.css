@@ -580,6 +580,10 @@ textarea:focus, input:focus{
     font-weight: 400;
 }
 
+.cb-hover-fix:hover, .overlay-top:hover::after, .overlay-bottom:hover::after {
+    background-color: #DCDFE4;
+}
+
 .overlay-top {
     position: relative;
     top: 0;
@@ -599,7 +603,7 @@ textarea:focus, input:focus{
     z-index: 0;
     border-radius: 70%;
     top: 40px;
-    left: 137px;
+    left: 149px;
     margin-top: -47px;
     transform: scale(1.4, 1.4);
 }
@@ -623,7 +627,7 @@ textarea:focus, input:focus{
     z-index: 0;
     border-radius: 70%;
     bottom: 40px;
-    left: 137px;
+    left: 147px;
     margin-bottom: -47px;
     transform: scale(1.4, 1.4);
 }
