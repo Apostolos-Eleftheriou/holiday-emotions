@@ -308,6 +308,38 @@ textarea:focus, input:focus{
     text-align: left;
 }
 
+.location-menu-style {
+    background-color: transparent;
+    color: #EFA00B;
+    border-bottom: solid 1px #EFA00B;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    max-width: 70px;
+    margin: 0 10px 0 10px;
+}
+
+.location-menu-style-city {
+    background-color: transparent;
+    color: #EFA00B;
+    border-bottom: solid 1px #EFA00B;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 150px;
+    margin: 0 10px 0 10px;
+}
+
+.label-width {
+    max-width: 150px;
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+.pad-left {
+    padding-left: 5px;
+}
+
 .active {
     color: #EFA00B !important;
 }

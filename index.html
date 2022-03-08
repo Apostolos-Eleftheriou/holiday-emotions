@@ -203,10 +203,10 @@
                         <div class="d-flex justify-content-between align-items-center bottom-search-nav">
                             <div class="nav-location">
                                 <span><i class="fa-solid fa-location-pin"></i></span>
-                                <p class="m-0">Pickup Location</p>
+                                <p class="m-0 pad-left">Pickup Location</p>
                             </div>
                             <div class="nav-country">
-                                <select name="country" id="country">
+                                <select class="location-menu-style" name="country" id="country">
                                     <option value="Greece">GR</option>
                                     <option value="Belgium">BE</option>
                                     <option value="Bulgaria">BG</option>
@@ -237,7 +237,7 @@
                                 </select>
                             </div>
                                 <div class="nav-area">
-                                        <select name="area" id="area">
+                                        <select class="location-menu-style" name="area" id="area">
                                             <option value="" disabled selected>AREA</option>
                                             <option value="Attica">Attica</option>
                                             <option value="Thessaloniki">Thessaloniki</option>
@@ -247,7 +247,7 @@
                                         </select>
                                     </div>
                                 <div class="nav-city">
-                                    <select name="city" id="city">
+                                    <select class="location-menu-style-city" name="city" id="city">
                                     <option value="" disabled selected> </option>
                                         <option value="PH">PH</option>
                                         <option value="PH">PH</option>
@@ -258,16 +258,16 @@
                                     </div>
                                     <div class="nav-pickup">
                                         <span><i class="fas fa-calendar-alt"></i></span>
-                                        <input class="nav-pickup-txt" type="text" name="nav-pickup" placeholder="Pickup">
+                                        <input class="nav-pickup-txt location-menu-style" type="text" name="nav-pickup" placeholder="Pickup">
                                     </div>
                                     <div class="nav-dropoff">
                                         <span><i class="fas fa-calendar-alt"></i></span>
-                                        <input class="nav-dropoff-txt" type="text" name="nav-dropoff" placeholder="Drop off">
+                                        <input class="nav-dropoff-txt location-menu-style" type="text" name="nav-dropoff" placeholder="Drop off">
                                     </div>
                                     <div class="dropoff-toanother">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
+                                        <div class="form-check d-flex justify-content-center align-items-center">
+                                            <input class="form-check-input mr-2" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label label-width" for="flexCheckDefault">
                                               Drop Off to another location
                                             </label>
                                           </div>
