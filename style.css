@@ -159,6 +159,12 @@ textarea:focus, input:focus{
     align-items: center;
 }
 
+@media screen and (max-height: 690px) {
+    .title {
+        font-size: 65px !important;
+    }
+}
+
 .title {
     font-size: 85px;
     color: #fff;
@@ -169,7 +175,7 @@ textarea:focus, input:focus{
 
 @media only screen and (max-width: 1200px) {
     .title {
-        font-size: 55px;
+        font-size: 65px;
         color: #fff;
         text-align: center;
         font-weight: 300;
