@@ -832,6 +832,10 @@ textarea:focus, input:focus{
       background-color: #1BABE2;
   }
 
+  .map-mw-fix {
+      max-width: 1500px;
+  }
+
   .numbers {
       font-size: 35px;
       font-weight: 300;
