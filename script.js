@@ -22,7 +22,7 @@ $(document).ready(function(){
     }
   });
   
-  var map = L.map('map', {scrollWheelZoom:false}).setView([37.98,  23.72], 6);
+  var map = L.map('map', {scrollWheelZoom:false}).setView([38.17,  20.56], 6);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',

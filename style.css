@@ -917,3 +917,53 @@ textarea:focus, input:focus{
       cursor: pointer;
       color: #EFA00B;
   }
+
+  .map-overlay {
+    height: 478px;
+    width: 436px;
+    background: rgba(0,0,0,.75);
+    border-radius: 10px;
+    font-size: 14px;
+    z-index: 2000;
+    top: 7%;
+    left: 13%;
+    position: relative;
+  }
+
+  .map-header-container {
+      padding: 30px 20px 30px 20px;
+  }
+
+  .map-title {
+      font-size: 40px;
+      color: #EFA00B;
+      font-weight: 300;
+      padding-left: 15px;
+  }
+
+  .map-text {
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+      padding: 0 30px 0 30px;
+  }
+
+  .map-text-two {
+      font-size: 13px;
+      color: #fff;
+      text-align: center;
+      padding: 0 30px 0 30px;
+  }
+
+  .btn-container-map {
+      margin-top: 3%;
+  }
+
+  .map-btn {
+      padding: 5px 70px 5px 70px;
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 20px;
+      text-transform: uppercase;
+  }
