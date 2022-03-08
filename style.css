@@ -632,7 +632,7 @@ textarea:focus, input:focus{
     transform: scale(1.4, 1.4);
 }
 
-@media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 1356px) {
     .overlay-top::after {
         content: '';
         position: absolute;
@@ -642,36 +642,7 @@ textarea:focus, input:focus{
         z-index: 0;
         border-radius: 70%;
         top: 40px;
-        left: 117px;
-        margin-top: -47px;
-        transform: scale(1.4, 1.4);
-    }
-    
-    .overlay-bottom::after {
-        content: '';
-        position: absolute;
-        background: #fff;
-        width: 40px;
-        height: 20px;
-        z-index: 0;
-        border-radius: 70%;
-        bottom: 40px;
-        left: 117px;
-        margin-bottom: -47px;
-        transform: scale(1.4, 1.4);
-    }
-  }
-  @media only screen and (max-width: 1200px) {
-    .overlay-top::after {
-        content: '';
-        position: absolute;
-        background: #fff;
-        width: 40px;
-        height: 20px;
-        z-index: 0;
-        border-radius: 70%;
-        top: 40px;
-        left: 97px;
+        left: 42%;
         margin-top: -47px;
         transform: scale(1.4, 1.4);
     }
@@ -684,7 +655,7 @@ textarea:focus, input:focus{
         z-index: 0;
         border-radius: 70%;
         bottom: 40px;
-        left: 97px;
+        left: 42%;
         margin-bottom: -47px;
         transform: scale(1.4, 1.4);
     }
@@ -712,6 +683,10 @@ textarea:focus, input:focus{
 
 .btn-container-cards {
     margin-top: 5%;
+}
+
+.btn-container-cards-two {
+    margin-bottom: 10%;
 }
 
 .cards-title-pad-fix {
@@ -776,7 +751,7 @@ textarea:focus, input:focus{
         height: 40px;
         z-index: 0;
         border-radius: 70%;
-        bottom: 120px;
+        bottom: 130px;
         right: 0;
         margin-right: -6px;
         transform: scale(1.4, 1.4);
@@ -813,32 +788,6 @@ textarea:focus, input:focus{
     }
     .box-text {
         font-size: 12px;
-    }
-    .overlay-right-two::after {
-        content: '';
-        position: absolute;
-        background: #EFA00B;
-        width: 20px;
-        height: 40px;
-        z-index: 0;
-        border-radius: 70%;
-        bottom: 120px;
-        right: 0;
-        margin-right: -6px;
-        transform: scale(1.4, 1.4);
-    }
-    .overlay-left-two::after {
-        content: '';
-        position: absolute;
-        background: #EFA00B;
-        width: 20px;
-        height: 40px;
-        z-index: 0;
-        border-radius: 70%;
-        top: 110px;
-        left: 0;
-        margin-left: -7px;
-        transform: scale(1.4, 1.4);
     }
   }
 
@@ -878,7 +827,7 @@ textarea:focus, input:focus{
   }
 
   .all-time-classic {
-      height: 123px;
+      height: 143px;
       width: 100%;
       background-color: #1BABE2;
   }
