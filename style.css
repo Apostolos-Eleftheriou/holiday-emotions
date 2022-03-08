@@ -100,6 +100,7 @@ body {
 
 .nav-location, .nav-checkin {
     display: flex;
+    padding-right: 15px;
 
 }
 
@@ -298,6 +299,14 @@ textarea:focus, input:focus{
     margin-right: 10px;
 }
 
+.form-check-input {
+    background-color: #EFA00B;
+}
+
+.form-check-input:checked {
+    background-color: #EFA00B;
+}
+
 .dropdown-menu.show {
     background-color: #EFA00B;
 }
@@ -334,6 +343,21 @@ textarea:focus, input:focus{
     max-width: 150px;
     padding-left: 10px;
     font-size: 13px;
+}
+
+.nav-available-dates {
+    background-color: transparent;
+    color: #EFA00B;
+    border-bottom: solid 1px #EFA00B;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 115px;
+    margin: 0 10px 0 10px;
+}
+
+.available-dates {
+    margin-left: 6px;
 }
 
 .pad-left {
