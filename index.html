@@ -21,7 +21,26 @@
 </head>
 <body>
     <div class="container-fluid background-img">
-        <div class="d-flex justify-content-around align-items-center top-menu pt-2 flex-wrap">
+        <nav class="container-fluid d-md-flex d-lg-none d-flex justify-content-around align-items-center flex-row mobile-nav">
+            <div class="logo-mobile"></div>
+            <div class="mobile-input-container">
+                <input type="text" class="mobile-input">
+            </div>
+                <ul class="nav-links">
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Activites</a></li>
+                    <li><a href="#">Dental Holidays</a></li>
+                    <li><a href="#">Gastronomy</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <li><a href="#">Shopping</a></li>
+                </ul>
+                <div class="burger d-md-block d-lg-none">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        <div class="d-none d-lg-flex d-flex justify-content-around align-items-center top-menu pt-2 flex-wrap">
             <div class="p-2 ">
                 <div class="logo"></div>
             </div>
@@ -130,7 +149,7 @@
                 </button>
               </li>
           </ul>
-          <div class="tab-content d-flex justify-content-center" id="pills-tabContent">
+          <div class="d-none d-lg-flex tab-content d-flex justify-content-center" id="pills-tabContent">
             <div class="tab-pane fade show active hotels" id="pills-hotels" role="tabpanel" aria-labelledby="pills-hotels-tab">
                 <div class="nav-container">
                     <div class="d-flex justify-content-between align-items-center bottom-search-nav">
@@ -442,7 +461,7 @@
                       </div>
                 </div>
             </div>
-            <div class="container-fluid d-flex justify-content-center align-items-center height-fix">
+            <div class="d-none d-lg-flex container-fluid d-flex justify-content-center align-items-center height-fix">
                 <div class="discover-more-container">
                     <a class="bottom-more" href="#first">DISCOVER MORE</a>
                     <div class="bottom-image-container">

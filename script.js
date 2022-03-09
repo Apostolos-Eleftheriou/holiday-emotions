@@ -42,3 +42,28 @@ $('.dr-off').on("change", function() {
   }
     
 });
+
+const navSlide = () => {
+  $(".burger").on("click", function() {
+    $(".nav-links").toggleClass("nav-active");
+  })
+
+  // $(".nav-links li").forEach(function(link, index){
+  //   link.style.animation = `navLinkFade 0,5s ease forwards ${index / 7 + 1.5s}`
+  // })
+
+
+}
+
+navSlide();
+
+// const navSlide = () => {
+//   const burger = ducument.querySelector('.burger');
+//   const nav = document.querySelector('.nav-links');
+
+//   burger.addEventListener('click', () => {
+//     nav.classList.toggle('nav-active');
+//   });
+// }
+
+// navSlide();
