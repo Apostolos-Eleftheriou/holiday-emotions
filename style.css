@@ -724,11 +724,51 @@ textarea:focus, input:focus{
   }
 
 .box-left {
-    background: url(../holiday-emotions/images/wines.png) no-repeat;
+    background: linear-gradient(0deg, rgba(0,0,0,.75) 2%, rgba(0,0,0,0) 60%),
+                url(../holiday-emotions/images/wines.png) no-repeat;
     background-size: auto;
     background-position: center;
     width: 50%;
     height: auto;
+}
+
+.box-left-content-container {
+    padding-bottom: 40px;
+}
+
+.box-left-header {
+    color: #fff;
+    font-size: 25px;
+    padding: 20px 40px 0 40px;
+}
+
+.box-left-para-one {
+    color: #fff;
+    font-size: 16px;
+    padding: 0 40px 0 40px;
+}
+
+.box-left-para-two {
+    color: #fff;
+    font-size: 14px;
+    padding: 0 40px 0 40px;
+}
+
+.box-left-btn-container {
+    padding: 10px 40px 0 55px;
+}
+
+.box-left-btn {
+    color: #fff;
+    background-color: transparent;
+    padding: 3px 50px 3px 50px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+
+.box-left-btn:hover {
+    color: #EFA00B;
+    border-color: #EFA00B;
 }
 
 .box-right {
