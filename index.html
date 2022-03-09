@@ -200,6 +200,7 @@
             </div>
                 <div class="tab-pane fade cars" id="pills-cars" role="tabpanel" aria-labelledby="pills-cars-tab">
                     <div class="nav-container">
+                        <div class="test1">
                         <div class="d-flex justify-content-between align-items-center bottom-search-nav">
                             <div class="nav-location">
                                 <span><i class="fa-solid fa-location-pin"></i></span>
@@ -266,14 +267,72 @@
                                     </div>
                                     <div class="dropoff-toanother">
                                         <div class="form-check d-flex justify-content-center align-items-center">
-                                            <input class="form-check-input mr-2" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input mr-2 dr-off" type="checkbox" value="" id="flexCheckDefault">
                                             <label class="form-check-label label-width" for="flexCheckDefault">
                                               Drop Off to another location
                                             </label>
                                           </div>
                                     </div>
-                            <button class="nav-submit"><span class="search-span"><img src="../holiday-emotions/images/Icon-awesome-search.png" alt="search-icon"></span>SEARCH</button>
-                        </div>
+                                    <button class="nav-submit"><span class="search-span"><img src="../holiday-emotions/images/Icon-awesome-search.png" alt="search-icon"></span>SEARCH</button>
+                                </div>
+                                </div>
+                                <div class="test2 d-none justify-content-start align-items-center bottom-search-nav-two">
+                                    <div class="nav-location">
+                                        <span><i class="fa-solid fa-location-pin"></i></span>
+                                        <p class="m-0 pad-left">Pickup Location</p>
+                                    </div>
+                                    <div class="nav-country vis-hide">
+                                        <select class="location-menu-style" name="country" id="country">
+                                            <option value="Greece">GR</option>
+                                            <option value="Belgium">BE</option>
+                                            <option value="Bulgaria">BG</option>
+                                            <option value="Czech Republic">CZ</option>
+                                            <option value="Denmark">DK</option>
+                                            <option value="Germany">DE</option>
+                                            <option value="Estonia">EE</option>
+                                            <option value="Ireland">IE</option>
+                                            <option value="Spain">ES</option>
+                                            <option value="France">FR</option>
+                                            <option value="Croatia">HR</option>
+                                            <option value="Italy">IT</option>
+                                            <option value="Cyprus">CY</option>
+                                            <option value="Latvia">LV</option>
+                                            <option value="Lithuania">LT</option>
+                                            <option value="Luxembourg">LU</option>
+                                            <option value="Hungary">HU</option>
+                                            <option value="Malta">MT</option>
+                                            <option value="Netherlands">NL</option>
+                                            <option value="Austria">AT</option>
+                                            <option value="Poland">PL</option>
+                                            <option value="Portugal">PT</option>
+                                            <option value="Romania">RO</option>
+                                            <option value="Slovenia">SI</option>
+                                            <option value="Slovensko">SK</option>
+                                            <option value="Finland">FI</option>
+                                            <option value="Sweden">SE</option>
+                                        </select>
+                                    </div>
+                                        <div class="nav-area">
+                                                <select class="location-menu-style" name="area" id="area">
+                                                    <option value="" disabled selected>AREA</option>
+                                                    <option value="Attica">Attica</option>
+                                                    <option value="Thessaloniki">Thessaloniki</option>
+                                                    <option value="Volos">Volos</option>
+                                                    <option value="Kefalonia">Kefalonia</option>
+                                                    <option value="Rethymno">Rethymno</option>
+                                                </select>
+                                            </div>
+                                        <div class="nav-city">
+                                            <select class="location-menu-style-city" name="city" id="city">
+                                            <option value="" disabled selected> </option>
+                                                <option value="PH">PH</option>
+                                                <option value="PH">PH</option>
+                                                <option value="PH">PH</option>
+                                                <option value="PH">PH</option>
+                                                <option value="PH">PH</option>
+                                            </select>
+                                        </div>
+                                    </div>
                       </div>
                 </div>
                 <div class="tab-pane fade stay" id="pills-stay" role="tabpanel" aria-labelledby="pills-stay-tab">

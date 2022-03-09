@@ -31,3 +31,14 @@ $(document).ready(function(){
     tileSize: 512,
     zoomOffset: -1
 }).addTo(map);
+
+$('.dr-off').on("change", function() {
+  if($(this).prop("checked")){
+    $(".test2").removeClass("d-none").addClass("d-flex");
+    $(".test1 .bottom-search-nav").addClass("notround");
+  } else {
+    $(".test2").addClass("d-none").removeClass("d-flex");
+    $(".test1 .bottom-search-nav").removeClass("notround");
+  }
+    
+});

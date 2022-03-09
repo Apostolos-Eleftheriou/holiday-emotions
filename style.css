@@ -181,7 +181,7 @@ textarea:focus, input:focus{
         font-weight: 300;
         letter-spacing: 1px;
     }
-    .bottom-search-nav {
+    .nav-container {
         transform: scale(0.8);
     }
     .nav-submit {
@@ -265,10 +265,25 @@ textarea:focus, input:focus{
     color: #EFA00B;
 }
 
+.vis-hide {
+    visibility: hidden;
+}
+
+
 .bottom-search-nav {
     border-radius: 50px;
     background-color: #000000;
     max-width: 1200px;
+}
+.notround {
+    border-radius: 50px 50px 50px 0 !important;
+}
+
+.bottom-search-nav-two {
+    border-radius: 0 0 0 50px;
+    background-color: #000000;
+    max-width: 81.5%;
+    padding: 22px 0 22px 0;
 }
 
 .bottom-nav-buttons {
