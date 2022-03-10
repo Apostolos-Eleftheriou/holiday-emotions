@@ -79,13 +79,16 @@ body {
     font-size: 28px;
 }
 
+.nav-bar-container-three a:hover {
+   color: #EFA00B;
+}
+
 .burger {
     background-color: #EFA00B;
-    width: 90px;
+    width: 79px;
     height: 64px;
     cursor: pointer;
     z-index: 100000;
-    padding-right: 5px;
 }
 
 .burger div {
@@ -229,7 +232,7 @@ body {
     border-color:#b37606;
 }
 
-.header-links:hover {
+.header-links:hover, .header-links-mobile:hover {
     color: #EFA00B;
 }
 
