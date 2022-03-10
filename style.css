@@ -15,8 +15,21 @@ body {
     
 }
 
+.logo-mobile {
+    background: url('../holiday-emotions/images/Group-66.png') no-repeat;
+    opacity: 1;
+    width: 46px;
+    height: 46px;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-search-container {
+    padding: 15px 0 0 0;
+}
+
 .mobile-nav {
-    min-height: 8vh;
+    min-height: 18vh;
     position: fixed;
     background: linear-gradient(180deg, rgba(0,0,0,.75) 2%, rgba(0,0,0,0) 100%);
     z-index: 10000;
@@ -140,15 +153,6 @@ body {
     opacity: 1;
     width: 87px;
     height: 88px;
-    background-position: center;
-}
-
-.logo-mobile {
-    background: url('../holiday-emotions/images/Group-66.png') no-repeat;
-    opacity: 1;
-    width: 46px;
-    height: 46px;
-    background-size: cover;
     background-position: center;
 }
 
