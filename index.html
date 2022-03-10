@@ -29,59 +29,63 @@
                     <input type="text" class="mobile-input">
                 </div>
             </div>
-                <ul class="nav-links">
-                    <div class="nav-bar-container-one d-flex flex-row align-items-center justify-content-start">
-                        <div class="p-3">
-                            <a class="header-links" href="#">
-                                <img src="../holiday-emotions/images/on-off.png" alt="on-off-icon"> EN
-                            </a>
+                <ul class="nav-links p-0">
+                    <div class="mobile-nav-top-grp">
+                        <div class="nav-bar-container-one container p-0 d-flex flex-row flex-wrap align-items-center justify-content-start">
+                            <div class="d-flex align-items-center mob-menu-height">
+                                <a class="header-links-mobile" href="#">
+                                    <img class="img-space-fix" src="../holiday-emotions/images/on-off.png" alt="on-off-icon"> EN
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center mob-menu-height">
+                                <a class="header-links-mobile" href="#">
+                                    <img class="img-space-fix" src="../holiday-emotions/images/cart.png" alt="cart"> Cart
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center mob-menu-height">
+                                <a class="header-links-mobile" href="#">
+                                    <img class="img-space-fix" src="../holiday-emotions/images/login.png" alt="login-icon"> Login
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center mob-menu-height">
+                                <button class="sign-up-btn-mobile">Sign up</button>
+                            </div>
                         </div>
-                        <div class="p-3">
-                            <a class="header-links" href="#">
-                                <img src="../holiday-emotions/images/cart.png" alt="cart"> Cart
-                            </a>
+                        <div class="nav-bar-container-two d-flex flex-row align-items-center justify-content-start">
+                            <div class="mob-menu-height d-flex align-items-center">
+                                <a class="header-links-mobile" href="#">
+                                    <img class="img-space-fix" src="../holiday-emotions/images/phone.png" alt="phone"> +30 210 22 08 297
+                                </a>
+                            </div>
+                            <div class="mob-menu-height d-flex align-items-center">
+                                <a class="header-links-mobile" href="#">
+                                    <img class="img-space-fix" src="../holiday-emotions/images/business-center.png" alt="business-center"> Small Business
+                                </a>
+                            </div>
                         </div>
-                        <div class="p-3">
-                            <a class="header-links" href="#">
-                                <img src="../holiday-emotions/images/login.png" alt="login-icon"> Login
-                            </a>
+                </div>
+                    <div class="mobile-nav-bottom-grp d-flex flex-column justify-content-around align-items-center">
+                        <div class="nav-bar-container-three">
+                            <li><a href="#">Destinations</a></li>
+                            <li><a href="#">Activites</a></li>
+                            <li><a href="#">Dental Holidays</a></li>
+                            <li><a href="#">Gastronomy</a></li>
+                            <li><a href="#">Entertainment</a></li>
+                            <li><a href="#">Shopping</a></li>
                         </div>
-                        <div class="p-3">
-                            <button class="sign-up-btn">Sign up</button>
+                        <div class="nav-bar-container-four">
+                            <a class="social-media-icons" href="#">
+                                <i class="fab fa-facebook-f"></i></a>
+                            <a class="social-media-icons" href="#" target="_blank">
+                                <i class="fab fa-instagram"></i></a>
+                            <a class="social-media-icons" href="#" target="_blank">
+                                <i class="fab fa-youtube"></i></a>
+                            <a class="social-media-icons" href="#" target="_blank">
+                                <i class="fab fa-twitter"></i></a>
+                            <a class="social-media-icons" href="#" target="_blank">
+                                <i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="nav-bar-container-two d-flex flex-row align-items-center justify-content-start">
-                        <div class="p-3">
-                            <a class="header-links" href="#">
-                                <img src="../holiday-emotions/images/phone.png" alt="phone"> +30 210 22 08 297
-                            </a>
-                        </div>
-                        <div class="p-3">
-                            <a class="header-links" href="#">
-                                <img src="../holiday-emotions/images/business-center.png" alt="business-center"> Small Business
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nav-bar-container-three">
-                        <li><a href="#">Destinations</a></li>
-                        <li><a href="#">Activites</a></li>
-                        <li><a href="#">Dental Holidays</a></li>
-                        <li><a href="#">Gastronomy</a></li>
-                        <li><a href="#">Entertainment</a></li>
-                        <li><a href="#">Shopping</a></li>
-                     </div>
-                     <div class="nav-bar-container-four">
-                        <a class="social-media-icons" href="#">
-                            <i class="fab fa-facebook-f"></i></a>
-                        <a class="social-media-icons" href="#" target="_blank">
-                            <i class="fab fa-instagram"></i></a>
-                        <a class="social-media-icons" href="#" target="_blank">
-                            <i class="fab fa-youtube"></i></a>
-                        <a class="social-media-icons" href="#" target="_blank">
-                            <i class="fab fa-twitter"></i></a>
-                        <a class="social-media-icons" href="#" target="_blank">
-                            <i class="fab fa-linkedin-in"></i></a>
-                     </div>
                 </ul>
                 <div class="burger d-md-flex d-lg-none d-flex flex-column justify-content-center align-items-center">
                     <div class="line1"></div>
@@ -520,7 +524,7 @@
             </div>
           </div>
      </main>
-     <main class="container-fluid d-md-flex d-lg-none d-flex flex-column align-items-center justify-content-around mobile-main">
+     <div class="container-fluid d-md-flex d-lg-none d-flex flex-column align-items-center justify-content-around mobile-main">
         <div class="container-fluid d-md-flex d-lg-none flex-column">
             <div class="container weather-mobile d-flex flex-row">
                 <div class="weather-icon">
@@ -571,7 +575,7 @@
                 </button>
               </li>
           </ul>
-     </main>
+     </div>
     </div>
     <a id="first"></a>
     <div class="container-fluid d-flex d-none d-lg-flex justify-content-around align-items-center tag flex-wrap second-background-color">
