@@ -714,20 +714,19 @@ textarea:focus, input:focus{
     max-width: 1350px;
 }
 
-.carousel-image-mobile-containers {
-    padding: 20px;
+.carousel-mobile {
+    max-width: 100%;
+    /* overflow-x: scroll; */
 }
 
-.carousel-mobile {
-    max-width: 320px;
-    overflow-x: scroll;
+.carousel-container-mobile {
+    width: 100%;
 }
 
 .carousel-txt-container {
-    /* padding: 20px 20px 0 20px; */
-    /* height: 100px; */
     padding: 20px;
     text-align: left;
+    max-width: 269px;
 
 }
 
