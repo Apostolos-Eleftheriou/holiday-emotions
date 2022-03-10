@@ -34,11 +34,11 @@ $(document).ready(function(){
 
 $('.dr-off').on("change", function() {
   if($(this).prop("checked")){
-    $(".test2").removeClass("d-none").addClass("d-flex");
-    $(".test1 .bottom-search-nav").addClass("notround");
+    $(".nav-selector-two").removeClass("d-none").addClass("d-flex");
+    $(".nav-selector-one .bottom-search-nav").addClass("notround");
   } else {
-    $(".test2").addClass("d-none").removeClass("d-flex");
-    $(".test1 .bottom-search-nav").removeClass("notround");
+    $(".nav-selector-two").addClass("d-none").removeClass("d-flex");
+    $(".nav-selector-one .bottom-search-nav").removeClass("notround");
   }
     
 });
@@ -46,24 +46,12 @@ $('.dr-off').on("change", function() {
 const navSlide = () => {
   $(".burger").on("click", function() {
     $(".nav-links").toggleClass("nav-active");
-  })
+  });
 
-  // $(".nav-links li").forEach(function(link, index){
-  //   link.style.animation = `navLinkFade 0,5s ease forwards ${index / 7 + 1.5s}`
-  // })
-
+  $(".burger").on("click", function() {
+    $(".burger").toggleClass("toggle");
+  });
 
 }
 
 navSlide();
-
-// const navSlide = () => {
-//   const burger = ducument.querySelector('.burger');
-//   const nav = document.querySelector('.nav-links');
-
-//   burger.addEventListener('click', () => {
-//     nav.classList.toggle('nav-active');
-//   });
-// }
-
-// navSlide();
