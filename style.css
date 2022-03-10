@@ -45,7 +45,7 @@ body {
     background-color: transparent;
     border: none;
     color: #fff;
-    max-width: 166px;
+    max-width: 161px;
 }
 
 .fa-magnifying-glass {
@@ -72,10 +72,11 @@ body {
 
 .burger {
     background-color: #EFA00B;
-    width: 78px;
+    width: 90px;
     height: 64px;
     cursor: pointer;
     z-index: 100000;
+    padding-right: 5px;
 }
 
 .burger div {
@@ -252,6 +253,15 @@ textarea:focus, input:focus{
       margin-top: 5%;
   }
 
+  .weather-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;   
+    margin-top: 10%;
+  }
+
 .celsius {
     font-size: 24px;
     color: #fff;
@@ -259,6 +269,20 @@ textarea:focus, input:focus{
     letter-spacing: 1px;
     font-family:'Open Sans', 'Helvetica Neue', sans-serif;
     border-bottom: solid 1px #fff;
+}
+
+.celsius-mobile {
+    width: 150px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom: solid 1px #fff;
+}
+
+.cel-loc-container {
+    padding-left: 15px;
 }
 
 .location-name {
@@ -288,6 +312,29 @@ textarea:focus, input:focus{
     text-align: center;
     font-weight: 300;
     letter-spacing: 1px;
+}
+
+.title-mobile {
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 30px;
+}
+
+.title-container-mobile {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-angle-left, .fa-angle-right {
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1200px) {
