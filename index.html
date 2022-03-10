@@ -21,10 +21,13 @@
 </head>
 <body>
     <div class="container-fluid background-img">
-        <nav class="container-fluid d-md-flex d-lg-none d-flex align-items-center flex-row mobile-nav">
-            <div class="logo-mobile"></div>
-            <div class="mobile-input-container">
-                <input type="text" class="mobile-input">
+        <nav class="container-fluid p-0 d-md-flex d-lg-none d-flex flex-row mobile-nav">
+            <div class="container-fluid p-0 logo-search-container d-flex justify-content-around align-items-center">
+                <div class="logo-mobile"></div>
+                <div class="mobile-input-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="mobile-input">
+                </div>
             </div>
                 <ul class="nav-links">
                     <div class="nav-bar-container-one d-flex flex-row align-items-center justify-content-start">
@@ -139,7 +142,7 @@
         </div>
       </div>
       <main class="container-fluid d-flex flex-column align-items-center justify-content-around main-height">
-        <div class="container-fluid d-flex flex-row flex-wrap mt-2 justify-content-center align-items-center p-0 main-height-two">
+        <div class="container-fluid d-none d-lg-flex d-flex flex-row flex-wrap mt-2 justify-content-center align-items-center p-0 main-height-two">
             <div class="container weather">
                 <div class="weather-icon">
                     <img src="../holiday-emotions/images/sun-icon.png" alt="weather icon">
@@ -519,7 +522,7 @@
      </main>
     </div>
     <a id="first"></a>
-    <div class="container-fluid d-flex justify-content-around align-items-center tag flex-wrap second-background-color">
+    <div class="container-fluid d-flex d-none d-lg-flex justify-content-around align-items-center tag flex-wrap second-background-color">
         <div class="destinations-container d-flex justify-content-center align-items-center">
             <div class="destinations-icon-container">
                 <img src="../holiday-emotions/images/destinations-icon.svg" alt="destinations-icon">
@@ -557,7 +560,7 @@
             <a href="#" class="second-links">Shopping</a>
         </div>
     </div>
-    <div class="container-fluid d-flex flex-column align-items-center p-5 tag">
+    <div class="container-fluid d-none d-lg-flex d-flex flex-column align-items-center p-5 tag">
         <h2 class="carousel-title">Discover wonderful destinations in Greece</h2>
         <div class="carousel-container">
             <div class="carousel d-flex flex-row align-items-center">
@@ -636,7 +639,7 @@
         </div>
     </section>
     <section>
-        <div class="container-fluid mw-fix tag">
+        <div class="container-fluid d-none d-lg-block mw-fix tag">
             <h2 class="card-group-header">Recommended activities in Greece</h2>
             <div class="card-group">
                 <div class="card">
@@ -696,7 +699,7 @@
     </section>
     <section class="tag">
         <h2 class="card-group-header mt-5">This November at Holiday Emotions</h2>
-        <div class="container-fluid mw-fix d-flex flex-row">
+        <div class="container-fluid d-none d-lg-flex mw-fix d-flex flex-row">
             <div class="box-left d-flex align-items-end">
                 <div class="box-left-content-container">
                     <div class="box-left-content d-flex flex-column justify-content-start">
@@ -776,7 +779,7 @@
         </div>
     </section>
     <section class="map tag">
-        <div class="container-fluid map-mw-fix">
+        <div class="container-fluid d-none d-lg-block map-mw-fix">
             <h2 class="card-group-header">Discover Greece</h2>
             <div id="map">
                 <div class="card-body p-0 map-overlay d-flex flex-column align-items-center card-color">
@@ -833,13 +836,13 @@
     </section>
     <section class="tag">
         <div class="container-fluid mt-5 p-0">
-            <div class="container p-4 d-flex align-items-center justify-content-start bottom-border">
-                <div class="bottom-page-links bpl-p-right"><img src="../holiday-emotions/images/he-logo.png" alt=""></div>
-                <div class="bottom-page-links bpl-p-right"> <a class="insta-follow-link" href="#">About us</a></div>
-                <div class="bottom-page-links bpl-p-right"> <a class="insta-follow-link" href="#">Loyalty program</a></div>
-                <div class="bottom-page-links bpl-p-right"> <a class="insta-follow-link" href="#">Terms of use</a></div>
-                <div class="bottom-page-links bpl-p-right"> <a class="insta-follow-link" href="#">Collaborate with us</a></div>
-                <div class="bottom-page-links bpl-p-right"> <a class="insta-follow-link" href="#">Partners terms and conditions</a></div>
+            <div class="container p-4 d-flex align-items-center justify-content-start bottom-border flex-wrap">
+                <div class="bottom-page-links bpl-p-right pt-3"><img src="../holiday-emotions/images/he-logo.png" alt=""></div>
+                <div class="bottom-page-links bpl-p-right pt-3"> <a class="insta-follow-link" href="#">About us</a></div>
+                <div class="bottom-page-links bpl-p-right pt-3"> <a class="insta-follow-link" href="#">Loyalty program</a></div>
+                <div class="bottom-page-links bpl-p-right pt-3"> <a class="insta-follow-link" href="#">Terms of use</a></div>
+                <div class="bottom-page-links bpl-p-right pt-3"> <a class="insta-follow-link" href="#">Collaborate with us</a></div>
+                <div class="bottom-page-links bpl-p-right pt-3"> <a class="insta-follow-link" href="#">Partners terms and conditions</a></div>
             </div>
             <div class="container-fluid justify-content-center d-flex flex-row pt-5 flex-wrap">
                 <div class="awards d-flex align-items-center flex-column">

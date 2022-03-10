@@ -22,6 +22,25 @@ body {
     z-index: 10000;
 }
 
+.mobile-input-container {
+    border: solid 2px #EFA00B;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.mobile-input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    max-width: 214px;
+}
+
+.fa-magnifying-glass {
+    color: #EFA00B;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
 .nav-links {
     display: flex;
     justify-content: center;
@@ -40,7 +59,7 @@ body {
 
 .burger {
     background-color: #EFA00B;
-    width: 64px;
+    width: 78px;
     height: 64px;
     cursor: pointer;
     z-index: 100000;
@@ -668,7 +687,7 @@ textarea:focus, input:focus{
 .cta-container {
     text-align: center;
     padding-top: 30px;
-    padding-right: 80px;
+    padding-right: 2%;
 }
 
 .cta-header {
