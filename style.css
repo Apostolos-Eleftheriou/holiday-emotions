@@ -28,11 +28,19 @@ body {
     padding: 15px 0 0 0;
 }
 
+.mobile-main {
+    height: 100vh;
+}
+
 .mobile-nav {
     min-height: 18vh;
     position: fixed;
-    background: linear-gradient(180deg, rgba(0,0,0,.75) 2%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,.75) 10%, rgba(0,0,0,0) 100%);
     z-index: 10000;
+}
+
+.mobile-margin-right-fix {
+    margin-right: 12px;
 }
 
 .mobile-input-container {
