@@ -6,6 +6,15 @@ $(document).ready(function(){
     });
   });
 
+  $(document).ready(function(){
+    $('.carousel-mobile').slick({
+        slidesToShow: 1, slidesToScroll: 1,
+        prevArrow:  '<i class="fa-solid fa-angle-left"></i>',
+        nextArrow: '<i class="fa-solid fa-angle-right"></i>',
+        appendArrows: $('.arrows-mobile')
+    });
+  });
+
   $(document).on("scroll", function() {
     var pageTop = $(document).scrollTop();
     var pageBottom = pageTop + $(window).height();
