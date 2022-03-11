@@ -1356,6 +1356,14 @@ textarea:focus, input:focus{
     position: relative;
   }
 
+  .map-overlay-mobile {
+    max-width: 378px;
+    background: rgba(0,0,0,.75);
+    border-radius: 10px;
+    font-size: 14px;
+    z-index: 2000;
+  }
+
   .map-header-container {
       padding: 30px 20px 30px 20px;
   }
@@ -1367,12 +1375,27 @@ textarea:focus, input:focus{
       padding-left: 15px;
   }
 
+  .map-title-mobile {
+    font-size: 30px;
+    color: #EFA00B;
+    font-weight: 300;
+    padding-left: 15px;
+}
+
   .map-text {
       font-size: 20px;
       color: #fff;
       text-align: center;
       padding: 0 30px 0 30px;
   }
+
+.map-text-mobile {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    padding: 0 30px 0 30px;
+}
+
 
   .map-text-two {
       font-size: 13px;
