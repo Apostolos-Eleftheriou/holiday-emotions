@@ -1439,3 +1439,7 @@ textarea:focus, input:focus{
       border-color: #EFA00B;
       color: #EFA00B;
   }
+
+  .carousel-mobile-two .card, .carousel-mobile-three .card {
+      border: none;
+  }
