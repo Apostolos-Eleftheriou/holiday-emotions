@@ -1258,6 +1258,12 @@ textarea:focus, input:focus{
       background-color: #1BABE2;
   }
 
+  .all-time-classic-mobile {
+    height: 177px;
+    width: 100%;
+    background-color: #1BABE2;
+  }
+
   .map-mw-fix {
       max-width: 1500px;
   }
@@ -1270,6 +1276,13 @@ textarea:focus, input:focus{
       padding: 8px;
       border-right: 1px solid #fff;     
   }
+  .numbers-mobile {
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+    padding: 8px;
+    border-bottom: 1px solid #fff;     
+}
 
   .letters {
       font-size: 16px;
@@ -1277,6 +1290,11 @@ textarea:focus, input:focus{
       color: #fff;
   }
 
+  .letters-mobile {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
   .atc-p-right {
       padding-right: 60px;
   }
