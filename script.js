@@ -43,6 +43,43 @@ $(document).ready(function(){
     });
   });
 
+  $(document).ready(function(){
+    $('.carousel-mobile-two').slick({
+        slidesToShow: 1, slidesToScroll: 1,
+        prevArrow:  '<i class="fa-solid fa-angle-left"></i>',
+        nextArrow: '<i class="fa-solid fa-angle-right"></i>',
+        appendArrows: $('.arrows-mobile-two'),
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              centerMode: true,
+              slidesToShow: 3
+            }
+          },{
+            breakpoint: 930,
+            settings: {
+              centerMode: true,
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 670,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              centerMode: true,
+              slidesToShow: 1
+            }
+          }
+        ]
+    });
+  });
+
   
   $(document).on("scroll", function() {
     var pageTop = $(document).scrollTop();
