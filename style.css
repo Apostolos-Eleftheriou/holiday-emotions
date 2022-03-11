@@ -700,7 +700,8 @@ textarea:focus, input:focus{
 }
 
 .arrows-mobile .fa-angle-left, .arrows-mobile .fa-angle-right,
-.arrows-mobile-two .fa-angle-left, .arrows-mobile-two .fa-angle-right {
+.arrows-mobile-two .fa-angle-left, .arrows-mobile-two .fa-angle-right,
+.arrows-mobile-four .fa-angle-left, .arrows-mobile-four .fa-angle-right {
     font-size: 16px;
     color: #000;
     padding: 7px;
@@ -1207,12 +1208,25 @@ textarea:focus, input:focus{
       max-width: 300px;
   }
 
+  .set-container-mobile {
+      margin: 15px;
+  }
+
   .set-image-container {
       width: 50%;
   }
 
+  .set-image-container-mobile {
+    width: 100%;
+}
+
   .set-image {
       width: 100%;
+  }
+
+  .para-container-mobile p{
+    font-size: 16px;
+    color: #64697A;
   }
 
   .para-container {
