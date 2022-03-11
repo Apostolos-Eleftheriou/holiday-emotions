@@ -836,6 +836,7 @@ textarea:focus, input:focus{
 
 .cta-right-btn {
     background-color: #79C8CD;
+    color: #000;
     border: none;
     border-radius: 20px;
     padding: 5px 50px 5px 50px;
@@ -869,6 +870,7 @@ textarea:focus, input:focus{
     font-size: 15px;
     font-weight: 400;
     margin-top: 10px;
+    color: #000;
 }
 
 .cta-left-btn:hover {
