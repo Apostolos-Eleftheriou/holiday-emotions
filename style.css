@@ -695,7 +695,7 @@ textarea:focus, input:focus{
     width: 75%;
 }
 
-.arrows-mobile, .arrows-mobile-two {
+.arrows-mobile, .arrows-mobile-two, .arrows-mobile-three {
     width: 25%;
 }
 
@@ -711,8 +711,27 @@ textarea:focus, input:focus{
     text-align: center;
 }
 
+.arrows-mobile-three .fa-angle-left, .arrows-mobile-three .fa-angle-right {
+    font-size: 16px;
+    color: #fff;
+    padding: 7px;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    margin: 5px;
+    width: 30px;
+    text-align: center;
+}
+
+.mobile-bg-color {
+    background-color: #EFA00B;
+}
 .mobile-card-margin {
     margin: 0 10px 0 10px;
+}
+
+.mobile-carousel-three-color {
+    background-color: #EFA00B;
+    margin-bottom: 10px;
 }
 
 .carousel {
@@ -800,7 +819,6 @@ textarea:focus, input:focus{
     background-size: cover;
     width: 888px;
     height: 307px;
-    margin-right: 10px;
 }
 
 .section-image-right-container {
@@ -808,7 +826,7 @@ textarea:focus, input:focus{
     background-position: center;
     background-size: cover;
     width: 436px;
-    height: 300px;
+    height: 290px;
 }
 
 .cta-offers {
@@ -832,8 +850,6 @@ textarea:focus, input:focus{
 
 .cta-container {
     text-align: center;
-    padding-top: 30px;
-    padding-right: 2%;
 }
 
 .cta-header {
@@ -841,7 +857,6 @@ textarea:focus, input:focus{
     letter-spacing: 1px;
     font-size: 38px;
     font-weight: 300;
-    width: 300px;
     padding: 10px;
 }
 
@@ -874,6 +889,11 @@ textarea:focus, input:focus{
     font-size: 25px;
 }
 
+.card-title-mobile {
+    font-size: 22px;
+    color: #fff;
+}
+
 .card-text {
     font-size: 16px;
 }
@@ -903,6 +923,22 @@ textarea:focus, input:focus{
     padding: 5px 40px 5px 40px;
     font-size: 15px;
     font-weight: bold;
+    color: black;
+}
+
+.mobile-card-btn {
+    background-color: transparent;
+    border: solid 2px #fff;
+    border-radius: 20px;
+    padding: 5px 60px 5px 60px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.mobile-card-btn:hover {
+    color: black;
+    border-color: black;
 }
 
 .card-btn:hover {
