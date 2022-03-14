@@ -239,17 +239,6 @@ body {
     transform: rotate(45deg) translate(-6px, -7px);
 }
 
-/* @keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-} */
-
 .top-menu {
     height: 20%;
 }
@@ -363,10 +352,6 @@ body {
     border-top: none;
     border-right: none;
     border-left: none;
-    /* border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: #EFA00B; */
     color: #fff;
     font-size: 15px;
     padding-left: 10px !important;
@@ -377,7 +362,6 @@ body {
     padding-right: 15px;
 
 }
-
 
 textarea:focus, input:focus{
     outline: none;

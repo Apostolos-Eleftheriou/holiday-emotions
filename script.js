@@ -207,43 +207,49 @@ const utilitiesSlide = () => {
   if ($(window).width() < 992) {
     $(".nav-link").removeClass("active");
     $(".hotels").on("click", function() {
-      $(".hotels-mobile").toggleClass("hotels-active");
+      $(".hotels-mobile").addClass("hotels-active");
       $(".burger").css('visibility', 'hidden');
       $(".close-btn").on("click", function() {
-      $(".hotels-mobile").removeClass("hotels-active");
-      $(".nav-link").removeClass("active");
-      $(".burger").css('visibility', 'visible');
+        $(".hotels-mobile").removeClass("hotels-active");
+        $(".nav-link").removeClass("active");
+        $(".burger").css('visibility', 'visible');
       })
     });
     $(".cars").on("click", function() {
-      $(".cars-mobile").toggleClass("cars-active");
+      $(".cars-mobile").addClass("cars-active");
       $(".burger").css('visibility', 'hidden');
       $(".close-btn").on("click", function() {
-      $(".cars-mobile").removeClass("cars-active");
-      $(".nav-link").removeClass("active");
-      $(".burger").css('visibility', 'visible');
+        $(".cars-mobile").removeClass("cars-active");
+        $(".nav-link").removeClass("active");
+        $(".burger").css('visibility', 'visible');
       })
     });
     $(".stay").on("click", function() {
-      $(".stay-drive-mobile").toggleClass("stay-drive-active");
+      $(".stay-drive-mobile").addClass("stay-drive-active");
       $(".burger").css('visibility', 'hidden');
       $(".close-btn").on("click", function() {
-      $(".stay-drive-mobile").removeClass("stay-drive-active");
-      $(".nav-link").removeClass("active");
-      $(".burger").css('visibility', 'visible');
+        $(".stay-drive-mobile").removeClass("stay-drive-active");
+        $(".nav-link").removeClass("active");
+        $(".burger").css('visibility', 'visible');
       })
     });
     $(".emotions").on("click", function() {
-      $(".emotions-mobile").toggleClass("emotions-active");
+      $(".emotions-mobile").addClass("emotions-active");
       $(".burger").css('visibility', 'hidden');
       $(".close-btn").on("click", function() {
-      $(".emotions-mobile").removeClass("emotions-active");
-      $(".nav-link").removeClass("active");
-      $(".burger").css('visibility', 'visible');
+        $(".emotions-mobile").removeClass("emotions-active");
+        $(".nav-link").removeClass("active");
+        $(".burger").css('visibility', 'visible');
       })
     });
- }
-}
+ } 
+};
+
+$(window).resize(function(){
+  if ($(window).width() < 992) {
+    utilitiesSlide();
+  }
+});
 
 navSlide();
 utilitiesSlide();
