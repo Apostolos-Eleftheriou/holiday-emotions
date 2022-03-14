@@ -224,6 +224,15 @@ const utilitiesSlide = () => {
       $(".burger").css('visibility', 'visible');
       })
     });
+    $(".stay").on("click", function() {
+      $(".stay-drive-mobile").toggleClass("stay-drive-active");
+      $(".burger").css('visibility', 'hidden');
+      $(".close-btn").on("click", function() {
+      $(".stay-drive-mobile").removeClass("stay-drive-active");
+      $(".nav-link").removeClass("active");
+      $(".burger").css('visibility', 'visible');
+      })
+    });
  }
 }
 

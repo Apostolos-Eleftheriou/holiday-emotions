@@ -120,7 +120,7 @@ body {
         transition: transform 0.5s ease-in;
         justify-content: space-between;
     }
-    .hotels-mobile, .cars-mobile {
+    .hotels-mobile, .cars-mobile, .stay-drive-mobile {
         position: absolute;
         left: 0px;
         top: 0px;
@@ -145,24 +145,27 @@ body {
     height: 80%;
 }
 
-.overlay-hotel .fa-hotel, .overlay-cars .fa-car-alt {
+.overlay-hotel .fa-hotel, .overlay-cars .fa-car-alt,
+.overlay-stay-drive .fa-bed,
+.overlay-stay-drive .fa-car-alt {
     font-size: 30px;
     color: #EFA00B;
 }
 
-.overlay-hotel, .overlay-cars {
+.overlay-hotel, .overlay-cars, .overlay-stay-drive {
     padding: 8px 0 0 50px;
     font-size: 15px;
     color: #EFA00B;
     font-weight: bold;
 }
 
-.hotels-overlay-container, .cars-overlay-container {
+.hotels-overlay-container, .cars-overlay-container, .stay-drive-overlay-container {
     height: 60%;
     padding-left: 20px;
 }
 
-.hotels-overlay-container .fa-location-pin, .cars-overlay-container .fa-location-pin {
+.hotels-overlay-container .fa-location-pin, .cars-overlay-container .fa-location-pin, 
+.stay-drive-overlay-container .fa-location-pin {
     margin-left: 0;
 }
 
@@ -181,7 +184,7 @@ body {
     margin: 0;
 }
 
-.hotels-overlay-search-btn, .cars-overlay-search-btn {
+.hotels-overlay-search-btn, .cars-overlay-search-btn, .stay-drive-overlay-search-btn {
     padding: 20px 60px 20px 60px;
     background-color: #EFA00B;
     color: #000;
@@ -191,7 +194,8 @@ body {
     font-size: 18px;
 }
 
-.hotels-overlay-search-btn .fa-magnifying-glass, .cars-overlay-search-btn .fa-magnifying-glass {
+.hotels-overlay-search-btn .fa-magnifying-glass, .cars-overlay-search-btn .fa-magnifying-glass 
+.stay-drive-overlay-search-btn .fa-magnifying-glass{
     font-size: 22px;
     color: #000;
     padding: 0 10px 0 0;
@@ -201,7 +205,7 @@ body {
     transform: translateX(0%);
 }
 
-.hotels-active, .cars-active {
+.hotels-active, .cars-active, .stay-drive-active {
     transform: translateX(0%);
 }
 
