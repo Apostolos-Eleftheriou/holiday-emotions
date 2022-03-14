@@ -205,11 +205,22 @@ const navSlide = () => {
 
 const utilitiesSlide = () => {
   if ($(window).width() < 992) {
+    $(".nav-link").removeClass("active");
     $(".hotels").on("click", function() {
-      $(".utilities-mobile").toggleClass("utilities-active");
+      $(".hotels-mobile").toggleClass("hotels-active");
       $(".burger").css('visibility', 'hidden');
       $(".close-btn").on("click", function() {
-      $(".utilities-mobile").removeClass("utilities-active");
+      $(".hotels-mobile").removeClass("hotels-active");
+      $(".nav-link").removeClass("active");
+      $(".burger").css('visibility', 'visible');
+      })
+    });
+    $(".cars").on("click", function() {
+      $(".cars-mobile").toggleClass("cars-active");
+      $(".burger").css('visibility', 'hidden');
+      $(".close-btn").on("click", function() {
+      $(".cars-mobile").removeClass("cars-active");
+      $(".nav-link").removeClass("active");
       $(".burger").css('visibility', 'visible');
       })
     });

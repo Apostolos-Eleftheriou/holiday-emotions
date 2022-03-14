@@ -92,17 +92,18 @@
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
-                <ul class="utilities-mobile p-0">
+                <ul class="hotels-mobile p-0">
                     <div class="mobile-nav-top-grp container-fluid p-0">
                         <div class="nav-bar-container-one container-fluid p-0 d-flex flex-row flex-wrap align-items-center justify-content-between">
-                            <div class="d-flex align-items-center overlay-hotel">
+                            <div class="d-flex align-items-center flex-column overlay-hotel">
                                 <i class="fas fa-hotel"></i>
+                                HOTELS
                             </div>
                             <div class="d-flex align-items-center justify-content-center close-btn">
                                 <i class="fa-solid fa-xmark"></i>
                             </div>
                         </div>
-                </div>
+                    </div>
                     <div class="mobile-nav-bottom-grp d-flex flex-column justify-content-around align-items-center">
                         <div class="hotels-overlay-container container d-flex flex-wrap align-items-center justify-content-start">
                             <div class="nav-location">
@@ -170,6 +171,125 @@
                         </div>
                         <div class="hotels-overlay-search-btn-container pb-5 text-center">
                             <button class="hotels-overlay-search-btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                        </div>
+                    </div>
+                </ul>
+                <ul class="cars-mobile p-0">
+                    <div class="mobile-nav-top-grp container-fluid p-0">
+                        <div class="nav-bar-container-one container-fluid p-0 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                            <div class="d-flex align-items-center flex-column overlay-cars">
+                                <i class="fas fa-car-alt"></i>
+                                CARS
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center close-btn">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-nav-bottom-grp d-flex flex-column justify-content-around align-items-center">
+                        <div class="cars-overlay-container container d-flex flex-column flex-wrap align-items-start justify-content-around">
+                            <div class="nav-location">
+                                <span><i class="fa-solid fa-location-pin"></i></span>
+                                <p class="m-0 pad-left">Pickup Location</p>
+                            </div>
+                            <div class="pickup-container container p-0 d-flex flex-wrap align-items-center justify-content-start">
+                                <div class="nav-country p-2">
+                                    <select class="location-menu-style" name="country" id="country">
+                                        <option value="Greece">GR</option>
+                                        <option value="Belgium">BE</option>
+                                        <option value="Bulgaria">BG</option>
+                                        <option value="Czech Republic">CZ</option>
+                                        <option value="Denmark">DK</option>
+                                        <option value="Germany">DE</option>
+                                        <option value="Estonia">EE</option>
+                                        <option value="Ireland">IE</option>
+                                        <option value="Spain">ES</option>
+                                        <option value="France">FR</option>
+                                        <option value="Croatia">HR</option>
+                                        <option value="Italy">IT</option>
+                                        <option value="Cyprus">CY</option>
+                                        <option value="Latvia">LV</option>
+                                        <option value="Lithuania">LT</option>
+                                        <option value="Luxembourg">LU</option>
+                                        <option value="Hungary">HU</option>
+                                        <option value="Malta">MT</option>
+                                        <option value="Netherlands">NL</option>
+                                        <option value="Austria">AT</option>
+                                        <option value="Poland">PL</option>
+                                        <option value="Portugal">PT</option>
+                                        <option value="Romania">RO</option>
+                                        <option value="Slovenia">SI</option>
+                                        <option value="Slovensko">SK</option>
+                                        <option value="Finland">FI</option>
+                                        <option value="Sweden">SE</option>
+                                    </select>
+                                </div>
+                                    <div class="nav-area p-2">
+                                            <select class="location-menu-style" name="area" id="area">
+                                                <option value="" disabled selected>AREA</option>
+                                                <option value="Attica">Attica</option>
+                                                <option value="Thessaloniki">Thessaloniki</option>
+                                                <option value="Volos">Volos</option>
+                                                <option value="Kefalonia">Kefalonia</option>
+                                                <option value="Rethymno">Rethymno</option>
+                                            </select>
+                                    </div>
+                                    <div class="nav-city">
+                                        <select class="location-menu-style-city" name="city" id="city">
+                                        <option value="" disabled selected> </option>
+                                            <option value="PH">PH</option>
+                                            <option value="PH">PH</option>
+                                            <option value="PH">PH</option>
+                                            <option value="PH">PH</option>
+                                            <option value="PH">PH</option>
+                                        </select>
+                                    </div>
+                                        <div class="nav-pickup p-2">
+                                            <span><i class="fas fa-calendar-alt"></i></span>
+                                            <input class="nav-pickup-txt location-menu-style" type="text" name="nav-pickup" placeholder="Pickup">
+                                        </div>
+                                        <div class="nav-dropoff p-2">
+                                            <span><i class="fas fa-calendar-alt"></i></span>
+                                            <input class="nav-dropoff-txt location-menu-style" type="text" name="nav-dropoff" placeholder="Drop off">
+                                        </div>
+                                        <div class="dropoff-toanother p-2">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input class="form-check-input mr-2 dr-off" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label label-width" for="flexCheckDefault">
+                                                Drop Off <br> to another location
+                                                </label>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="nav-location">
+                                    <span><i class="fa-solid fa-location-pin"></i></span>
+                                    <p class="m-0 pad-left">Return Location</p>
+                                </div>
+                                <div class="return-container container d-flex flex-wrap align-items-center justify-content-start">
+                                    <div class="nav-area">
+                                        <select class="location-menu-style" name="area" id="area">
+                                            <option value="" disabled selected>AREA</option>
+                                            <option value="Attica">Attica</option>
+                                            <option value="Thessaloniki">Thessaloniki</option>
+                                            <option value="Volos">Volos</option>
+                                            <option value="Kefalonia">Kefalonia</option>
+                                            <option value="Rethymno">Rethymno</option>
+                                        </select>
+                                    </div>
+                                    <div class="nav-city">
+                                        <select class="location-menu-style-city" name="city" id="city">
+                                        <option value="" disabled selected> </option>
+                                            <option value="PH">PH</option>
+                                            <option value="PH">PH</option>
+                                            <option value="PH">PH</option>
+                                            <option value="PH">PH</option>
+                                            <option value="PH">PH</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="cars-overlay-search-btn-container pb-5 text-center">
+                            <button class="cars-overlay-search-btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
                         </div>
                     </div>
                 </ul>
