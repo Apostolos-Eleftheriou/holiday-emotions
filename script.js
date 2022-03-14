@@ -203,4 +203,18 @@ const navSlide = () => {
 
 }
 
+const utilitiesSlide = () => {
+  if ($(window).width() < 992) {
+    $(".hotels").on("click", function() {
+      $(".utilities-mobile").toggleClass("utilities-active");
+      $(".burger").css('visibility', 'hidden');
+      $(".close-btn").on("click", function() {
+      $(".utilities-mobile").removeClass("utilities-active");
+      $(".burger").css('visibility', 'visible');
+      })
+    });
+ }
+}
+
 navSlide();
+utilitiesSlide();
