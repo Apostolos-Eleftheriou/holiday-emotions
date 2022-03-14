@@ -233,6 +233,15 @@ const utilitiesSlide = () => {
       $(".burger").css('visibility', 'visible');
       })
     });
+    $(".emotions").on("click", function() {
+      $(".emotions-mobile").toggleClass("emotions-active");
+      $(".burger").css('visibility', 'hidden');
+      $(".close-btn").on("click", function() {
+      $(".emotions-mobile").removeClass("emotions-active");
+      $(".nav-link").removeClass("active");
+      $(".burger").css('visibility', 'visible');
+      })
+    });
  }
 }
 
