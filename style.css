@@ -1364,7 +1364,6 @@ textarea:focus, input:focus{
     font-size: 25px;
     font-weight: 300;
     color: #fff;
-    padding: 8px;
     border-bottom: 1px solid #fff;     
 }
 
