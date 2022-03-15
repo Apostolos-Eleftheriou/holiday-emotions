@@ -11,50 +11,31 @@
     background-position: center;
 }
 
-.destinations-sub-container-one {
-    background: linear-gradient(0deg, rgba(0,0,0,.70) 10%, rgba(0,0,0,0) 100%),
-                url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/delphi.png') no-repeat;
-    width: 436px;
+.sub-container-title {
+    font-size: 25px;
+    color: #fff;
+}
+
+.destinations-sub-container-small {
+    width: 323px;
     height: 245px;
-    background-size: cover;
-    background-position: center;
     border-radius: 15px;
 }
 
-.destinations-sub-container-two {
-    background: linear-gradient(0deg, rgba(0,0,0,.70) 10%, rgba(0,0,0,0) 100%),
-                url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/delphi.png') no-repeat;
+.destinations-sub-container-medium {
     width: 436px;
     height: 245px;
-    background-size: cover;
-    background-position: center;
     border-radius: 15px;
 }
-.destinations-sub-container-three {
-    background: linear-gradient(0deg, rgba(0,0,0,.70) 10%, rgba(0,0,0,0) 100%),
-                url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/delphi.png') no-repeat;
-    width: 436px;
+
+.destinations-sub-container-big {
+    width: 549px;
     height: 245px;
-    background-size: cover;
-    background-position: center;
     border-radius: 15px;
 }
-.destinations-sub-container-four {
-    background: linear-gradient(0deg, rgba(0,0,0,.70) 10%, rgba(0,0,0,0) 100%),
-                url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/delphi.png') no-repeat;
-    width: 436px;
-    height: 245px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-}
-.destinations-sub-container-five {
-    background: linear-gradient(0deg, rgba(0,0,0,.70) 10%, rgba(0,0,0,0) 100%),
-                url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/lady-on-sea.png') no-repeat;
+.destinations-sub-container-biggest {
     width: 888px;
     height: 245px;
-    background-size: cover;
-    background-position: center;
     border-radius: 15px;
 }
 .clickable-img {
@@ -64,6 +45,9 @@
 
 .clickable-img:hover {
     color: #EFA00B;
+}
+.clickable-img h2 {
+    font-size: 25px;
 }
 
 .destinations-maxwidth {
