@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.carousel').slick({
+    $('.carousel-landing-page').slick({
         slidesToShow: 4, slidesToScroll: 4,
         prevArrow:  '<i class="fa-solid fa-chevron-left"></i>',
         nextArrow: '<i class="fa-solid fa-chevron-right"></i>'
@@ -7,7 +7,7 @@ $(document).ready(function(){
   });
 
   $(window).resize(function(){
-    $('.carousel')[0].slick.refresh();
+    $('.carousel-landing-page')[0].slick.refresh();
   });
 
   $(document).ready(function(){

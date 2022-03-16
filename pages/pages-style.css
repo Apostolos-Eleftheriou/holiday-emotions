@@ -57,3 +57,49 @@
 .second-links {
     font-size: 16px;
 }
+
+.carousel {
+    width: 662px;
+}
+
+.carousel-inner {
+    border-radius: 15px;
+}
+
+.destination-overlay-left {
+    background: url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/subtraction-14.svg') no-repeat;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 44px;
+    height: 202px;
+    z-index: 1;
+}
+.destination-overlay-right {
+    background: url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/subtraction-13.svg') no-repeat;
+    position: absolute;
+    top: 85px;
+    right: 0;
+    width: 44px;
+    height: 202px;
+    z-index: 1;
+}
+
+.carousel-control-prev {
+    justify-content: start;
+    opacity: 1;
+}
+
+.carousel-control-next {
+    justify-content: end;
+    opacity: 1;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/destination-arrow-left.svg');
+    z-index: 100;
+}
+.carousel-control-next-icon {
+    background-image: url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/destination-arrow-right.svg');
+    z-index: 100;
+}
