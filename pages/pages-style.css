@@ -103,3 +103,43 @@
     background-image: url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/destination-arrow-right.svg');
     z-index: 100;
 }
+
+#destination-map {
+    height: 171px;
+    width: 328px;
+}
+
+.destination-max-width {
+    max-width: 1450px;
+}
+
+.destination-ul {
+    list-style-type: '- ';
+}
+
+.destination-links {
+    text-decoration: none;
+    color: #000;
+}
+
+.destination-links:hover {
+    color: #EFA00B;
+}
+
+.aside-container {
+    background-color: #fdf6e7;
+    border-radius: 15px;
+    width: 326px;
+    padding: 10px;
+}
+
+.aside-container h3 {
+    font-size: 20px;
+    color: #EFA00B;
+}
+
+.aside-container p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}

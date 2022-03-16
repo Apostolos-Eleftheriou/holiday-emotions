@@ -170,16 +170,7 @@ $(document).ready(function(){
       }
     }
   });
-  
-  var map = L.map('map', {scrollWheelZoom:false}).setView([38.17,  20.56], 6);
 
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    maxZoom: 19,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1
-}).addTo(map);
 
 $('.dr-off').on("change", function() {
   if($(this).prop("checked")){
