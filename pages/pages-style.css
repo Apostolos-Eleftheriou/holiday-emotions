@@ -143,3 +143,38 @@
     font-weight: bold;
     margin-left: 10px;
 }
+
+.article h2 {
+    font-size: 25px;
+}
+
+.article p {
+    font-size: 16px;
+    color: #64697A;
+}
+
+.top-attractions-bg-color {
+    background-color: #EFA00B19;
+}
+
+.top-attractions-bg-color h3 {
+    padding-left: 30px;
+}
+
+.card-group-header {
+    font-size: 25px;
+}
+
+.set-image {
+    border-radius: 15px;
+    z-index: 1;
+}
+.set-image-container-overlay {
+    background: url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/subtraction-11.svg') no-repeat;
+    position: relative;
+    top: -104px;
+    left: 138px;
+    width: 13px;
+    height: 60px;
+    z-index: 100;
+}
