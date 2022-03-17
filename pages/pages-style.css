@@ -218,3 +218,51 @@
 .bottom-search-nav-two {
     max-width: 250px;
 }
+
+.carousel-container-destination {
+    width: 330px;
+}
+
+.cards-text-pad-fix {
+    padding: 10px 20px 10px 20px;
+    color: #64697A;
+}
+
+.card-price {
+    color: #000;
+}
+
+.mobile-card-margin {
+    border-radius: 15px;
+}
+
+.destination-under-carousel-btn {
+    background-color: #64697A;
+    color: #fff;
+    width: 319px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 50px;
+    border: none;
+    text-transform: uppercase;
+    margin: 10px 5px;
+}
+
+.destination-under-carousel-btn:hover {
+    background-color: #7f838f;
+}
+
+.destination-carousel-img-container {
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+}
+
+.cb-hover-fix:hover {
+    border-radius: 0 0 14px 14px;
+}
+
+.carousel-two-title {
+    padding: 20px 20px 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #64697A;
+}

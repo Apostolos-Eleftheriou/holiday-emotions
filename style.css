@@ -777,13 +777,15 @@ textarea:focus, input:focus{
     width: 75%;
 }
 
-.arrows-mobile, .arrows-mobile-two, .arrows-mobile-three {
+.arrows-mobile, .arrows-mobile-two, .arrows-mobile-three, .arrows-destination, .arrows-destination-two {
     width: 25%;
 }
 
 .arrows-mobile .fa-angle-left, .arrows-mobile .fa-angle-right,
 .arrows-mobile-two .fa-angle-left, .arrows-mobile-two .fa-angle-right,
-.arrows-mobile-four .fa-angle-left, .arrows-mobile-four .fa-angle-right {
+.arrows-mobile-four .fa-angle-left, .arrows-mobile-four .fa-angle-right,
+.arrows-destination .fa-angle-left, .arrows-destination .fa-angle-right,
+.arrows-destination-two .fa-angle-left, .arrows-destination-two .fa-angle-right {
     font-size: 16px;
     color: #000;
     padding: 7px;

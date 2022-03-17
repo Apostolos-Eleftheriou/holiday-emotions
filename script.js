@@ -155,6 +155,81 @@ $(document).ready(function(){
     });
   });
   
+  
+  $(document).ready(function(){
+    $('.carousel-destination').slick({
+        slidesToShow: 1, slidesToScroll: 1,
+        prevArrow:  '<i class="fa-solid fa-angle-left"></i>',
+        nextArrow: '<i class="fa-solid fa-angle-right"></i>',
+        appendArrows: $('.arrows-destination'),
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              centerMode: true,
+              slidesToShow: 3
+            }
+          },{
+            breakpoint: 930,
+            settings: {
+              centerMode: true,
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 670,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              centerMode: true,
+              slidesToShow: 1
+            }
+          }
+        ]
+    });
+  });
+
+  $(document).ready(function(){
+    $('.carousel-destination-two').slick({
+        slidesToShow: 1, slidesToScroll: 1,
+        prevArrow:  '<i class="fa-solid fa-angle-left"></i>',
+        nextArrow: '<i class="fa-solid fa-angle-right"></i>',
+        appendArrows: $('.arrows-destination-two'),
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              centerMode: true,
+              slidesToShow: 3
+            }
+          },{
+            breakpoint: 930,
+            settings: {
+              centerMode: true,
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 670,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              centerMode: true,
+              slidesToShow: 1
+            }
+          }
+        ]
+    });
+  });
+
   $(document).on("scroll", function() {
     var pageTop = $(document).scrollTop();
     var pageBottom = pageTop + $(window).height();
