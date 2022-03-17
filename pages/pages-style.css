@@ -266,3 +266,18 @@
     font-weight: bold;
     color: #64697A;
 }
+
+.destination-this-month-container {
+    height: 260px;
+    width: 260px;
+}
+
+.this-month-card {
+    width: 260px;
+    border: none;
+    margin: 0 10px 0 10px;
+}
+
+.cards-title-pad-fix {
+    padding: 10px 5px;
+}
