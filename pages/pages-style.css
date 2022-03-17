@@ -178,3 +178,43 @@
     height: 60px;
     z-index: 100;
 }
+
+.utilities {
+    background-color: #000;
+    border-radius: 15px;
+    height: auto;
+}
+
+.utilities h2 {
+    font-size: 20px;
+    color: #EFA00B;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-submit {
+    width: auto;
+    border-radius: 15px;
+    padding: 3px 23px 3px 23px;
+}
+
+.nav-submit .fa-magnifying-glass {
+    color: black;
+    padding: 0;
+}
+
+.bottom-search-nav {
+    max-width: 250px;
+}
+
+.fa-location-pin {
+    margin-left: 0;
+}
+
+.nav-location {
+    padding-right: 22px;
+}
+
+.bottom-search-nav-two {
+    max-width: 250px;
+}
