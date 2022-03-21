@@ -3,7 +3,7 @@
 }
 
 .logo {
-    background: transparent url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/Group-66.png') 0% 0% no-repeat padding-box;
+    background: transparent url('/holiday-emotions/images/Group-66.png') 0% 0% no-repeat padding-box;
     opacity: 1;
     width: 50px;
     height: 50px;
@@ -67,7 +67,7 @@
 }
 
 .destination-overlay-left {
-    background: url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/subtraction-14.svg') no-repeat;
+    background: url('/holiday-emotions/images/subtraction-14.svg') no-repeat;
     position: absolute;
     top: 85px;
     left: 0;
@@ -76,7 +76,7 @@
     z-index: 1;
 }
 .destination-overlay-right {
-    background: url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/subtraction-13.svg') no-repeat;
+    background: url('/holiday-emotions/images/subtraction-13.svg') no-repeat;
     position: absolute;
     top: 85px;
     right: 0;
@@ -96,11 +96,11 @@
 }
 
 .carousel-control-prev-icon {
-    background-image: url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/destination-arrow-left.svg');
+    background-image: url('/holiday-emotions/images/destination-arrow-left.svg');
     z-index: 100;
 }
 .carousel-control-next-icon {
-    background-image: url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/destination-arrow-right.svg');
+    background-image: url('/holiday-emotions/images/destination-arrow-right.svg');
     z-index: 100;
 }
 
@@ -170,7 +170,7 @@
     z-index: 1;
 }
 .set-image-container-overlay {
-    background: url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/subtraction-11.svg') no-repeat;
+    background: url('/holiday-emotions/images/subtraction-11.svg') no-repeat;
     position: relative;
     top: -104px;
     left: 138px;
@@ -290,7 +290,7 @@
 }
 
 .hotel-search-background {
-    background: url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/lady-on-sea.png') no-repeat;
+    background: url('/holiday-emotions/images/lady-on-sea.png') no-repeat;
     background-position: top;
     background-size: cover;
     height: 203px;
@@ -333,7 +333,7 @@
 }
 
 .hotel-carousel-overlay-left {
-    background: url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/nudge-left.svg') no-repeat;
+    background: url('/holiday-emotions/images/nudge-left.svg') no-repeat;
     position: absolute;
     top: 50px;
     left: 0;
@@ -343,7 +343,7 @@
 }
 
 .hotel-carousel-overlay-right {
-    background: url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/nudge-right.svg') no-repeat;
+    background: url('/holiday-emotions/images/nudge-right.svg') no-repeat;
     position: absolute;
     top: 50px;
     right: 0;
