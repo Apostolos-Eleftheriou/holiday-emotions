@@ -426,3 +426,56 @@
     height: 75px;
     background-color: #F7F7F7;
 }
+
+.hotel-information p {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #6d717e;
+    font-weight: bold;
+}
+
+.hotel-information i {
+    font-size: 16px;
+    color: #64697A;
+}
+
+.yellow-bg {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(231, 186, 30, 50%)
+}
+
+.light-blue-bg {
+    background-color: rgba(27, 171, 226, 33%);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.hotels-border-bottom {
+    border-bottom: solid 1px #DCDFE4;
+}
+
+.fa-user {
+    font-size: 11px;
+    color: #6d717e;
+}
+
+.hotel-view-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #6d717e;
+}
+
+.hotel-book-now {
+    color: #2BA030;
+    font-size: 25px;
+    background-color: transparent;
+    padding: 5px 20px;
+    border-radius: 100px;
+    border: solid 1px #2BA030;
+    width: 236px;
+}
+
+.hotel-book-now:hover {
+    background-color: #b7ffa4;
+}
