@@ -479,3 +479,17 @@
 .hotel-book-now:hover {
     background-color: #b7ffa4;
 }
+
+.hotels-aside {
+   border-right: solid 1px #DCDFE4;
+}
+
+.title-padding {
+    padding: 0 40px;
+}
+
+.budget p {
+    font-size: 14px;
+    color: #64697A;
+    font-weight: bold;
+}
