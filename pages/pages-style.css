@@ -226,10 +226,6 @@
     padding-right: 22px;
 }
 
-.bottom-search-nav-two {
-    max-width: 250px;
-}
-
 .carousel-container-destination {
     width: 330px;
 }
@@ -298,4 +294,36 @@
     background-position: top;
     background-size: cover;
     height: 203px;
+}
+
+.hotels-utilities .fa-location-pin {
+    margin-left: 20px;
+}
+
+.hotel-search-results {
+    height: 34px;
+    background-color: #E7BA1E19;
+}
+
+.hotel-search-results select {
+    border: none;
+    background-color: transparent;
+    color: black;
+}
+
+.hotel-search-results p {
+    color: #7f838f;
+}
+
+.hotel-search-results strong {
+    color: black;
+}
+
+.hotel-search-results a {
+    text-decoration: none;
+    color: black;
+}
+
+.hotel-search-results a:hover {
+    color: #EFA00B;
 }
