@@ -67,7 +67,7 @@
 }
 
 .destination-overlay-left {
-    background: url('/holiday-emotions/images/subtraction-14.svg') no-repeat;
+    background: url('/holiday-emotions/images/Subtraction-14.svg') no-repeat;
     position: absolute;
     top: 85px;
     left: 0;
@@ -76,7 +76,7 @@
     z-index: 1;
 }
 .destination-overlay-right {
-    background: url('/holiday-emotions/images/subtraction-13.svg') no-repeat;
+    background: url('/holiday-emotions/images/Subtraction-13.svg') no-repeat;
     position: absolute;
     top: 85px;
     right: 0;
