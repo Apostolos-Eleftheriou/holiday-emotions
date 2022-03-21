@@ -3,7 +3,7 @@ body {
 }
 
 .background-img {
-    background: linear-gradient(180deg, rgba(0,0,0,.75) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 50%, rgba(0,0,0,.75) 100%),
+    background: linear-gradient(180deg, rgba(0,0,0,.55) 100%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 50%, rgba(0,0,0,.75) 100%),
                     url('../holiday-emotions/images/alternate-image-landing-page.jpg') 0% 0% no-repeat padding-box;
     opacity: 1;
     background-position: center;
