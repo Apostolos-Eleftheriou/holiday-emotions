@@ -179,23 +179,34 @@
     z-index: 100;
 }
 
-.utilities {
+.destination-utilities {
     background-color: #000;
     border-radius: 15px;
     height: auto;
 }
 
-.utilities h2 {
+.destination-utilities h2 {
     font-size: 20px;
     color: #EFA00B;
     font-weight: bold;
     text-align: center;
 }
 
-.nav-submit {
-    width: auto;
+.destination-nav-submit {
+    width: auto;    
     border-radius: 15px;
     padding: 3px 23px 3px 23px;
+    background-color: #EFA00B;
+    border: none;
+}
+
+.destination-nav-submit:hover {
+    background-color: #d18b09;
+}
+
+.destination-nav-submit .fa-magnifying-glass {
+    color: black;
+    padding: 0;
 }
 
 .nav-submit .fa-magnifying-glass {
@@ -203,7 +214,7 @@
     padding: 0;
 }
 
-.bottom-search-nav {
+.destination-bottom-search-nav {
     max-width: 250px;
 }
 
@@ -280,4 +291,11 @@
 
 .cards-title-pad-fix {
     padding: 10px 5px;
+}
+
+.hotel-search-background {
+    background: url('C:/Users/DeCoY/Desktop/repos/holiday-emotions/images/lady-on-sea.png') no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 203px;
 }
