@@ -353,7 +353,7 @@
 }
 
 .hotel-carousel {
-    width: 460px;
+    width: 405px;
 }
 
 .hotel-carousel .carousel-control-prev-icon, .hotel-carousel .carousel-control-next-icon {
@@ -420,4 +420,9 @@
     font-size:11px; 
     color:#6d717e;
     text-align: center ;
+}
+
+.hotels-second-background-color {
+    height: 75px;
+    background-color: #F7F7F7;
 }
