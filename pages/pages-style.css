@@ -352,6 +352,72 @@
     z-index: 1;
 }
 
+.hotel-carousel {
+    width: 460px;
+}
+
 .hotel-carousel .carousel-control-prev-icon, .hotel-carousel .carousel-control-next-icon {
     width: 13px;
+}
+
+.hotel-carousel a {
+    text-decoration: none;
+    color: #64697A;
+}
+
+.hotel-carousel p {
+    font-size: 14px;
+}
+
+.hotel-carousel .fa-location-pin, .hotel-carousel .fa-map {
+    color: black;
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.carousel-sub-text p {
+    font-size: 12px;
+}
+
+.carousel-sub-text a {
+    text-decoration: none;
+    color: #EFA00B;
+}
+
+.carousel-sub-text a:hover {
+    color: #d18b09;
+}
+
+.hotel-address a:hover, .hotel-map a:hover {
+    color: #EFA00B;
+}
+
+.hotel-carousel .carousel-inner {
+    height: 212px;
+}
+
+.property-star-rating {
+    margin-right: 30px;
+}
+
+.property-para, .traveler-rating-para {
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+
+.trip-advisor-rating i {
+    font-size: 16px;
+    color: #28ca00;
+}
+
+.fa-star {
+    font-size: 16px;
+    color: #EFA00B;
+}
+
+.based-on {
+    font-size:11px; 
+    color:#6d717e;
+    text-align: center ;
 }
