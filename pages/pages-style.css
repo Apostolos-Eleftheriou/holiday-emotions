@@ -666,3 +666,23 @@ input[type="range"]:active::-webkit-slider-thumb{
       font-size: 14px;
       color: #64697A;
   }
+
+  .page {
+      padding: 4px 12px;
+      border-radius: 3px;
+      background-color: #DCDFE4;
+      margin: 3px; 
+  }
+
+  .pages a {
+      text-decoration: none;
+      color: #000;
+  }
+
+  .page:hover {
+      background-color: #EFA00B;
+  }
+
+  .hotel-background-hover:hover {
+    background-color: #fdf8e9;
+  }
