@@ -686,3 +686,44 @@ input[type="range"]:active::-webkit-slider-thumb{
   .hotel-background-hover:hover {
     background-color: #fdf8e9;
   }
+
+  .hotel-map-modal {
+      background-color: transparent;
+      color: #64697A;
+      border: none;
+      width: 260px;
+      font-size: 14px;
+  }
+
+  .hotel-show-map-modal {
+    background-color: transparent;
+    color: #64697A;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .hotel-show-map-modal:hover, .hotel-map-modal:hover {
+      color: #EFA00B;
+  }
+
+  #modal-map {
+      height: 469px;
+      width: 775px;
+  }
+
+  .modal-content {
+      width: 777px;
+      height: 550px;
+  }
+
+  .modal-header .btn-close {
+      background-color: #EFA00B;
+      padding: 1.5rem 1.5rem;
+      opacity: 1;
+      border-radius: 0;
+  }
+
+  .modal-dialog {
+      max-width: 800px;
+  }
