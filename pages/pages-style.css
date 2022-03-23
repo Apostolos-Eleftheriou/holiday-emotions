@@ -776,3 +776,46 @@ input[type="range"]:active::-webkit-slider-thumb{
     text-transform: uppercase;
     text-align: center;
 }
+
+/* #hotel-carousel {
+    width: 622px;
+} */
+
+#hotel-carousel .carousel-inner {
+    height: 372px;
+}
+
+.hotel-bnb-width-fix {
+    width: 110px;
+}
+
+.hotel-non-refund-width-fix {
+    width: 160px;
+}
+
+.hotel-undercarousel-container-width-fix {
+    width: 285px;
+}
+
+.hotel-para {
+    font-size: 16px;
+    color: #64697A;
+}
+
+.hotel-list-left li, .hotel-list-right li {
+    font-size: 16px;
+    color: #64697A;
+}
+
+#solo-hotel-map {
+    width: 651px;
+    height: 342px;
+}
+
+.hotel-link-hover {
+    color: #000;
+}
+
+.hotel-link-hover:hover {
+    color: #EFA00B;
+}
