@@ -1107,15 +1107,15 @@
                             <div class="container-fluid p-0 mb-3 d-flex flex-row justify-content-between">
                                 <div class="hotel-address d-flex flex-row align-items-center">
                                     <!-- Button trigger modal -->
-                                    <button type="button" class="hotel-map-modal p-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <button type="button" class="hotel-map-modal p-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
                                         <i class="fa-solid fa-location-pin"></i>
                                         Themidos 2, Athina 105 54, Greece
                                     </button>
                                     <!-- Modal -->
-                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content">
-                                            <div class="modal-header p-2">
+                                            <div class="modal-header">
                                             <h3 class="p-1">Map</h3>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
@@ -1126,7 +1126,7 @@
                                     </div>
                                 </div>
                                 <div class="hotel-map d-flex flex-row align-items-center">
-                                    <button type="button" class="hotel-show-map-modal p-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <button type="button" class="hotel-show-map-modal p-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
                                         <i class="fa-solid fa-map"></i>
                                         Show Map
                                     </button>
@@ -1167,7 +1167,75 @@
                             </div>
                                 <div class="container-fluid p-0 mt-2">
                                     <div class="container-fluid p-0 d-flex flex-row align-items-center">
-                                        <p class="m-2 text-uppercase hotel-view-text">Acropolis View</p>
+                                        <div class="hotel-address m-2 d-flex flex-row align-items-center">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="hotel-map-modal p-0 text-uppercase hotel-view-text" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                                                Acropolis View
+                                            </button>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h3 class="p-1">Room Information</h3>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="container-fluid d-flex flex-row align-items-start justify-content-center p-2">
+                                                        <div class="modal-carousel-container">
+                                                            <p class="fs-4">Photos</p>
+                                                            <div id="facilities-modal-carousel" class="carousel slide" data-bs-ride="carousel">
+                                                                <div class="carousel-inner">
+                                                                <div class="carousel-item active">
+                                                                    <img src="/holiday-emotions/images/bedroom-hotel.jpg" class="d-block w-100" alt="...">
+                                                                </div>
+                                                                <div class="carousel-item">
+                                                                    <img src="/holiday-emotions/images/bedroom-hotel.jpg" class="d-block w-100" alt="...">
+                                                                </div>
+                                                                <div class="carousel-item">
+                                                                    <img src="/holiday-emotions/images/lady-on-sea.png" class="d-block w-100" alt="...">
+                                                                </div>
+                                                                </div>
+                                                                <button class="carousel-control-prev" type="button" data-bs-target="#facilities-modal-carousel" data-bs-slide="prev">
+                                                                    <div class="hotel-carousel-overlay-left"></div>
+                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Previous</span>
+                                                                </button>
+                                                                <button class="carousel-control-next" type="button" data-bs-target="#facilities-modal-carousel" data-bs-slide="next">
+                                                                    <div class="hotel-carousel-overlay-right"></div>
+                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Next</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-facilities-container">
+                                                            <ul>
+                                                                <p class="fs-4 m-0">Facilities</p>
+                                                                <li>Ατομική θέρμανση</li>
+                                                                <li>Βεράντα</li>
+                                                                <li>Μπαλκόνι</li>
+                                                                <li>Δορυφορική τηλεόραση</li>
+                                                                <li>Ανιχνευτής καπνού</li>
+                                                                <li>Υπηρεσία αφύπνισης</li>
+                                                                <li>Υπηρεσίες καθαριότητας</li>
+                                                                <li>Δωμάτιο με ηχομόνωση</li>
+                                                                <li>Καλωδιακή τηλεόραση</li>
+                                                                <li>Μίνι μπαρ</li>
+                                                                <li>Πρόσβαση για ΑΜΕΑ</li>
+                                                                <li>Επιφάνεια δωματίου (τμ)</li>
+                                                                <li>Επιπλέον κρεβάτια ΚΑΤΟΠΙΝ ΑΙΤΗΣΗΣ</li>
+                                                                <li>Μπουρνούζι</li>
+                                                                <li>Μικρή κουζίνα</li>
+                                                                <li>Καφετιέρα / Τσαγιέρα</li>
+                                                                <li>Πλυντήριο</li>
+                                                                <li>Κουζίνα</li>
+                                                                <li>Σετ μπάνιου</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="user-container m-2">
                                             <i class="fa-solid fa-user"></i>
                                             <i class="fa-solid fa-user"></i>
