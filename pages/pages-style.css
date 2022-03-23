@@ -819,3 +819,27 @@ input[type="range"]:active::-webkit-slider-thumb{
 .hotel-link-hover:hover {
     color: #EFA00B;
 }
+
+.hotel-needhelp {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #1BABE2;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 15px 0 0 15px;
+}
+
+.hotel-call-email {
+    color: #1BABE2;
+    font-size: 14px;
+    background-color: transparent;
+    border: solid 1px #1BABE2;
+    padding: 10px;
+    border-radius: 0 15px 15px 0;
+}
+
+.hotel-details-background-color {
+    border-radius: 15px;
+    background-color: #fdf8e9;
+}
