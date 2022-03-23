@@ -713,7 +713,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 
   .modal-content {
       width: 777px;
-      height: 550px;
+      height: 533px;
   }
 
   .modal-header .btn-close {
@@ -757,4 +757,22 @@ input[type="range"]:active::-webkit-slider-thumb{
 
   .modal-carousel-container .carousel-control-prev-icon, .modal-carousel-container .carousel-control-next-icon {
     width: 13px;
+}
+
+.carnmotion-logo {
+    width: 141px;
+    height: 29px;
+}
+
+.carnmotion-logo-container {
+    position: relative;
+    top: 20px;
+    left: 184px;
+}
+
+.carnmotion-logo-container p {
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
 }
