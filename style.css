@@ -584,7 +584,7 @@ textarea:focus, input:focus{
 }
 
 .bottom-search-nav-two {
-    border-radius: 0 0 0 50px;
+    border-radius: 0 0 0 30px;
     background-color: #000000;
     max-width: 81.5%;
     padding: 22px 0 22px 0;

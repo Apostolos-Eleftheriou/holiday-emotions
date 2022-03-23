@@ -293,7 +293,6 @@
     background: url('/holiday-emotions/images/lady-on-sea.png') no-repeat;
     background-position: top;
     background-size: cover;
-    height: 203px;
 }
 
 .hotels-utilities .fa-location-pin {
@@ -842,4 +841,33 @@ input[type="range"]:active::-webkit-slider-thumb{
 .hotel-details-background-color {
     border-radius: 15px;
     background-color: #fdf8e9;
+}
+
+#discount-coupon, #cashback-discount {
+    width: 129px;
+}
+
+.hotel-cash-in-btn {
+    font-size: 10px;
+    color: #2BA030;
+    background-color: #CEF7B4;
+    border: solid 1px #2BA030;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 6px 9px;
+    border-radius: 15px;
+}
+
+.hotel-cash-in-btn:hover {
+    background-color: #b7ffa4;
+}
+
+.hotel-youpay-background-color {
+    background-color: #E7BA1E19;
+    height: 70px;
+}
+
+.incl-vat-para {
+    font-size: 12px;
+    color: #000000B3;
 }
