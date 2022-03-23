@@ -902,3 +902,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 .hotel-legal-info:hover {
     color: #EFA00B;
 }
+
+.hotel-max-width {
+    max-width: 1330px;
+}
