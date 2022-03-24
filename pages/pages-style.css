@@ -746,11 +746,12 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 
 
-  #facilities-modal-carousel {
+  #facilities-modal-carousel, #facilities-modal-carousel-one, #facilities-modal-carousel-two, #facilities-modal-carousel-three, #facilities-modal-carousel-four {
       width: 378px;
   }
 
-  #facilities-modal-carousel .carousel-inner {
+  #facilities-modal-carousel .carousel-inner, #facilities-modal-carousel-one .carousel-inner, #facilities-modal-carousel-two .carousel-inner,
+  #facilities-modal-carousel-three .carousel-inner, #facilities-modal-carousel-four .carousel-inner {
       height: 212px;
   }
 
