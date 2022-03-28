@@ -907,3 +907,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 .hotel-max-width {
     max-width: 1330px;
 }
+
+.hotel-awards-ratings-bg-color {
+    background-color: rgba(220, 223, 228, 31%);
+}
