@@ -21,8 +21,8 @@
    <link rel="stylesheet" href="/holiday-emotions/pages/pages-style.css">
 </head>
 <body>
-    <header class="container-fluid destinations-header">
-        <div class="d-none d-lg-flex d-flex justify-content-around align-items-center top-menu flex-wrap">
+    <header class="container-fluid destinations-header d-none d-lg-flex">
+        <div class="d-flex justify-content-around align-items-center top-menu flex-wrap">
             <div class="p-2 ">
                 <a href="/holiday-emotions/index.html"><div class="logo"></div></a>
             </div>
@@ -73,12 +73,13 @@
                     <i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
-      </div>
-      <nav class="container-fluid p-0 d-md-flex d-lg-none d-flex flex-row mobile-nav">
+        </div>
+    </header>
+    <nav class="container-fluid p-0 d-md-flex d-lg-none d-flex flex-row mobile-nav" style="min-height: 11vh;">
         <div class="container-fluid logo-search-container d-flex justify-content-around align-items-start">
             <a href="/holiday-emotions/index.html"><div class="logo-mobile"></div></a>
-            <div class="mobile-input-container mt-1">
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="mobile-input-container mt-1" style="background-color: #EFA00BE5;">
+                <i class="fa-solid fa-magnifying-glass" style="color: #00000067;"></i>
                 <input type="text" class="mobile-input">
             </div>
         </div>
@@ -483,9 +484,148 @@
                     </div>
                 </div>
             </ul>
-        </nav>
-    </header>
-    <div class="container-fluid d-flex d-none d-lg-flex justify-content-center align-items-center flex-wrap second-background-color">
+    </nav>
+    <div class="container-fluid d-md-block d-lg-none destinations-mobile-visibility-fix">
+        <p class="destinations-mobile-title">Destinations</p>
+        <div class="container-fluid p-0 d-md-flex d-lg-none d-flex flex-column align-items-center">
+            <div class="container-fluid p-0 arrow-title-container d-flex flex-row">
+                <h2 class="carousel-title-mobile">Athens - Attica</h2>
+                <div class="arrows-mobile-destinations-one d-flex align-items-center"></div>
+            </div>
+            <div class="carousel-container-mobile">
+                <div class="carousel-mobile-destinations-one d-flex flex-row align-items-center">
+                    <div class="set-container-mobile d-flex flex-column">
+                        <div class="set-image-container-mobile">
+                            <a class="clickable-img" href="/holiday-emotions/pages/destinations/destination.html">
+                                <div style="background: linear-gradient(0deg, rgba(0,0,0,.80) 25%, rgba(0,0,0,0) 100%),
+                                url('/holiday-emotions/images/athens.png'); background-size: cover; background-repeat: no-repeat;
+                                background-position: center;" class="destinations-mobile-sub-container d-flex flex-column align-items-center justify-content-end">
+                                     <div class="container-fluid p-0">
+                                         <div class="destinations-sub-container-one-content d-flex flex-column align-items-center justify-content-end">
+                                             <p class="destinations-mobile-carousel-title m-0 mb-2">Athens <br>Historical Center</p>
+                                             <p class="destinations-mobile-carousel-subtitle">3000 years of history</p>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </a>
+                        </div>
+                    </div>
+                    <div class="set-container-mobile d-flex flex-column">
+                        <div class="set-image-container-mobile">
+                            <img class="set-image" src="/holiday-emotions/images/hydra.png" alt="">
+                        </div>
+                    </div>
+                    <div class="set-container-mobile d-flex flex-column">
+                        <div class="set-image-container-mobile">
+                            <img class="set-image" src="/holiday-emotions/images/hydra.png" alt="">
+                        </div>
+                    </div>
+                    <div class="set-container-mobile d-flex flex-column">
+                        <div class="set-image-container-mobile">
+                            <img class="set-image" src="/holiday-emotions/images/hydra.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-md-block d-lg-none">
+        <div class="container-fluid p-0 d-md-flex d-lg-none d-flex flex-column align-items-center">
+            <div class="container-fluid p-0 arrow-title-container d-flex flex-row">
+                <h2 class="carousel-title-mobile">Other Regions of Greece</h2>
+                <div class="arrows-mobile-destinations-two d-flex align-items-center"></div>
+            </div>
+            <div class="carousel-container-mobile">
+                <div class="carousel-mobile-destinations-two d-flex flex-row align-items-center">
+                    <div class="set-container-mobile d-flex flex-column">
+                        <div class="set-image-container-mobile">
+                            <img class="set-image" src="/holiday-emotions/images/hydra.png" alt="">
+                        </div>
+                    </div>
+                    <div class="set-container-mobile d-flex flex-column">
+                        <div class="set-image-container-mobile">
+                            <img class="set-image" src="/holiday-emotions/images/hydra.png" alt="">
+                        </div>
+                    </div>
+                    <div class="set-container-mobile d-flex flex-column">
+                        <div class="set-image-container-mobile">
+                            <img class="set-image" src="/holiday-emotions/images/hydra.png" alt="">
+                        </div>
+                    </div>
+                    <div class="set-container-mobile d-flex flex-column">
+                        <div class="set-image-container-mobile">
+                            <img class="set-image" src="/holiday-emotions/images/hydra.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-md-block d-lg-none">
+        <div class="container-fluid p-0 d-md-flex d-lg-none d-flex flex-column align-items-center">
+            <div class="container-fluid p-0 arrow-title-container d-flex flex-row">
+                <h2 class="carousel-title-mobile">Crete</h2>
+                <div class="arrows-mobile-destinations-three d-flex align-items-center"></div>
+            </div>
+            <div class="carousel-container-mobile">
+                <div class="carousel-mobile-destinations-three d-flex flex-row align-items-center">
+                    <div class="set-container-mobile d-flex flex-column">
+                        <div class="set-image-container-mobile">
+                            <img class="set-image" src="/holiday-emotions/images/hydra.png" alt="">
+                        </div>
+                    </div>
+                    <div class="set-container-mobile d-flex flex-column">
+                        <div class="set-image-container-mobile">
+                            <img class="set-image" src="/holiday-emotions/images/hydra.png" alt="">
+                        </div>
+                    </div>
+                    <div class="set-container-mobile d-flex flex-column">
+                        <div class="set-image-container-mobile">
+                            <img class="set-image" src="/holiday-emotions/images/hydra.png" alt="">
+                        </div>
+                    </div>
+                    <div class="set-container-mobile d-flex flex-column">
+                        <div class="set-image-container-mobile">
+                            <img class="set-image" src="/holiday-emotions/images/hydra.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-md-block d-lg-none">
+        <div class="container-fluid p-0 d-md-flex d-lg-none d-flex flex-column align-items-center">
+            <div class="container-fluid p-0 arrow-title-container d-flex flex-row">
+                <h2 class="carousel-title-mobile">Cyclades</h2>
+                <div class="arrows-mobile-destinations-four d-flex align-items-center"></div>
+            </div>
+            <div class="carousel-container-mobile">
+                <div class="carousel-mobile-destinations-four d-flex flex-row align-items-center">
+                    <div class="set-container-mobile d-flex flex-column">
+                        <div class="set-image-container-mobile">
+                            <img class="set-image" src="/holiday-emotions/images/hydra.png" alt="">
+                        </div>
+                    </div>
+                    <div class="set-container-mobile d-flex flex-column">
+                        <div class="set-image-container-mobile">
+                            <img class="set-image" src="/holiday-emotions/images/hydra.png" alt="">
+                        </div>
+                    </div>
+                    <div class="set-container-mobile d-flex flex-column">
+                        <div class="set-image-container-mobile">
+                            <img class="set-image" src="/holiday-emotions/images/hydra.png" alt="">
+                        </div>
+                    </div>
+                    <div class="set-container-mobile d-flex flex-column">
+                        <div class="set-image-container-mobile">
+                            <img class="set-image" src="/holiday-emotions/images/hydra.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-flex d-none d-lg-flex justify-content-center align-items-center flex-wrap third-background-color">
         <div class="destinations-container p-4 d-flex justify-content-center align-items-center">
             <div class="destinations-icon-container">
                 <img src="/holiday-emotions/images/destinations-icon.svg" alt="destinations-icon">

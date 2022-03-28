@@ -320,35 +320,139 @@ $(window).resize(function(){
 navSlide();
 utilitiesSlide();
 
-window.onload = function(){
-  slideOne();
-  slideTwo();
-}
 
-let sliderOne = document.getElementById("slider-1");
-let sliderTwo = document.getElementById("slider-2");
-let displayValOne = document.getElementById("range1");
-let displayValTwo = document.getElementById("range2");
-let minGap = 0;
-let sliderTrack = document.querySelector(".slider-track");
-let sliderMaxValue = document.getElementById("slider-1").max;
+$(document).ready(function(){
+  $('.carousel-mobile-destinations-one').slick({
+      slidesToShow: 1, slidesToScroll: 1,
+      prevArrow:  '<i class="fa-solid fa-angle-left"></i>',
+      nextArrow: '<i class="fa-solid fa-angle-right"></i>',
+      appendArrows: $('.arrows-mobile-destinations-one'),
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3
+          }
+        },{
+          breakpoint: 930,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 670,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
+  });
+});
 
-function slideOne(){
-  if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
-      sliderOne.value = parseInt(sliderTwo.value) - minGap;
-  }
-  displayValOne.textContent = sliderOne.value + ("€");
-  fillColor();
-}
-function slideTwo(){
-  if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
-      sliderTwo.value = parseInt(sliderOne.value) + minGap;
-  }
-  displayValTwo.textContent = sliderTwo.value + ("€");
-  fillColor();
-}
-function fillColor(){
-  percent1 = (sliderOne.value / sliderMaxValue) * 100;
-  percent2 = (sliderTwo.value / sliderMaxValue) * 100;
-  sliderTrack.style.background = `linear-gradient(to right, #DCDFE4 ${percent1}% , #6d717e ${percent1}% , #6d717e ${percent2}%, #DCDFE4 ${percent2}%)`;
-}
+$(document).ready(function(){
+  $('.carousel-mobile-destinations-two').slick({
+      slidesToShow: 1, slidesToScroll: 1,
+      prevArrow:  '<i class="fa-solid fa-angle-left"></i>',
+      nextArrow: '<i class="fa-solid fa-angle-right"></i>',
+      appendArrows: $('.arrows-mobile-destinations-two'),
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3
+          }
+        },{
+          breakpoint: 930,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 670,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
+  });
+});
+
+$(document).ready(function(){
+  $('.carousel-mobile-destinations-three').slick({
+      slidesToShow: 1, slidesToScroll: 1,
+      prevArrow:  '<i class="fa-solid fa-angle-left"></i>',
+      nextArrow: '<i class="fa-solid fa-angle-right"></i>',
+      appendArrows: $('.arrows-mobile-destinations-three'),
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3
+          }
+        },{
+          breakpoint: 930,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 670,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
+  });
+});
+
+$(document).ready(function(){
+  $('.carousel-mobile-destinations-four').slick({
+      slidesToShow: 1, slidesToScroll: 1,
+      prevArrow:  '<i class="fa-solid fa-angle-left"></i>',
+      nextArrow: '<i class="fa-solid fa-angle-right"></i>',
+      appendArrows: $('.arrows-mobile-destinations-four'),
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3
+          }
+        },{
+          breakpoint: 930,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 670,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
+  });
+});

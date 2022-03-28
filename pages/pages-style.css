@@ -38,6 +38,25 @@
     height: 245px;
     border-radius: 15px;
 }
+
+.destinations-mobile-sub-container {
+    width: 160px;
+    height: 167px;
+    border-radius: 15px;
+}
+
+.destinations-mobile-carousel-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.destinations-mobile-carousel-subtitle {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 .clickable-img {
     text-decoration: none;
     color: #fff;
@@ -910,4 +929,18 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 .hotel-awards-ratings-bg-color {
     background-color: rgba(220, 223, 228, 31%);
+}
+
+.destinations-mobile-visibility-fix {
+    padding-top: 100px;
+}
+
+.destinations-mobile-title {
+    font-size: 20px;
+    color: #014A7C;
+    padding-left: 10px;
+}
+
+.third-background-color {
+    background-color: #FEF9EF;
 }
