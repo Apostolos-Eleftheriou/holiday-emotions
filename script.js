@@ -6,10 +6,6 @@ $(document).ready(function(){
     });
   });
 
-  $(window).resize(function(){
-    $('.carousel-landing-page')[0].slick.refresh();
-  });
-
   $(document).ready(function(){
     $('.carousel-mobile').slick({
         slidesToShow: 1, slidesToScroll: 1,

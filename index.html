@@ -1595,5 +1595,10 @@
           zoomOffset: -1
       }).addTo(map);
       </script>
+      <script>  
+        $(window).resize(function(){
+            $('.carousel-landing-page')[0].slick.refresh();
+        });
+      </script>
 </body>
 </html>
