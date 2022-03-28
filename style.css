@@ -1528,3 +1528,7 @@ textarea:focus, input:focus{
   .carousel-mobile-two .card, .carousel-mobile-three .card {
       border: none;
   }
+
+  .hotel-awards-ratings-bg-color {
+    background-color: rgba(220, 223, 228, 31%);
+}
