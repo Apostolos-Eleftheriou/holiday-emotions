@@ -1034,6 +1034,8 @@ input[type="range"]:active::-webkit-slider-thumb{
 #destination-mobile-modal-map {
     width: 100%;
     height: 530px;
+    margin-top: 10px;
+    border-radius: 15px;
 }
 
 .destination-mobile-video-on-modal {
@@ -1055,6 +1057,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     height: 500px;
     background-color: transparent;
     border: none;
+    padding: 10px;
 }
 
 .destination-modals .modal-header {
