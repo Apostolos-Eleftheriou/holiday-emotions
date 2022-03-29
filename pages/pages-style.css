@@ -950,3 +950,45 @@ input[type="range"]:active::-webkit-slider-thumb{
     color: #64697A;
     text-align: center;
 }
+
+.destination-top-attractions {
+    height: 245px;
+    border-radius: 15px;
+}
+
+/* destinations desktop breakpoints */
+
+@media screen and (max-width: 1446px) {
+    .destination-desktop-breakpoint {
+        flex-wrap: wrap;
+    }
+    .destination-desktop-breakpoint-video-map {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        
+    }
+    .destination-map-container {
+        margin: 0 !important;
+    }
+    #destination-map {
+        height: 181px;
+        margin-left: 5px;
+        /* max-width: 328px; */
+    }
+}
+
+@media screen and (max-width: 1098px) {
+    .carousel {
+        width: 580px;
+
+    }
+    #destination-map {
+        width: 252px;
+    }
+    .destination-overlay-left, .destination-overlay-right {
+        top: 66px;
+    }
+}
+
+/* destinations desktop breakpoints */
