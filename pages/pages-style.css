@@ -992,3 +992,30 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 
 /* destinations desktop breakpoints */
+
+@media screen and (max-width: 600px) {
+    .destination-utilities {
+        width: 300px;
+    }
+}
+
+.destination-mobile-distance-from-top {
+    margin-top: 100px;
+}
+
+#destination-mobile-carousel {
+    width: 320px;
+}
+
+#destination-mobile-carousel .carousel-inner {
+    height: 175px;
+}
+
+#destination-mobile-carousel .hotel-carousel-overlay-left, #destination-mobile-carousel .hotel-carousel-overlay-right {
+    top: 30px;
+}
+
+#destination-mobile-carousel .carousel-control-next-icon, #destination-mobile-carousel .carousel-control-prev-icon {
+    background-size: 45%;
+    width: 1.5rem;
+}
