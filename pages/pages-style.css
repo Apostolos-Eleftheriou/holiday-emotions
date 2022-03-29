@@ -1061,3 +1061,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     background-color: transparent;
     border: none;
 }
+
+.destination-modals .modal {
+    background-color: rgba(0, 0, 0, 70%);
+}
