@@ -681,15 +681,56 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-                    
                     <div class="assets-container container m-3 text-center">
                         <a href="#"><img src="/holiday-emotions/images/group-505.svg" alt=""></a>
                         <a href="#"><img src="/holiday-emotions/images/group-504.svg" alt=""></a>
                         <a href="#"><img src="/holiday-emotions/images/group-503.svg" alt=""></a>
                         <a href="#"><img src="/holiday-emotions/images/group-502.svg" alt=""></a>
                     </div>
+                    <div class="container p-0 d-flex flex-row justify-content-around destination-modals">
+                        <div class="d-flex flex-row align-items-center">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="destination-mobile-video-modal-btn p-0" data-bs-toggle="modal" data-bs-target="#destination-video-modal">
+                                <i class="fa-solid fa-video"></i>
+                                Video
+                            </button>
+                            <!-- Mobile Video Modal -->
+                            <div class="modal fade" id="destination-video-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h3 class="p-1">Map</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="destination-video-container text-center">
+                                        <iframe class="destination-mobile-video-on-modal" src="https://player.vimeo.com/video/3696723?h=f135226439" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- Mobile Map Modal -->
+                            <div class="modal fade" id="destination-map-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h3 class="p-1">Map</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div id="destination-mobile-modal-map">
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row align-items-center">
+                                <button type="button" class="destination-mobile-show-map-modal-btn p-0" data-bs-toggle="modal" data-bs-target="#destination-map-modal">
+                                    <i class="fa-solid fa-map"></i>
+                                    Show Map
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                </div>
-            </div>
                <div class="container aside-container d-none d-lg-block">
                    <h3 class="text-center">ATHENS - ATTICA</h3>
                    <p>Athens- Attica</p>
@@ -718,7 +759,7 @@
                        <li class="destination-list"><a class="destination-links" href="#">Athens Center</a></li>
                    </ul>
                </div>
-               <div class="container-fluid mt-3 p-0 destination-utilities d-flex flex-column align-items-center justify-content-center">
+               <div class="container mt-3 p-0 destination-utilities d-flex flex-column align-items-center justify-content-center">
                    <div class="container p-4">
                     <h2>BOOK IN ATHENS HISTORICAL CENTER</h2>
                    </div>
@@ -1034,7 +1075,7 @@
                       </div>
                       <button class="destination-under-carousel-btn">FIND MORE ACTIVITIES</button>
                 </div>
-            </div>
+                </div>
             <div class="container-fluid p-0 d-flex flex-column align-items-center">
                 <div class="container-fluid p-0 arrow-title-container d-flex flex-row">
                     <h2 class="carousel-title-mobile">Top Business</h2>
@@ -1265,6 +1306,17 @@
         tileSize: 512,
         zoomOffset: -1
         }).addTo(destMap);
+    </script>
+    <script>
+        var destMobileMap = L.map('destination-mobile-modal-map', {scrollWheelZoom:false}).setView([38.17,  20.56], 6);
+
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 19,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1
+        }).addTo(destMobileMap);
     </script>
 </body>
 </html>

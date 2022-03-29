@@ -202,6 +202,7 @@
     background-color: #000;
     border-radius: 15px;
     height: auto;
+    width: 300px;
 }
 
 .destination-utilities h2 {
@@ -720,6 +721,16 @@ input[type="range"]:active::-webkit-slider-thumb{
     font-size: 14px;
   }
 
+  .destination-mobile-show-map-modal-btn, .destination-mobile-video-modal-btn {
+    background-color: rgba(220, 223, 228, 50%);
+    color: #64697A;
+    border: none;
+    border-radius: 5px;
+    width: 155px;
+    height: 46px;
+    font-size: 16px;
+  }
+
   .hotel-show-map-modal:hover, .hotel-map-modal:hover {
       color: #EFA00B;
   }
@@ -1018,4 +1029,27 @@ input[type="range"]:active::-webkit-slider-thumb{
 #destination-mobile-carousel .carousel-control-next-icon, #destination-mobile-carousel .carousel-control-prev-icon {
     background-size: 45%;
     width: 1.5rem;
+}
+
+#destination-mobile-modal-map {
+    width: 100%;
+    height: 530px;
+}
+
+.destination-mobile-video-on-modal {
+    width: 100%;
+    height: 400px;
+}
+
+@media screen and (max-width: 425px) {
+    .destination-mobile-video-on-modal {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+.destination-modals .modal-content {
+    width: 100%;
+    height: auto;
 }
