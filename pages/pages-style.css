@@ -1068,3 +1068,47 @@ input[type="range"]:active::-webkit-slider-thumb{
 .destination-modals .modal {
     background-color: rgba(0, 0, 0, 70%);
 }
+
+#destination-mobile-text{
+    display:none;
+}
+
+#destination-mobile-read-more-btn {
+    background-color: transparent;
+    border: none;
+    color: #EFA00B;
+    font-size: 16px;
+}
+
+.destination-mobile-read-more-para {
+    font-size: 16px;
+    color: #64697A;
+    z-index: 10;
+}
+
+.destination-mobile-read-more-header {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.destination-mobile-white-overlay {
+    background: linear-gradient(0deg, rgb(255, 255, 255) 10%, rgba(0,0,0,0) 100%);
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.destination-mobile-white-overlay-container {
+    position: relative;
+}
+
+.destination-mobile-read-more-btn-arrow-under {
+    background: url("/holiday-emotions/images/Path 93.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 77px;
+    height: 10px;
+    filter: opacity(1) drop-shadow(0 0 0 #d18b09);
+}

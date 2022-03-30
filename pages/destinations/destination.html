@@ -729,6 +729,24 @@
                                 </button>
                             </div>
                         </div>
+                        <div class="container">
+                            <h1 class="text-left destination-mobile-read-more-header">The Historic Center of Athens</h1>
+                            <div class="destination-mobile-white-overlay-container">
+                                <p class="text-left destination-mobile-read-more-para m-0">The vibrations are intense, the vertiginous rhythms, lights, sounds, colors and perfumes all concentrated in an urban center that adds to the identity of multiculturalism. The historic center of Athens served as a springboard dissemination of an entire civilization, which was meant to lay the foundation in philosophy and politics.</p>
+                                <div class="destination-mobile-white-overlay"></div>
+                            </div>
+                            <div id="destination-mobile-text">
+                            <br>
+                            <span class="destination-mobile-read-more-para">Athens is uniquely charming. Large and small cafes, restaurants and fast foods, flavors from around the world, itinerant merchants, people moving endlessly through the streets and small alleys of all become part of wisdom. A centuries-old wisdom, born in open spaces of the Ancient Agora. Gallery The first look of the visitor center include the Hellenic Parliament and Syntagma Square. Indeed, many are those who gathered outside the parliament building to watch the ceremonial changing of the Guard of Evzones.National Garden A walk in the National Park is a must for those who wish to escape a few hours from overcrowding and tension of the city. Those who love the rich vegetation will be impressed by the hundreds of species of trees, shrubs and other plants they will face. In an area of 15.5 hectares hosted a cafeteria for the public, and duck pond, playground and children’s library. Nearby is one of the most important buildings of Athens Zappeion Hall. The Acropolis Museum The Acropolis still maintains the role of the most important Greek Attraction, the one that stands out for its historical and cultural value. It ranks as one of the greatest monuments of world heritage by Unesco, and includes, while the most famous travel guides worldwide. Through the pedestrian street Dionysius Areopagite, the right of which the hill of the Acropolis found, you will be directed to the new Acropolis Museum and the Odeon of Herodes Atticus, which hosts the largest Athenian festivals. In the heart of the city you will find the largest shopping street, where thousands of people flock daily.Ermou Street at Athens The famous Ermou, synonymous of abundance, hosts the capital’s main shopping and is ideal for those who want to spend part of their time in clothing and footwear markets. In the middle of the pedestrian zone lies the small Byzantine church of Kapnikarea, road trademark. Around her, and all along Ermou are daily street musicians entertain their audience. The passage from the pedestrian shopping street goes from Monastiraki, known Athenian district remains Tzistaraki Old Mosque at Monastirakisteadfast through the years. At the first glance you will see the Assumption church in the middle of the square just a few steps from Tzistarakis Mosque (also known as the “Cursed Mosque”). Traditional and modern at the same time, the bustling flea market (Athens Flea Market) with its famous antique shops will find priceless treasures of old Athens. Drives for pick up, clothes and shoes, coins, furniture and silverware, beads and fabric emerge from the narrow alleys of abundance. The area is ideal for night excursions to one of the many rooftop bars overlooking the illuminated Acropolis and Thission.Ancient Roman Agora The proximity to Thissio facilitate those who wish to see up close one of the best preserved temples of Athens, that of Vulcan, and the remains of the Ancient Agora, economic, philosophical and sociopolitical center of antiquity. Restaurant at PlakaThe perhaps most beautiful neighborhood of Athens, Plaka, located just below the Acropolis and is composed of a set of listed buildings. It is without doubt one of the most popular tourist options, as the unique architecture buildings operate cozy cafe, restaurants, taverns and small shops.<br>
+                            </span>
+                            </div>
+                            <div class="destination-mobile-read-more-btn-container text-center">
+                            <button id="destination-mobile-read-more-btn">Read More</button>
+                            <div class="container d-flex align-items-center justify-content-center">
+                                <div class="destination-mobile-read-more-btn-arrow-under"></div>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                </div>
                <div class="container aside-container d-none d-lg-block">
@@ -1317,6 +1335,24 @@
         tileSize: 512,
         zoomOffset: -1
         }).addTo(destMobileMap);
+    </script>
+    <script>
+        $(document).ready(function() {
+        $("#destination-mobile-read-more-btn").click(function() {
+            var elem = $("#destination-mobile-read-more-btn").text();
+            if (elem == "Read More") {
+            //Stuff to do when btn is in the read more state
+            $(".destination-mobile-white-overlay").css("display","none");
+            $("#destination-mobile-read-more-btn").text("Read Less");
+            $("#destination-mobile-text").slideDown();
+            } else {
+            //Stuff to do when btn is in the read less state
+            $(".destination-mobile-white-overlay").css("display","block");
+            $("#destination-mobile-read-more-btn").text("Read More");
+            $("#destination-mobile-text").slideUp();
+            }
+        });
+        });
     </script>
 </body>
 </html>
