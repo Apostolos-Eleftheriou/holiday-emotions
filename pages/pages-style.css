@@ -1112,3 +1112,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     height: 10px;
     filter: opacity(1) drop-shadow(0 0 0 #d18b09);
 }
+
+.max-width-350 {
+    max-width: 350px;
+}
