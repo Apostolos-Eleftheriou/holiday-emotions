@@ -470,6 +470,7 @@
     background-color: rgba(27, 171, 226, 33%);
     padding: 5px;
     border-radius: 5px;
+    max-width: 130px;
 }
 
 .hotels-border-bottom {
@@ -1125,4 +1126,43 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 .hotels-max-width-fix {
     max-width: 544px;
+}
+
+@media screen and (max-width: 425px) {
+    .hotel-book-now {
+        width: 128px;
+        height: 39px;
+        font-size: 17px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hotel-carousel .carousel{
+        width: 310px;
+    }
+    .hotel-carousel img {
+        height: 180px;
+    }
+    .hotel-carousel .carousel-inner {
+        height: 180px;
+    }
+    .hotel-carousel-overlay-left, .hotel-carousel-overlay-right {
+        top: 32px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hotel-carousel .carousel{
+        width: 269px;
+    }
+    /* .hotel-carousel img {
+        height: 180px;
+    }
+    .hotel-carousel .carousel-inner {
+        height: 180px;
+    }
+    .hotel-carousel-overlay-left, .hotel-carousel-overlay-right {
+        top: 32px;
+    } */
 }
