@@ -1105,7 +1105,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 
 .destination-mobile-read-more-btn-arrow-under {
-    background: url("/holiday-emotions/images/Path 93.png") no-repeat;
+    background: url("/holiday-emotions/images/show-more-icon.svg") no-repeat;
     background-position: center;
     background-size: contain;
     width: 77px;
@@ -1115,4 +1115,15 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 .max-width-350 {
     max-width: 350px;
+}
+
+.destination-carousel-three-mobile .cards-title-pad-fix {
+    padding: 20px 20px 0 20px;
+}
+
+
+@media screen and (max-width: 1209px) {
+    .responsive-wrap {
+        flex-wrap: wrap;
+    }
 }
