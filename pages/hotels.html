@@ -498,17 +498,17 @@
                     <h3 class="text-start fw-bold fs-6">FILTER YOUR RESULTS</h3>
                     <div class="container budget">
                         <p>Available Budget</p>
-                            <div class="slider-track-container">
-                                <div class="slider-track"></div>
-                                <input type="range" min="165" max="6154" value="165" id="slider-1" oninput="slideOne()">
-                                <input type="range" min="165" max="6154" value="6154" id="slider-2" oninput="slideTwo()">
+                            <div class="mobile-slider-track-container">
+                                <div class="mobile-slider-track"></div>
+                                <input type="range" min="165" max="6154" value="165" id="mobile-slider-1" oninput="mobileSlideOne()">
+                                <input type="range" min="165" max="6154" value="6154" id="mobile-slider-2" oninput="mobileSlideTwo()">
                             </div>
-                            <div class="values">
-                                <span id="range1">
+                            <div class="mobile-values">
+                                <span id="mobile-range1">
                                     0
                                 </span>
                                 <span>→</span>
-                                <span id="range2">
+                                <span id="mobile-range2">
                                     100€
                                 </span>
                             </div>
@@ -1090,8 +1090,8 @@
                         <p>Available Budget</p>
                             <div class="slider-track-container">
                                 <div class="slider-track"></div>
-                                <input type="range" min="165" max="6154" value="165" id="slider-1" oninput="slideOne()">
-                                <input type="range" min="165" max="6154" value="6154" id="slider-2" oninput="slideTwo()">
+                                <input type="range" min="164" max="6155" value="165" id="slider-1" oninput="slideOne()">
+                                <input type="range" min="164" max="6155" value="6154" id="slider-2" oninput="slideTwo()">
                             </div>
                             <div class="values">
                                 <span id="range1">
@@ -2314,6 +2314,8 @@
         window.onload = function(){
         slideOne();
         slideTwo();
+        mobileSlideOne();
+        mobileSlideTwo();
         }
 
         let sliderOne = document.getElementById("slider-1");
@@ -2342,6 +2344,40 @@
         percent1 = (sliderOne.value / sliderMaxValue) * 100;
         percent2 = (sliderTwo.value / sliderMaxValue) * 100;
         sliderTrack.style.background = `linear-gradient(to right, #DCDFE4 ${percent1}% , #6d717e ${percent1}% , #6d717e ${percent2}%, #DCDFE4 ${percent2}%)`;
+        }
+    </script>
+    <script>
+        // window.onload = function(){
+        // mobileSlideOne();
+        // mobileSlideTwo();
+        // }
+
+        let mobileSliderOne = document.getElementById("mobile-slider-1");
+        let mobileSliderTwo = document.getElementById("mobile-slider-2");
+        let mobileDisplayValOne = document.getElementById("mobile-range1");
+        let mobileDisplayValTwo = document.getElementById("mobile-range2");
+        let mobileMinGap = 0;
+        let mobileSliderTrack = document.querySelector(".mobile-slider-track");
+        let mobileSliderMaxValue = document.getElementById("mobile-slider-1").max;
+
+        function mobileSlideOne(){
+        if(parseInt(mobileSliderTwo.value) - parseInt(mobileSliderOne.value) <= mobileMinGap){
+            mobileSliderOne.value = parseInt(mobileSliderTwo.value) - mobileMinGap;
+        }
+        mobileDisplayValOne.textContent = mobileSliderOne.value + ("€");
+        mobileFillColor();
+        }
+        function mobileSlideTwo(){
+        if(parseInt(mobileSliderTwo.value) - parseInt(mobileSliderOne.value) <= mobileMinGap){
+            mobileSliderTwo.value = parseInt(mobileSliderOne.value) + mobileMinGap;
+        }
+        mobileDisplayValTwo.textContent = mobileSliderTwo.value + ("€");
+        mobileFillColor();
+        }
+        function mobileFillColor(){
+        mobilePercent1 = (mobileSliderOne.value / mobileSliderMaxValue) * 100;
+        mobilePercent2 = (mobileSliderTwo.value / mobileSliderMaxValue) * 100;
+        mobileSliderTrack.style.background = `linear-gradient(to right, #DCDFE4 ${mobilePercent1}% , #6d717e ${mobilePercent1}% , #6d717e ${mobilePercent2}%, #DCDFE4 ${mobilePercent2}%)`;
         }
     </script>
     <script>
