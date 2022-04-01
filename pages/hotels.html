@@ -2034,6 +2034,9 @@
            </div>
        </div>
     </section>
+    <button onclick="topFunction()" id="scroll-to-top-btn" title="Go to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
     <div class="container d-none d-lg-block mt-5">
         <div class="pages d-flex flex-row justify-content-center align-items-center">
             <a href="#"><div class="page">1</div></a>
@@ -2143,6 +2146,26 @@
         percent1 = (sliderOne.value / sliderMaxValue) * 100;
         percent2 = (sliderTwo.value / sliderMaxValue) * 100;
         sliderTrack.style.background = `linear-gradient(to right, #DCDFE4 ${percent1}% , #6d717e ${percent1}% , #6d717e ${percent2}%, #DCDFE4 ${percent2}%)`;
+        }
+    </script>
+    <script>
+        mybutton = document.getElementById("scroll-to-top-btn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 340 || document.documentElement.scrollTop > 340) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
 </body>
