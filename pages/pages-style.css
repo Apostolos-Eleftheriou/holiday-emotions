@@ -320,8 +320,8 @@
 }
 
 .hotel-search-results {
-    height: 34px;
     background-color: #E7BA1E19;
+    padding-top: 100px;
 }
 
 .hotel-search-results select {
