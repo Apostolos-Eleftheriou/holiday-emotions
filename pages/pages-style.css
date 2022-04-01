@@ -461,7 +461,9 @@
 .yellow-bg {
     padding: 5px;
     border-radius: 5px;
-    background-color: rgba(231, 186, 30, 50%)
+    background-color: rgba(231, 186, 30, 50%);
+    height: 31px;
+    max-width: 120px;
 }
 
 .light-blue-bg {
