@@ -1149,6 +1149,18 @@ input[type="range"]:active::-webkit-slider-thumb{
     .hotel-carousel-overlay-left, .hotel-carousel-overlay-right {
         top: 32px;
     }
+    .modal-carousel-container .carousel {
+        width: 310px !important;
+    }
+    .modal-carousel-container img {
+        height: 180px;
+    }
+    .modal-carousel-container .carousel-inner {
+        height: 180px !important;
+    }
+    .modal-carousel-container .hotel-carousel-overlay-left,.modal-carousel-container .hotel-carousel-overlay-right {
+        top: 32px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -1199,4 +1211,34 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 .mobile-filter-aside {
     width: 310px;
+}
+
+@media screen and (max-width: 768px) {
+    .hotel-background-hover .modal-content {
+        width: 100%;
+        height: 500px;
+        background-color: transparent;
+        border: none;
+        padding: 10px;
+    }
+    
+    .hotel-background-hover .modal-header {
+        background-color: transparent;
+        border: none;
+    }
+    
+    .hotel-background-hover .modal {
+        background-color: rgba(0, 0, 0, 70%);
+    }
+    .hotel-background-hover #modal-map {
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .hotel-background-hover .modal-header h3{
+        color: #ffffff;
+    }
+    .modal-facilities-container p, .modal-facilities-container li {
+        color: #ffffff;
+    }
 }
