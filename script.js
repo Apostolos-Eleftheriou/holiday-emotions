@@ -298,6 +298,15 @@ const utilitiesSlide = () => {
         $(".burger").css('visibility', 'visible');
       })
     });
+    $(".mobile-filters").on("click", function() {
+      $(".filters-mobile").addClass("filters-active");
+      $(".burger").css('visibility', 'hidden');
+      $(".close-btn").on("click", function() {
+        $(".filters-mobile").removeClass("filters-active");
+        $(".nav-link").removeClass("active");
+        $(".burger").css('visibility', 'visible');
+      })
+    });
  } 
 };
 

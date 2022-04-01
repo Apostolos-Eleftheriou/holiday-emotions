@@ -1181,3 +1181,22 @@ input[type="range"]:active::-webkit-slider-thumb{
 .fa-chevron-up:hover {
     color: #EFA00B;
 }
+
+.fa-filter {
+    font-size: 19px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.filter-icon-sizing {
+    height: 21px;
+    width: 25px;
+}
+
+.filters-mobile {
+    background-color: #FFFFFF;
+}
+
+.mobile-filter-aside {
+    width: 310px;
+}

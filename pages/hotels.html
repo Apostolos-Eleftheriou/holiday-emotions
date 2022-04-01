@@ -81,6 +81,9 @@
                 <i class="fa-solid fa-magnifying-glass" style="color: #00000067;"></i>
                 <input type="text" class="mobile-input">
             </div>
+            <div class="container-fluid m-0 mt-2 p-0 d-flex align-items-center justify-content-center filter-icon-sizing">
+                <i class="fa-solid fa-filter mobile-filters"></i>
+            </div>
         </div>
             <ul class="nav-links p-0">
                 <div class="mobile-nav-top-grp">
@@ -482,6 +485,199 @@
                         <button class="emotions-overlay-search-btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
                     </div>
                 </div>
+            </ul>
+            <ul class="filters-mobile p-0">
+                <div class="mobile-nav-top-grp container-fluid p-0">
+                    <div class="nav-bar-container-one container-fluid p-0 d-flex flex-row flex-wrap align-items-center justify-content-end">
+                        <div class="d-flex align-items-center justify-content-center close-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <aside class="mobile-filter-aside">
+                    <h3 class="text-start fw-bold fs-6">FILTER YOUR RESULTS</h3>
+                    <div class="container budget">
+                        <p>Available Budget</p>
+                            <div class="slider-track-container">
+                                <div class="slider-track"></div>
+                                <input type="range" min="165" max="6154" value="165" id="slider-1" oninput="slideOne()">
+                                <input type="range" min="165" max="6154" value="6154" id="slider-2" oninput="slideTwo()">
+                            </div>
+                            <div class="values">
+                                <span id="range1">
+                                    0
+                                </span>
+                                <span>→</span>
+                                <span id="range2">
+                                    100€
+                                </span>
+                            </div>
+                    </div>
+                    <div class="filter-property-star-rating">
+                        <p class="rating-titles">Property Star Rating</p>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <i class="fa-solid fa-star"></i>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                             <p class="no-stars m-0">no stars</p>
+                        </label>
+                    </div>
+                    <div class="filter-property-meal-type mt-3">
+                        <p class="rating-titles m-0">Meal Type</p>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Room Only</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Bed & Breakfast</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Buffet Breakfast</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Breakfast</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Half Board</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Full Board</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">European Plan</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Self Catering</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">As Brochured</p>
+                        </label>
+                    </div>
+                    <div class="filter-property-star-rating mt-3">
+                        <p class="rating-titles m-0">Property Type</p>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Hotel</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Boutique Hotel</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Other</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Furnished Apartments</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Apartments</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">City Hotel</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Luxury Hotel</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Suites</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Suites & Apartments</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Design Hotel</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Historic Accommodation</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Luxury Beach Resort</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Luxury Suits</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Villa</p>
+                        </label>
+                    </div>
+                </aside>
             </ul>
         </nav>
     </header>
