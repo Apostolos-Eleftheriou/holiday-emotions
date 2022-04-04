@@ -307,6 +307,15 @@ const utilitiesSlide = () => {
         $(".burger").css('visibility', 'visible');
       })
     });
+    $(".mobile-multi-search").on("click", function() {
+      $(".hotels-multi-search-mobile").addClass("hotels-multi-search-mobile-active");
+      $(".burger").css('visibility', 'hidden');
+      $(".close-btn").on("click", function() {
+        $(".hotels-multi-search-mobile").removeClass("hotels-multi-search-mobile-active");
+        $(".nav-link").removeClass("active");
+        $(".burger").css('visibility', 'visible');
+      })
+    });
  } 
 };
 

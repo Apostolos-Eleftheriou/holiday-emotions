@@ -1278,3 +1278,33 @@ input[type="range"]:active::-webkit-slider-thumb{
     font-size: 18px;
     color: #ffffff;
 }
+
+.hotels-multi-search-btns {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 10px 0 0 0;
+}
+
+.hotels-multi-search-btns .fa-hotel, .hotels-multi-search-btns .fa-car-alt, .hotels-multi-search-btns .fa-grin {
+    font-size: 26px;
+}
+
+@media screen and (max-width: 425px) {
+    .hotels-multi-search-btns {
+        margin: 0 24px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hotels-multi-search-btns {
+        margin: 0 14px;
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hotels-multi-search-btns {
+        margin: 0 10px;
+    }
+}
