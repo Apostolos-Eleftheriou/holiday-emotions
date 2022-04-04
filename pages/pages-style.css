@@ -1269,3 +1269,12 @@ input[type="range"]:active::-webkit-slider-thumb{
         color: #ffffff;
     }
 }
+
+.hotels-input-change {
+     max-width: 97px;
+}
+
+.hotels-input-mag-glass {
+    font-size: 18px;
+    color: #ffffff;
+}
