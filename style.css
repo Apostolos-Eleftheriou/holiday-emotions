@@ -1540,3 +1540,8 @@ textarea:focus, input:focus{
   .hotel-awards-ratings-bg-color {
     background-color: rgba(220, 223, 228, 31%);
 }
+
+#hotels-multi-search-tab-content .nav-location, #hotels-multi-search-tab-content .nav-checkin,
+#hotels-multi-search-tab-content .type, #hotels-multi-search-tab-content .available-dates {
+    padding: 20px;
+}
