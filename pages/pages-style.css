@@ -923,7 +923,6 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 .hotel-youpay-background-color {
     background-color: #E7BA1E19;
-    height: 70px;
 }
 
 .incl-vat-para {
@@ -940,6 +939,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     border: none;
     padding: 5px;
     width: 157px;
+    margin: 20px 0;
 }
 
 .hotel-payment-next-btn:hover {
