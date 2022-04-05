@@ -1406,3 +1406,13 @@ input[type="range"]:active::-webkit-slider-thumb{
     font-weight: bold;
     font-size: 14px;
 }
+
+
+#accomodation-info::before, #accomodation-facilities::before, #booking-conditions::before, #accomodation-location::before {
+    content: '';
+    display: block;
+    height: 12vh;
+    margin-top: -12vh;
+    visibility: hidden;
+    pointer-events: none;
+}
