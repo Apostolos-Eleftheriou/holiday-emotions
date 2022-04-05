@@ -1166,6 +1166,29 @@ input[type="range"]:active::-webkit-slider-thumb{
         font-size: 17px;
         padding: 0;
     }
+    #hotel-carousel {
+        width: 405px;
+    }
+    #hotel-carousel .carousel-inner {
+        height: 212px;
+    }
+    #hotel-carousel .destination-overlay-left {
+        background: url("/holiday-emotions/images/nudge-left.svg") no-repeat;
+        width: 24px;
+        top: 48px;
+    }
+    #hotel-carousel .destination-overlay-right {
+        background: url("/holiday-emotions/images/nudge-right.svg") no-repeat;
+        width: 24px;
+        top: 48px;
+    }
+    #solo-hotel-map {
+        width: 400px;
+        height: 218px;
+    }
+    #hotel-carousel .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 14px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -1192,6 +1215,29 @@ input[type="range"]:active::-webkit-slider-thumb{
     }
     .modal-carousel-container .hotel-carousel-overlay-left,.modal-carousel-container .hotel-carousel-overlay-right {
         top: 32px;
+    }
+    #hotel-carousel {
+        width: 350px;
+    }
+    #hotel-carousel .carousel-inner {
+        height: 198px;
+    }
+    #hotel-carousel .destination-overlay-left {
+        background: url("/holiday-emotions/images/nudge-left.svg") no-repeat;
+        width: 25px;
+        top: 42px;
+    }
+    #hotel-carousel .destination-overlay-right {
+        background: url("/holiday-emotions/images/nudge-right.svg") no-repeat;
+        width: 24px;
+        top: 42px;
+    }
+    #solo-hotel-map {
+        width: 350px;
+        height: 218px;
+    }
+    #hotel-carousel .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 14px;
     }
 }
 
@@ -1343,6 +1389,10 @@ input[type="range"]:active::-webkit-slider-thumb{
     }
     .hotel-call-email {
         border-radius: 0 0 15px 15px;
+    }
+    .hotel-mobile-payment-method-border {
+        border-radius: 15px;
+        border: solid 1px black;
     }
 }
 
