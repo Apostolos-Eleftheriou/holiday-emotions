@@ -321,7 +321,6 @@
 
 .hotel-search-results {
     background-color: #E7BA1E19;
-    padding-top: 100px;
 }
 
 .hotel-search-results select {
@@ -1308,5 +1307,11 @@ input[type="range"]:active::-webkit-slider-thumb{
 @media screen and (max-width: 320px) {
     .hotels-multi-search-btns {
         margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 994px) {
+    .hotel-search-results  {
+        padding-top: 100px;
     }
 }
