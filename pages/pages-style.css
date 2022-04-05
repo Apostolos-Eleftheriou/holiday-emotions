@@ -866,7 +866,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 
 #solo-hotel-map {
-    width: 651px;
+    width: 662px;
     height: 342px;
 }
 
@@ -1020,7 +1020,13 @@ input[type="range"]:active::-webkit-slider-thumb{
 @media screen and (max-width: 1098px) {
     .carousel {
         width: 580px;
-
+    }
+    #hotel-carousel .carousel-inner {
+        height: 326px;
+    }
+    #solo-hotel-map {
+        width: 580px;
+        height: 342px;
     }
     #destination-map {
         width: 252px;
@@ -1314,4 +1320,39 @@ input[type="range"]:active::-webkit-slider-thumb{
     .hotel-search-results  {
         padding-top: 100px;
     }
+}
+
+.discounts-max-width {
+    max-width: 232px;
+}
+
+.payment-method-max-width-one {
+    max-width: 261px;
+}
+
+.payment-method-max-width-two {
+    max-width: 120px;
+}
+
+@media screen and (max-width: 994px) {
+    .hotel-top-distance-fix {
+        padding-top: 100px;
+    }
+    .hotel-needhelp {
+        border-radius: 15px 15px 0 0;
+    }
+    .hotel-call-email {
+        border-radius: 0 0 15px 15px;
+    }
+}
+
+.hotel-mobile-link-style {
+    text-decoration: none;
+    color: #64697A;
+    background-color: #DCDFE4;
+    border-radius: 5px;
+    height: 48px;
+    width: 87px;
+    font-weight: bold;
+    font-size: 14px;
 }

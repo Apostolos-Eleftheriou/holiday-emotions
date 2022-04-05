@@ -74,12 +74,15 @@
             </div>
         </div>
       </div>
-      <nav class="container-fluid p-0 d-md-flex d-lg-none d-flex flex-row mobile-nav">
+      <nav class="container-fluid p-0 d-md-flex d-lg-none d-flex flex-row mobile-nav" style="min-height: 11vh;">
         <div class="container-fluid logo-search-container d-flex justify-content-around align-items-start">
             <a href="/holiday-emotions/index.html"><div class="logo-mobile"></div></a>
-            <div class="mobile-input-container mt-1">
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="mobile-input-container mt-1" style="background-color: #EFA00BE5;">
+                <i class="fa-solid fa-magnifying-glass" style="color: #00000067;"></i>
                 <input type="text" class="mobile-input">
+            </div>
+            <div class="container-fluid m-0 mt-2 p-0 d-flex align-items-center justify-content-center filter-icon-sizing">
+                <i class="fa-solid fa-magnifying-glass hotels-input-mag-glass mobile-multi-search"></i>
             </div>
         </div>
             <ul class="nav-links p-0">
@@ -483,9 +486,263 @@
                     </div>
                 </div>
             </ul>
+            <ul class="hotels-multi-search-mobile p-0">
+                <div class="mobile-nav-top-grp container-fluid p-0">
+                    <div class="nav-bar-container-one container-fluid p-0 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                        <div class="d-flex align-items-center flex-column justify-content-around">
+                            <ul class="nav d-flex justify-content-around" id="hotels-multi-search-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active d-flex flex-column align-items-center hotels-multi-search-btns" id="hotels-multi-search-hotel-tab" data-bs-toggle="tab" data-bs-target="#hotels-multi-search-hotel" type="button" role="tab" aria-controls="home" aria-selected="true">
+                                      <i class="fas fa-hotel"></i>
+                                        HOTELS
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link d-flex flex-column align-items-center hotels-multi-search-btns" id="hotels-multi-search-cars-tab" data-bs-toggle="tab" data-bs-target="#hotels-multi-search-cars" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                      <i class="fas fa-car-alt"></i>
+                                        CARS
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link d-flex flex-column align-items-center hotels-multi-search-btns" id="hotels-multi-search-emotions-tab" data-bs-toggle="tab" data-bs-target="#hotels-multi-search-emotions" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                                      <i class="far fa-grin"></i>
+                                        EMOTIONS
+                                    </button>
+                                </li>
+                              </ul>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center close-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-nav-bottom-grp d-flex flex-column justify-content-around align-items-center">
+                    <div class="tab-content" id="hotels-multi-search-tab-content">
+                        <div class="tab-pane fade show active" id="hotels-multi-search-hotel" role="tabpanel" aria-labelledby="hotels-multi-search-hotel-tab">
+                            <div class="hotels-overlay-container container d-flex flex-wrap align-items-center justify-content-start">
+                                <div class="nav-location">
+                                    <span><i class="fa-solid fa-location-pin"></i></span>
+                                    <input class="nav-location-txt" type="text" name="nav-location-text" placeholder="City, Place, Property">
+                                </div>
+                                <div class="nav-checkin">
+                                    <span><i class="fas fa-calendar-alt"></i></span>
+                                    <input class="nav-checkin-txt" type="text" name="nav-checkin-text" placeholder="Check in - Check out">
+                                </div>
+                                <div class="hotels-overlay-dropdown-menu">
+                                    <div class="btn-group dropup p-3">
+                                            <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Rooms
+                                            </button>
+                                            <div class="dropdown-menu">
+                                            <ul>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    <div class="btn-group dropup p-3">
+                                            <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Adults
+                                            </button>
+                                            <div class="dropdown-menu">
+                                            <ul>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    <div class="btn-group dropup p-3">
+                                            <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Children
+                                            </button>
+                                            <div class="dropdown-menu">
+                                            <ul>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    <div class="btn-group dropup p-3">
+                                            <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Order by
+                                            </button>
+                                            <div class="dropdown-menu">
+                                            <ul>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="hotels-overlay-search-btn-container p-5 text-center">
+                                <button class="hotels-overlay-search-btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="hotels-multi-search-cars" role="tabpanel" aria-labelledby="hotels-multi-search-cars-tab">
+                            <div class="mobile-nav-bottom-grp d-flex flex-column justify-content-around align-items-center">
+                                <div class="cars-overlay-container container d-flex flex-column flex-wrap align-items-start justify-content-around">
+                                    <div class="nav-location">
+                                        <span><i class="fa-solid fa-location-pin"></i></span>
+                                        <p class="m-0 pad-left">Pickup Location</p>
+                                    </div>
+                                    <div class="pickup-container container p-0 d-flex flex-wrap align-items-center justify-content-start">
+                                        <div class="nav-country p-2">
+                                            <select class="location-menu-style" name="country" id="country">
+                                                <option value="Greece">GR</option>
+                                                <option value="Belgium">BE</option>
+                                                <option value="Bulgaria">BG</option>
+                                                <option value="Czech Republic">CZ</option>
+                                                <option value="Denmark">DK</option>
+                                                <option value="Germany">DE</option>
+                                                <option value="Estonia">EE</option>
+                                                <option value="Ireland">IE</option>
+                                                <option value="Spain">ES</option>
+                                                <option value="France">FR</option>
+                                                <option value="Croatia">HR</option>
+                                                <option value="Italy">IT</option>
+                                                <option value="Cyprus">CY</option>
+                                                <option value="Latvia">LV</option>
+                                                <option value="Lithuania">LT</option>
+                                                <option value="Luxembourg">LU</option>
+                                                <option value="Hungary">HU</option>
+                                                <option value="Malta">MT</option>
+                                                <option value="Netherlands">NL</option>
+                                                <option value="Austria">AT</option>
+                                                <option value="Poland">PL</option>
+                                                <option value="Portugal">PT</option>
+                                                <option value="Romania">RO</option>
+                                                <option value="Slovenia">SI</option>
+                                                <option value="Slovensko">SK</option>
+                                                <option value="Finland">FI</option>
+                                                <option value="Sweden">SE</option>
+                                            </select>
+                                        </div>
+                                            <div class="nav-area p-2">
+                                                    <select class="location-menu-style" name="area" id="area">
+                                                        <option value="" disabled selected>AREA</option>
+                                                        <option value="Attica">Attica</option>
+                                                        <option value="Thessaloniki">Thessaloniki</option>
+                                                        <option value="Volos">Volos</option>
+                                                        <option value="Kefalonia">Kefalonia</option>
+                                                        <option value="Rethymno">Rethymno</option>
+                                                    </select>
+                                            </div>
+                                            <div class="nav-city">
+                                                <select class="location-menu-style-city" name="city" id="city">
+                                                <option value="" disabled selected> </option>
+                                                    <option value="PH">PH</option>
+                                                    <option value="PH">PH</option>
+                                                    <option value="PH">PH</option>
+                                                    <option value="PH">PH</option>
+                                                    <option value="PH">PH</option>
+                                                </select>
+                                            </div>
+                                                <div class="nav-pickup p-2">
+                                                    <span><i class="fas fa-calendar-alt"></i></span>
+                                                    <input class="nav-pickup-txt location-menu-style" type="text" name="nav-pickup" placeholder="Pickup">
+                                                </div>
+                                                <div class="nav-dropoff p-2">
+                                                    <span><i class="fas fa-calendar-alt"></i></span>
+                                                    <input class="nav-dropoff-txt location-menu-style" type="text" name="nav-dropoff" placeholder="Drop off">
+                                                </div>
+                                                <div class="dropoff-toanother p-2">
+                                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                                        <input class="form-check-input mr-2 dr-off" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label label-width" for="flexCheckDefault">
+                                                        Drop Off <br> to another location
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="nav-location">
+                                            <span><i class="fa-solid fa-location-pin"></i></span>
+                                            <p class="m-0 pad-left">Return Location</p>
+                                        </div>
+                                        <div class="return-container container d-flex flex-wrap align-items-center justify-content-start">
+                                            <div class="nav-area">
+                                                <select class="location-menu-style" name="area" id="area">
+                                                    <option value="" disabled selected>AREA</option>
+                                                    <option value="Attica">Attica</option>
+                                                    <option value="Thessaloniki">Thessaloniki</option>
+                                                    <option value="Volos">Volos</option>
+                                                    <option value="Kefalonia">Kefalonia</option>
+                                                    <option value="Rethymno">Rethymno</option>
+                                                </select>
+                                            </div>
+                                            <div class="nav-city">
+                                                <select class="location-menu-style-city" name="city" id="city">
+                                                <option value="" disabled selected> </option>
+                                                    <option value="PH">PH</option>
+                                                    <option value="PH">PH</option>
+                                                    <option value="PH">PH</option>
+                                                    <option value="PH">PH</option>
+                                                    <option value="PH">PH</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="cars-overlay-search-btn-container p-5 text-center">
+                                    <button class="cars-overlay-search-btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="hotels-multi-search-emotions" role="tabpanel" aria-labelledby="hotels-multi-search-emotions-tab">
+                            <div class="mobile-nav-bottom-grp d-flex flex-column justify-content-around align-items-center">
+                                <div class="emotions-overlay-container container d-flex flex-wrap align-items-center justify-content-start">
+                                        <div class="nav-location">
+                                            <span><i class="fa-solid fa-location-pin"></i></span>
+                                            <input class="nav-location-txt" type="text" name="nav-location-text" placeholder="City / Area">
+                                        </div>
+                                        <div class="all-places">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label label-width" for="flexCheckDefault">
+                                                  All Places
+                                                </label>
+                                              </div>
+                                        </div>
+                                            <div class="type">
+                                                <select class="location-menu-style-city" name="type" id="type">
+                                                    <option value="ph" disabled selected> Type</option>
+                                                    <option value="ph">ph</option>
+                                                    <option value="ph">ph</option>
+                                                    <option value="ph">ph</option>
+                                                </select>
+                                            </div>
+                                            <div class="all-types">
+                                                <div class="form-check d-flex justify-content-center align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label label-width" for="flexCheckDefault">
+                                                      All Types
+                                                    </label>
+                                                  </div>
+                                            </div>
+                                            <div class="available-dates">
+                                                <span><i class="fa-solid fa-calendar-alt"></i></span>
+                                                <input class="nav-available-dates" type="text" name="available-dates" placeholder="Available Dates">
+                                            </div>
+                                </div>
+                                <div class="emotions-overlay-search-btn-container p-5 text-center">
+                                    <button class="emotions-overlay-search-btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    
+                </div>
+            </ul>
         </nav>
     </header>
-    <div class="container-fluid d-flex d-none d-lg-flex justify-content-center align-items-center flex-wrap hotels-second-background-color">
+    <div class="container-fluid p-1 d-flex d-none d-lg-flex justify-content-center align-items-center flex-wrap hotels-second-background-color">
         <div class="destinations-container p-2 d-flex justify-content-center align-items-center">
             <div class="destinations-icon-container">
                 <img src="/holiday-emotions/images/destinations-icon.svg" alt="destinations-icon">
@@ -873,11 +1130,20 @@
               </div>
               <p class="text-center m-0 p-2 text-white">The booking form will expire in 29:59 minutes.</p>
     </div>
-    <div class="container-fluid hotel-search-results d-flex flex-row align-items-center p-lg-2">
+    <div class="container-fluid d-none d-lg-flex hotel-search-results d-flex flex-row align-items-center p-lg-2">
         <p class="m-0"><a href="#"> Home </a>/ <a href="#"> Greece </a> / <a href="#"> Attica </a> / <a href="#"> Athens </a> / Search results</p>
     </div>
+    <div class="container d-flex flex-column d-lg-none hotel-top-distance-fix">
+        <h1>A for Athens</h1>
+        <div class="container d-flex flex-row justify-content-around p-2">
+            <a href="" class="hotel-mobile-link-style text-center d-flex align-items-center justify-content-center">Info</a>
+            <a href="" class="hotel-mobile-link-style text-center d-flex align-items-center justify-content-center">Facilities</a>
+            <a href="" class="hotel-mobile-link-style text-center d-flex align-items-center justify-content-center">Booking conditions</a>
+            <a href="" class="hotel-mobile-link-style text-center d-flex align-items-center justify-content-center">Location</a>
+        </div>
+    </div>
     <section>
-        <div class="container-fluid hotel-max-width p-0 d-flex flex-row mt-4">
+        <div class="container-fluid hotel-max-width flex-wrap-reverse flex-lg-nowrap p-0 d-flex flex-row mt-lg-4">
             <div class="container-fluid">
                 <div class="container-fluid p-0"><h1>A for Athens</h1></div>
                 <div id="hotel-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -927,7 +1193,7 @@
                             </div>
                             <p class="based-on m-0">based on 1360 reviews</p>
                         </div>
-                        <div class="container m-0 d-flex flex-row align-items-center hotel-undercarousel-container-width-fix">
+                        <div class="container m-0 d-flex flex-row align-items-center d-none d-lg-flex hotel-undercarousel-container-width-fix">
                             <div class="container p-1 m-0 hotel-bnb-width-fix hotel-information">
                                 <div class="container p-0 m-1 d-flex yellow-bg flex-row justify-content-center align-items-center">
                                     <i class="fa-solid fa-mug-saucer"></i>
@@ -1016,12 +1282,12 @@
                     <div id="solo-hotel-map"></div>
                 </div>
             </div>
-            <div class="container-fluid">
-                    <div class="container p-0  d-flex flex-row">
-                        <span class="hotel-needhelp">need help?</span>
-                        <span class="hotel-call-email">CALL <span class="fw-bold">(+30) 210-2208-297</span> EMAIL <span class="fw-bold">reservation@holidayemotions.com</span></span>
+            <div class="container-fluid d-flex flex-column-reverse flex-lg-column">
+                    <div class="container p-0  d-flex flex-column flex-lg-row mt-3 mt-lg-0">
+                        <span class="hotel-needhelp text-center">need help?</span>
+                        <span class="hotel-call-email text-center">CALL <span class="fw-bold">(+30) 210-2208-297</span> EMAIL <span class="fw-bold">reservation@holidayemotions.com</span></span>
                     </div>
-                    <div class="container p-3 mt-3 hotel-details-background-color">
+                    <div class="container p-3 mt-lg-3 hotel-details-background-color">
                         <h4 class="fw-bold hotels-border-bottom p-2">A for Athens</h4>
                         <div class="container">
                             <div class="row p-3 hotels-border-bottom">
@@ -1042,42 +1308,53 @@
                             </div>
                         </div>
                         <div class="container">
-                            <div class="row p-3 hotels-border-bottom">
-                                <div class="container col-4 p-0">
-                                    <p>Overnight stays</p>
-                                    <p>Rooms</p>
-                                    <p>Adults</p>
-                                    <p class="m-0">Children</p>
+                            <div class="row p-3 hotels-border-bottom ">
+                                <div class="container col-5 p-0 d-flex flex-column justify-content-around">
+                                    <p class="p-1 m-0">Overnight stays</p>
+                                    <p class="p-1 m-0">Rooms</p>
+                                    <p class="p-1 m-0">Adults</p>
+                                    <p class="p-1 m-0">Children</p>
                                 </div>
-                                <div class="container col-8 p-0">
-                                    <p class="fw-bold">6</p>
-                                    <p class="fw-bold">1</p>
-                                    <p class="fw-bold">2</p>
-                                    <p class="fw-bold m-0">0</p>
+                                <div class="container col-7 p-0 d-flex flex-column justify-content-around">
+                                    <p class="fw-bold p-1 m-0">6</p>
+                                    <p class="fw-bold p-1 m-0">1</p>
+                                    <p class="fw-bold p-1 m-0">2</p>
+                                    <p class="fw-bold p-1 m-0">0</p>
                                 </div>
                             </div>
                         </div>
                         <div class="container">
                             <div class="row p-3">
-                                <div class="container col-4 p-0 d-flex flex-column align-items-start">
-                                    <p>Price</p>
-                                    <p>Discount Coupon</p>
-                                    <p>Cashback Discout</p>
+                                <div class="container col-9 p-0 d-flex flex-column align-items-start">
+                                    <p class="mt-2">Price</p>
+                                    <div class="container p-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                                        <div class="container p-0 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                                            <p class="m-0">Discount Coupon</p>
+                                            <div class="container m-0 p-0 discounts-max-width">
+                                                <input type="text" class="m-0" placeholder="Enter Code" name="discount-coupon" id="discount-coupon">
+                                                <button class="m-2 hotel-cash-in-btn">Cash in</button>
+                                            </div>
+                                        </div>
+                                        <div class="container p-0 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                                            <p class="m-0">Cashback Discout</p>
+                                            <div class="container m-0 p-0 discounts-max-width">
+                                                <input type="text" class="m-0" placeholder="Enter Code" name="cashback-discount" id="cashback-discount">
+                                                <button class="m-2 hotel-cash-in-btn">Cash in</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <p class="m-0">5% Member Discount</p>
                                 </div>
-                                <div class="container col-3 p-0 d-flex flex-column align-items-center justify-content-center">
+                                <!-- <div class="container col-3 p-0 d-flex flex-column align-items-center justify-content-center">
                                     <input type="text" class="m-2" placeholder="Enter Code" name="discount-coupon" id="discount-coupon">
                                     <input type="text" class="m-2" placeholder="Enter Code" name="cashback-discount" id="cashback-discount">
-                                </div>
-                                <div class="container col-3 p-0 d-flex flex-column align-items-center justify-content-center">
-                                    <button class="m-2 hotel-cash-in-btn">Cash in</button>
-                                    <button class="m-2 hotel-cash-in-btn">Cash in</button>
-                                </div>
-                                <div class="container col-2 p-0 text-end">
-                                    <p class="fw-bold">890,00 €</p>
-                                    <p class="fw-bold">15,00 €</p>
-                                    <p class="fw-bold">25,00 €</p>
-                                    <p class="fw-bold m-0">0,00 €</p>
+                                </div> -->
+                                
+                                <div class="container col-3 p-0 text-end d-flex flex-column justify-content-around">
+                                    <p class="fw-bold m-2">890,00 €</p>
+                                    <p class="fw-bold m-2">15,00 €</p>
+                                    <p class="fw-bold m-2">25,00 €</p>
+                                    <p class="fw-bold m-2">0,00 €</p>
                                 </div>
                             </div>
                             <div class="container d-flex flex-row p-0 hotel-youpay-background-color">
@@ -1096,8 +1373,8 @@
                             <p class="fs-5">Select your payment method</p>
                         </div>
                     <div class="container">
-                            <div class="row">
-                                <div class="container d-flex flex-row col-8">
+                            <div class="d-flex flex-row flex-wrap justify-content-xl-start justify-content-end">
+                                <div class="container d-flex flex-row payment-method-max-width-one m-0">
                                     <div class="visa-icon-container p-1">
                                         <img src="/holiday-emotions/images/visa-icon.svg" alt="visa icon">
                                     </div>
@@ -1112,7 +1389,7 @@
                                         <span class="checkmark" style="top: 19px; left: 9px;"></span>
                                     </label>
                                 </div>
-                            <div class="container d-flex flex-row col-4">
+                            <div class="container d-flex flex-row payment-method-max-width-two m-0">
                                 <div class="paypal-icon-container p-1">
                                     <img src="/holiday-emotions/images/paypal-icon.svg" alt="paypal icon">
                                 </div>
@@ -1134,6 +1411,9 @@
             </div>
         </div>
     </section>
+    <button onclick="topFunction()" id="scroll-to-top-btn" title="Go to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
     <section class="">
         <div class="container-fluid mt-5 p-0 pb-5 hotel-awards-ratings-bg-color">
             <div class="container p-4 d-flex align-items-start justify-content-start flex-column align-items-lg-center flex-lg-row bottom-border flex-wrap">
@@ -1185,6 +1465,26 @@
         tileSize: 512,
         zoomOffset: -1
         }).addTo(soloHotelMap);
+    </script>
+    <script>
+        mybutton = document.getElementById("scroll-to-top-btn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 340 || document.documentElement.scrollTop > 340) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
     </script>
 </body>
 </html>
