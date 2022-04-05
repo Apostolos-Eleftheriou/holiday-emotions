@@ -1167,7 +1167,7 @@ input[type="range"]:active::-webkit-slider-thumb{
         padding: 0;
     }
     #hotel-carousel {
-        width: 405px;
+        width: 400px;
     }
     #hotel-carousel .carousel-inner {
         height: 212px;
