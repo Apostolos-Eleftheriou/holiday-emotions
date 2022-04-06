@@ -1486,6 +1486,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     height: 46px;
     padding: 7px;
     margin: 5px;
+    cursor: pointer;
 }
 
 .mini-car-results-container-first {
@@ -1498,6 +1499,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     font-weight: bold;
     color: #64697A;
     margin: 5px;
+    cursor: pointer;
 }
 
 .car-result-number {
@@ -1514,4 +1516,21 @@ input[type="range"]:active::-webkit-slider-thumb{
     font-size: 14px;
     color: #64697A;
     text-transform: uppercase;
+}
+
+.mini-car-results-container:hover, .mini-car-results-container-first:hover {
+    background-color: #DCDFE4;
+}
+
+.car-par {
+    font-size: 20px;
+}
+.car-sub-par {
+    font-size: 14px;
+    color: #64697A;
+}
+
+.car-page-list {
+    font-size: 16px;
+    color: #64697A;
 }
