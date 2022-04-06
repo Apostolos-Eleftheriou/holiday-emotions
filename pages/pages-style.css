@@ -1485,6 +1485,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     max-width: 220px;
     height: 46px;
     padding: 7px;
+    margin: 5px;
 }
 
 .mini-car-results-container-first {
@@ -1496,6 +1497,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     text-align: center;
     font-weight: bold;
     color: #64697A;
+    margin: 5px;
 }
 
 .car-result-number {
