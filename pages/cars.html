@@ -1338,428 +1338,84 @@
         </p>
     </div>
     <section>
-       <div class="container-fluid d-flex p-0 flex-row destination-max-width mt-lg-5">
+       <div class="container-fluid d-flex p-0 flex-row cars-max-width mt-lg-5">
            <div class="container-fluid p-0">
             <div class="container-fluid d-flex flex-row p-0">
-                <aside class="hotels-aside p-3 d-none d-lg-block">
-                    <h3 class="text-start fw-bold fs-6">FILTER YOUR RESULTS</h3>
-                    <div class="container budget">
-                        <p>Available Budget</p>
-                            <div class="slider-track-container">
-                                <div class="slider-track"></div>
-                                <input type="range" min="164" max="6155" value="165" id="slider-1" oninput="slideOne()">
-                                <input type="range" min="164" max="6155" value="6154" id="slider-2" oninput="slideTwo()">
-                            </div>
-                            <div class="values">
-                                <span id="range1">
-                                    0
-                                </span>
-                                <span>→</span>
-                                <span id="range2">
-                                    100€
-                                </span>
-                            </div>
-                    </div>
-                    <div class="filter-property-star-rating">
-                        <p class="rating-titles">Property Star Rating</p>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <i class="fa-solid fa-star"></i>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                             <p class="no-stars m-0">no stars</p>
-                        </label>
-                    </div>
-                    <div class="filter-property-meal-type mt-3">
-                        <p class="rating-titles m-0">Meal Type</p>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Room Only</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Bed & Breakfast</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Buffet Breakfast</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Breakfast</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Half Board</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Full Board</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">European Plan</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Self Catering</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">As Brochured</p>
-                        </label>
-                    </div>
-                    <div class="filter-property-star-rating mt-3">
-                        <p class="rating-titles m-0">Property Type</p>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Hotel</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Boutique Hotel</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Other</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Furnished Apartments</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Apartments</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">City Hotel</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Luxury Hotel</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Suites</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Suites & Apartments</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Design Hotel</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Historic Accommodation</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Luxury Beach Resort</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Luxury Suits</p>
-                        </label>
-                        <label class="container filter-checkbox-container">
-                            <input class="filter-checkbox" type="checkbox">
-                            <span class="checkmark"></span>
-                            <p class="meal-type-para m-0">Villa</p>
-                        </label>
-                    </div>
-                     <div class="destination-map-container mt-3">
-                         <p class="map-para">Map</p>
-                        <div id="destination-map"></div>
-                    </div>
-                </aside>
                 <div class="container-fluid p-0">
                     <div class="container-fluid pt-3 p-0 hotel-background-hover">
                     <div class="container-fluid d-flex flex-row hotels-border-bottom flex-wrap flex-xl-nowrap">
-                        <div class="container-fluid hotel-carousel">
-                            <div class="container-fluid p-0">
-                                <h1>
-                                    <a class="text-decoration-none hotel-link-hover" href="/holiday-emotions/pages/hotel.html"> A for Athens</a>
-                                </h1>
+                        <div class="p-2">
+                            <div class="cars-image-container" 
+                            style="background: url('/holiday-emotions/images/cars-aygo.png');
+                            width: 378px;
+                            height: 212px;
+                            background-size: cover;
+                            background-repeat: no-repeat;">
                             </div>
-                            <div class="container-fluid p-0 mb-3 d-flex flex-row justify-content-between">
-                                <div class="hotel-address d-flex flex-row align-items-center">
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="hotel-map-modal p-0" data-bs-toggle="modal" data-bs-target="#hotels-map-modal1">
-                                        <i class="fa-solid fa-location-pin"></i>
-                                        Themidos 2, Athina 105 54, Greece
-                                    </button>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="hotels-map-modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                            <h3 class="p-1">Map</h3>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div id="modal-map">
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hotel-map d-flex flex-row align-items-center">
-                                    <button type="button" class="hotel-show-map-modal p-0" data-bs-toggle="modal" data-bs-target="#hotels-map-modal1">
-                                        <i class="fa-solid fa-map"></i>
-                                        Show Map
-                                    </button>
-                                </div>
-                            </div>
-                                <div id="hotel-carousel-one" class="carousel slide" data-bs-ride="carousel">
-                                        <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="/holiday-emotions/images/bedroom-hotel.jpg" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="/holiday-emotions/images/bedroom-hotel.jpg" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="/holiday-emotions/images/lady-on-sea.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#hotel-carousel-one" data-bs-slide="prev">
-                                            <div class="hotel-carousel-overlay-left"></div>
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#hotel-carousel-one" data-bs-slide="next">
-                                            <div class="hotel-carousel-overlay-right"></div>
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                        </button>
-                                </div>
-                                <div class="container-fluid p-0 carousel-sub-text">
-                                    <p>This Hotel is available for <a href="#">STAY & DRIVE</a></p>
-                                    <p>This Hotel has <a href="#">3 Emotions</a> nearby</p>
-                                </div>
+                            <p class="car-stat-drive-para mt-3 text-center">This car is available for <a href="#">Stay & Drive</a></p>
                         </div>
-                        <div class="container-fluid p-0 hotels-max-width-fix">
-                            <div class="container d-flex flex-row justify-content-xl-end justify-content-center"> 
-                                <div class="property-star-rating">
-                                    <p class="property-para">Property Star Rating</p>
-                                        <div class="stars">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                </div>
-                                <div class="traveler-rating">
-                                    <p class="traveler-rating-para">Traveler Rating</p>
-                                    <div class="trip-advisor-rating">
-                                        <span class="trip-advisor-number-rating">4.5</span>
-                                        <span><img src="/holiday-emotions/images/tripadvisor.png" alt="trip advisor icon"></span>
-                                        <i class="fa-solid fa-circle"></i>
-                                        <i class="fa-solid fa-circle"></i>
-                                        <i class="fa-solid fa-circle"></i>
-                                        <i class="fa-solid fa-circle"></i>
-                                        <i class="fa-solid fa-circle-half-stroke"></i>
-                                    </div>
-                                    <p class="based-on">based on 1360 reviews</p>
-                                </div>
-                            </div>
+                        <div class="container-fluid p-0">
                             <div class="container-fluid hotels-border-bottom">
-                                <h4>A for Athens</h4>
-                                <p>Accomodation for 7 nights</p>
+                                <h1 class="cars-car-name">Toyota Aygo 1.0cc</h1>
                             </div>
                                 <div class="container-fluid p-0 mt-2">
                                     <div class="container-fluid p-0 d-flex flex-row align-items-center">
                                         <div class="hotel-address m-2 d-flex flex-row align-items-center">
-                                            <!-- Button trigger modal -->
-                                            <button type="button" class="hotel-map-modal p-0 text-uppercase hotel-view-text" data-bs-toggle="modal" data-bs-target="#hotels-modal-room-info1">
-                                                Acropolis View
-                                            </button>
-                                            <!-- Modal -->
-                                            <div class="modal fade" id="hotels-modal-room-info1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h3 class="p-1">Room Information</h3>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="container-fluid d-flex flex-row flex-wrap flex-lg-nowrap align-items-start justify-content-center p-2">
-                                                        <div class="modal-carousel-container">
-                                                            <p class="fs-4">Photos</p>
-                                                            <div id="facilities-modal-carousel-one" class="carousel slide" data-bs-ride="carousel">
-                                                                <div class="carousel-inner">
-                                                                <div class="carousel-item active">
-                                                                    <img src="/holiday-emotions/images/bedroom-hotel.jpg" class="d-block w-100" alt="...">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="/holiday-emotions/images/bedroom-hotel.jpg" class="d-block w-100" alt="...">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="/holiday-emotions/images/lady-on-sea.png" class="d-block w-100" alt="...">
-                                                                </div>
-                                                                </div>
-                                                                <button class="carousel-control-prev" type="button" data-bs-target="#facilities-modal-carousel-one" data-bs-slide="prev">
-                                                                    <div class="hotel-carousel-overlay-left"></div>
-                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Previous</span>
-                                                                </button>
-                                                                <button class="carousel-control-next" type="button" data-bs-target="#facilities-modal-carousel-one" data-bs-slide="next">
-                                                                    <div class="hotel-carousel-overlay-right"></div>
-                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Next</span>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="modal-facilities-container mt-2 mt-md-0">
-                                                            <ul>
-                                                                <p class="fs-4 m-0">Facilities</p>
-                                                                <li>Ατομική θέρμανση</li>
-                                                                <li>Βεράντα</li>
-                                                                <li>Μπαλκόνι</li>
-                                                                <li>Δορυφορική τηλεόραση</li>
-                                                                <li>Ανιχνευτής καπνού</li>
-                                                                <li>Υπηρεσία αφύπνισης</li>
-                                                                <li>Υπηρεσίες καθαριότητας</li>
-                                                                <li>Δωμάτιο με ηχομόνωση</li>
-                                                                <li>Καλωδιακή τηλεόραση</li>
-                                                                <li>Μίνι μπαρ</li>
-                                                                <li>Πρόσβαση για ΑΜΕΑ</li>
-                                                                <li>Επιφάνεια δωματίου (τμ)</li>
-                                                                <li>Επιπλέον κρεβάτια ΚΑΤΟΠΙΝ ΑΙΤΗΣΗΣ</li>
-                                                                <li>Μπουρνούζι</li>
-                                                                <li>Μικρή κουζίνα</li>
-                                                                <li>Καφετιέρα / Τσαγιέρα</li>
-                                                                <li>Πλυντήριο</li>
-                                                                <li>Κουζίνα</li>
-                                                                <li>Σετ μπάνιου</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                            </div>
+                                            <p class="car-booking-duration-para m-0">You are booking this car for <strong>6 days</strong></p>
                                         </div>
                                         <div class="user-container m-2">
-                                            <i class="fa-solid fa-user"></i>
-                                            <i class="fa-solid fa-user"></i>
+                                            <img src="/holiday-emotions/images/carnmotionlogo-black.png" alt="">
                                         </div>
                                     </div>
-                                    <div class="container-fluid p-0 d-flex flex-row align-items-start hotel-information flex-wrap flex-lg-nowrap">
-                                        <div class="container p-0 m-1 d-flex yellow-bg flex-row justify-content-center align-items-center">
-                                            <i class="fa-solid fa-mug-saucer"></i>
-                                            <i class="fa-solid fa-bed"></i>
-                                            <p class="m-2 text-uppercase">BNB</p>
+                                    <div class="container-fluid p-0 d-flex flex-row align-items-start hotel-information flex-wrap">
+                                        <div class="container p-0 m-1 d-flex cars-cat-a flex-row justify-content-center align-items-center">
+                                            <p class="m-2 text-uppercase text-white text-center">CATEGORY A</p>
                                         </div>
-                                        <div class="container m-1 d-flex yellow-bg flex-row align-items-center">
-                                            <i class="fa-brands fa-creative-commons-nc-eu m-1"></i>
-                                            <p class="m-0 text-uppercase">Non Refundable</p>
+                                        <div class="container p-0 m-1 d-flex cars-gray-bg flex-row justify-content-center align-items-center">
+                                            <div class="p-1">
+                                                <img src="/holiday-emotions/images/car-door.svg" alt="">
+                                            </div>
+                                            <p class="m-0 text-uppercase text-center">4 DOORS</p>
                                         </div>
-                                        <div class="container p-0 m-1 d-flex yellow-bg flex-row justify-content-center align-items-center">
-                                            <i class="fa-solid fa-circle-info m-1"></i>
-                                            <p class="m-0 text-uppercase">Room Info</p>
+                                        <div class="container p-0 m-1 d-flex cars-gray-bg flex-row justify-content-around align-items-center">
+                                            <div class="p-1">
+                                                <img src="/holiday-emotions/images/cars-person.svg" alt="">
+                                            </div>
+                                            <p class="m-0 text-uppercase text-center">4 PASSENGERS</p>
                                         </div>
-                                        <div class="container p-0 m-1 d-flex light-blue-bg flex-row justify-content-center align-items-center">
-                                            <p class="m-2 text-uppercase text-center">75€ HE Cash Back</p>
+                                        <div class="container p-0 m-1 d-flex cars-gray-bg flex-row justify-content-center align-items-center">
+                                            <div class="p-1">
+                                                <img src="/holiday-emotions/images/cars-bag.svg" alt="">
+                                            </div>
+                                            <p class="m-0 text-uppercase text-center">25 BAGS</p>
+                                        </div>
+                                        <div class="container p-0 m-1 d-flex cars-gray-bg flex-row justify-content-around align-items-center">
+                                            <div class="p-1">
+                                                <img src="/holiday-emotions/images/cars-transmition.svg" alt="">
+                                            </div>
+                                            <p class="m-0 text-uppercase text-center">MANUAL TRANSMITION</p>
+                                        </div>
+                                        <div class="container p-0 m-1 d-flex cars-gray-bg flex-row justify-content-around align-items-center">
+                                            <div class="p-1">
+                                                <img src="/holiday-emotions/images/cars-air-cond.svg" alt="">
+                                            </div>
+                                            <p class="m-0 text-uppercase text-center">AIR CONDITIONING</p>
+                                        </div>
+                                        <div class="container p-0 m-1 d-flex cars-yellow-bg flex-row justify-content-around align-items-center">
+                                            <p class="m-2 text-uppercase text-center">FULL INSURANCE & COVERAGE</p>
+                                        </div>
+                                        <div class="container m-1 d-flex cars-yellow-bg flex-row align-items-center">
+                                            <p class="m-2 text-uppercase text-center">FREE CANCELATION AVAILABLE</p>
+                                        </div>
+                                        <div class="container p-0 m-1 d-flex light-blue-bg flex-row justify-content-around align-items-center">
+                                            <p class="m-2 text-uppercase text-center">7€ HE Cash Back</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="container-fluid d-flex flex-row mt-3 p-0 align-items-start hotels-border-bottom">
                                     <div class="container p-0 d-flex flex-column align-items-center justify-content-center">
-                                        <p class="text-center">Price for 7 nights</p>
-                                        <p class="text-center fs-5 fw-bold">1.469,00 €</p>
-                                    </div>
-                                    <div class="container">
-                                        <button class="hotel-book-now text-uppercase">book now</button>
-                                    </div>
-                                </div>
-                                <div class="container-fluid p-0 mt-2">
-                                    <div class="container-fluid p-0 d-flex flex-row align-items-center">
-                                        <p class="m-2 text-uppercase hotel-view-text">Acropolis View</p>
-                                        <div class="user-container m-2">
-                                            <i class="fa-solid fa-user"></i>
-                                            <i class="fa-solid fa-user"></i>
-                                            <i class="fa-solid fa-user"></i>
-                                        </div>
-                                    </div>
-                                    <div class="container-fluid p-0 d-flex flex-row align-items-start hotel-information flex-wrap flex-lg-nowrap">
-                                        <div class="container p-0 m-1 d-flex yellow-bg flex-row justify-content-center align-items-center">
-                                            <i class="fa-solid fa-mug-saucer"></i>
-                                            <i class="fa-solid fa-bed"></i>
-                                            <p class="m-2 text-uppercase">BNB</p>
-                                        </div>
-                                        <div class="container m-1 d-flex yellow-bg flex-row align-items-center">
-                                            <i class="fa-brands fa-creative-commons-nc-eu m-1"></i>
-                                            <p class="m-0 text-uppercase">Non Refundable</p>
-                                        </div>
-                                        <div class="container p-0 m-1 d-flex yellow-bg flex-row justify-content-center align-items-center">
-                                            <i class="fa-solid fa-circle-info m-1"></i>
-                                            <p class="m-0 text-uppercase">Room Info</p>
-                                        </div>
-                                        <div class="container p-0 m-1 d-flex light-blue-bg flex-row justify-content-center align-items-center">
-                                            <p class="m-2 text-uppercase text-center">75€ HE Cash Back</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="container-fluid d-flex flex-row mt-3 p-0 align-items-start">
-                                    <div class="container p-0 d-flex flex-column align-items-center justify-content-center">
-                                        <p class="text-center">Price for 7 nights</p>
-                                        <p class="text-center fs-5 fw-bold">1.662,00 €</p>
+                                        <p class="text-center m-0">Price for 6 days</p>
+                                        <p class="text-center fs-5 fw-bold">137,00 €</p>
                                     </div>
                                     <div class="container">
                                         <button class="hotel-book-now text-uppercase">book now</button>
@@ -2545,98 +2201,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/holiday-emotions/slick/slick.min.js"></script>
     <script src="/holiday-emotions/script.js"></script>
-    <script>
-        var destMap = L.map('destination-map', {scrollWheelZoom:false}).setView([38.17,  20.56], 6);
-
-        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        maxZoom: 19,
-        id: 'mapbox/streets-v11',
-        tileSize: 512,
-        zoomOffset: -1
-        }).addTo(destMap);
-    </script>
-    <script>
-        var modalMap = L.map('modal-map', {scrollWheelZoom:false}).setView([38.17,  20.56], 6);
-
-        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        maxZoom: 19,
-        id: 'mapbox/streets-v11',
-        tileSize: 512,
-        zoomOffset: -1
-        }).addTo(modalMap);
-    </script>
-    <script>
-        window.onload = function(){
-        slideOne();
-        slideTwo();
-        mobileSlideOne();
-        mobileSlideTwo();
-        }
-
-        let sliderOne = document.getElementById("slider-1");
-        let sliderTwo = document.getElementById("slider-2");
-        let displayValOne = document.getElementById("range1");
-        let displayValTwo = document.getElementById("range2");
-        let minGap = 0;
-        let sliderTrack = document.querySelector(".slider-track");
-        let sliderMaxValue = document.getElementById("slider-1").max;
-
-        function slideOne(){
-        if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
-            sliderOne.value = parseInt(sliderTwo.value) - minGap;
-        }
-        displayValOne.textContent = sliderOne.value + ("€");
-        fillColor();
-        }
-        function slideTwo(){
-        if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
-            sliderTwo.value = parseInt(sliderOne.value) + minGap;
-        }
-        displayValTwo.textContent = sliderTwo.value + ("€");
-        fillColor();
-        }
-        function fillColor(){
-        percent1 = (sliderOne.value / sliderMaxValue) * 100;
-        percent2 = (sliderTwo.value / sliderMaxValue) * 100;
-        sliderTrack.style.background = `linear-gradient(to right, #DCDFE4 ${percent1}% , #6d717e ${percent1}% , #6d717e ${percent2}%, #DCDFE4 ${percent2}%)`;
-        }
-    </script>
-    <script>
-        // window.onload = function(){
-        // mobileSlideOne();
-        // mobileSlideTwo();
-        // }
-
-        let mobileSliderOne = document.getElementById("mobile-slider-1");
-        let mobileSliderTwo = document.getElementById("mobile-slider-2");
-        let mobileDisplayValOne = document.getElementById("mobile-range1");
-        let mobileDisplayValTwo = document.getElementById("mobile-range2");
-        let mobileMinGap = 0;
-        let mobileSliderTrack = document.querySelector(".mobile-slider-track");
-        let mobileSliderMaxValue = document.getElementById("mobile-slider-1").max;
-
-        function mobileSlideOne(){
-        if(parseInt(mobileSliderTwo.value) - parseInt(mobileSliderOne.value) <= mobileMinGap){
-            mobileSliderOne.value = parseInt(mobileSliderTwo.value) - mobileMinGap;
-        }
-        mobileDisplayValOne.textContent = mobileSliderOne.value + ("€");
-        mobileFillColor();
-        }
-        function mobileSlideTwo(){
-        if(parseInt(mobileSliderTwo.value) - parseInt(mobileSliderOne.value) <= mobileMinGap){
-            mobileSliderTwo.value = parseInt(mobileSliderOne.value) + mobileMinGap;
-        }
-        mobileDisplayValTwo.textContent = mobileSliderTwo.value + ("€");
-        mobileFillColor();
-        }
-        function mobileFillColor(){
-        mobilePercent1 = (mobileSliderOne.value / mobileSliderMaxValue) * 100;
-        mobilePercent2 = (mobileSliderTwo.value / mobileSliderMaxValue) * 100;
-        mobileSliderTrack.style.background = `linear-gradient(to right, #DCDFE4 ${mobilePercent1}% , #6d717e ${mobilePercent1}% , #6d717e ${mobilePercent2}%, #DCDFE4 ${mobilePercent2}%)`;
-        }
-    </script>
     <script>
         mybutton = document.getElementById("scroll-to-top-btn");
 
