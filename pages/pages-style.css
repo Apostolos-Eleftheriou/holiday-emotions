@@ -1465,3 +1465,51 @@ input[type="range"]:active::-webkit-slider-thumb{
     text-decoration: none;
     font-weight: bold;
 }
+
+.cars-search-results-bg-color {
+    background-color: rgba(27, 171, 226, 0.1);
+}
+
+.cars-search-results-list {
+    color: #64697A;
+    font-size: 16px;
+}
+
+.cars-search-results-list li {
+    margin-right: 5px;
+}
+
+.mini-car-results-container {
+    background-color: #EDEFF1;
+    border-radius: 23px;
+    max-width: 220px;
+    height: 46px;
+    padding: 7px;
+}
+
+.mini-car-results-container-first {
+    background-color: #EDEFF1;
+    border-radius: 23px;
+    width: 97px;
+    height: 46px;
+    padding: 7px;
+    text-align: center;
+    font-weight: bold;
+    color: #64697A;
+}
+
+.car-result-number {
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    font-size: 18px;
+    color: #64697A;
+    font-weight: bold;
+    width: 32px;
+    text-align: center;
+}
+
+.mini-car-results-container p {
+    font-size: 14px;
+    color: #64697A;
+    text-transform: uppercase;
+}
