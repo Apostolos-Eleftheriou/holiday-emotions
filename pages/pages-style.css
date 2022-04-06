@@ -1390,10 +1390,11 @@ input[type="range"]:active::-webkit-slider-thumb{
     .hotel-call-email {
         border-radius: 0 0 15px 15px;
     }
-    .hotel-mobile-payment-method-border {
-        border-radius: 15px;
-        border: solid 1px black;
-    }
+    
+}
+.hotel-mobile-payment-method-border {
+    border-radius: 15px;
+    border: solid 1px black;
 }
 
 .hotel-mobile-link-style {
@@ -1533,4 +1534,13 @@ input[type="range"]:active::-webkit-slider-thumb{
 .car-page-list {
     font-size: 16px;
     color: #64697A;
+}
+
+.car-extras-width {
+    width: 210px;
+}
+
+.car-border-up-down {
+    border-top: solid 1px #DCDFE4;
+    border-bottom: solid 1px #DCDFE4;
 }
