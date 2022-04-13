@@ -260,10 +260,11 @@ body {
 }
 
 .logo {
-    background: transparent url('../holiday-emotions/images/Group-66.png') 0% 0% no-repeat padding-box;
+    background: url('/holiday-emotions/images/he-logo-color.png') no-repeat;
     opacity: 1;
     width: 87px;
     height: 88px;
+    background-size: contain;
     background-position: center;
 }
 
