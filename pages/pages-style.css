@@ -1601,6 +1601,12 @@ input[type="range"]:active::-webkit-slider-thumb{
     font-weight: bold;
 }
 
+.carousel-activites-image-titles-smaller {
+    font-size: 18px;
+    color: #0074A0;
+    font-weight: bold;
+}
+
 .activities-carousel-icons {
     padding-right: 10px;
     color: #64697A;
@@ -1618,3 +1624,45 @@ input[type="range"]:active::-webkit-slider-thumb{
     font-weight: bold;
     color: #6d717e;
 }
+
+.activities-carousel-bg-color {
+    background-color: #E7F7FC;
+    padding: 20px 0 40px 0;
+}
+
+.hotel-book-now-smaller {
+    color: #2BA030;
+    font-size: 14px;
+    background-color: transparent;
+    padding: 5px 20px;
+    border-radius: 100px;
+    border: solid 1px #2BA030;
+    width: 136px;
+}
+
+.hotel-book-now-smaller:hover {
+    background-color: #b7ffa4;
+}
+
+.activities-carousel-small-cta {
+    width: 250px;
+    padding: 5px 5px 5px 15px;
+}
+
+.activities-carousel-title {
+    font-size: 30px;
+    color: black;
+    font-weight: 100;
+}
+
+.carousel-image-containers {
+    width: 790px;
+}
+
+/* .activities-small-width {
+    width: 400px;
+} */
+
+/* .carousel-image-containers-small {
+    width: 400px !important;
+} */
