@@ -1622,7 +1622,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 .activities-he-cashback {
     font-size: 10px;
     font-weight: bold;
-    color: #6d717e;
+    color: #0074A0;
 }
 
 .activities-carousel-bg-color {
@@ -1659,10 +1659,12 @@ input[type="range"]:active::-webkit-slider-thumb{
     width: 790px;
 }
 
-/* .activities-small-width {
-    width: 400px;
-} */
+.activities-card-width {
+    width: 320px;
+}
 
-/* .carousel-image-containers-small {
-    width: 400px !important;
-} */
+.activities-card-title {
+    font-size: 20px;
+    color: #64697A;
+    padding: 10px 0 20px 0;
+}
