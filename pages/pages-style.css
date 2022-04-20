@@ -1670,22 +1670,22 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 
 .activities-bottom-page-width-change {
-    width: 323px;
+    width: 295px;
     border-radius: 15px;
 }
 
-.tourism-biz-title {
+.tourism-biz-title-green {
     font-size: 18px;
     font-weight: bold;
     color: #CEF7B4;
 }
 
-.tourism-biz-para {
+.tourism-biz-para-green {
     font-size: 14px;
     color: #CEF7B4;
 }
 
-.tourism-biz-btn {
+.tourism-biz-btn-green {
     width: 136px;
     height: 31px;
     color: #CEF7B4;
@@ -1695,7 +1695,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     font-size: 14px;
 }
 
-.tourism-biz-btn:hover {
+.tourism-biz-btn-green:hover {
     background-color: #28ca00;
 }
 
@@ -1703,6 +1703,36 @@ input[type="range"]:active::-webkit-slider-thumb{
     background-color: #2BA030;
 }
 
+.activities-orange-bg {
+    background-color: #EFA00B;
+}
+
 .acitivities-logo-width {
     width: 125px;
+}
+
+.tourism-biz-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.tourism-biz-para {
+    font-size: 14px;
+    color: #000000;
+}
+
+.tourism-biz-btn {
+    width: 136px;
+    height: 31px;
+    color: #000000;
+    background-color: transparent;
+    border-radius: 15px;
+    border: solid 1px black;
+    font-size: 14px;
+}
+
+.tourism-biz-btn:hover {
+    background-color: #000;
+    color: white;
 }
