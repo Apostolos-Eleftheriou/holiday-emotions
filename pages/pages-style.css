@@ -1555,3 +1555,42 @@ input[type="range"]:active::-webkit-slider-thumb{
 .activities-logo-width {
     width: 865px;
 }
+
+.activities-icons-selection {
+    max-width: 900px;
+}
+
+.activities-icons-selection .fa-map,
+.activities-icons-selection .fa-location-pin,
+.activities-icons-selection .fa-star,
+.activities-icons-selection .fa-lightbulb {
+    color: white;
+    font-size: 12px;
+    margin: 0 10px 0 0;
+}
+
+.activities-btn-selection {
+    background-color: transparent;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: solid 1px white;
+    border-radius: 14px;
+    padding: 5px 11px;
+    margin-right: 7px;
+}
+
+#activities-select {
+    background-color: transparent;
+    border: solid 1px white;
+    border-radius: 14px;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+#activities-select option {
+    color: black;
+}
