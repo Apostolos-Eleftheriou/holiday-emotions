@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Emotions</title>
+    <link rel="stylesheet" href="/holiday-emotions/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/holiday-emotions/slick/slick.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+   <link rel="stylesheet" href="/holiday-emotions/style.css">
+   <link rel="stylesheet" href="/holiday-emotions/pages/pages-style.css">
+</head>
+<body>
+    <header class="container-fluid destinations-header p-0">
+        <div class="d-none d-lg-flex d-flex justify-content-around align-items-center top-menu flex-wrap">
+            <div class="p-2 ">
+                <a href="/holiday-emotions/index.html"><div class="logo"></div></a>
+            </div>
+            <div class="p-2">
+                <div class="search-box">
+                    <input class="search-txt" type="text" name="search" placeholder="SEARCH">
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+            <div class="p-3">
+                <a class="header-links" href="#">
+                    <img src="/holiday-emotions/images/phone.png" alt="phone"> +30 210 22 08 297
+                </a>
+            </div>
+            <div class="p-3">
+                <a class="header-links" href="#">
+                    <img src="/holiday-emotions/images/business-center.png" alt="business-center"> Small Business
+                </a>
+            </div>
+            <div class="p-3">
+                <a class="header-links" href="#">
+                    <img src="/holiday-emotions/images/cart.png" alt="cart"> Cart
+                </a>
+            </div>
+            <div class="p-3">
+                <a class="header-links" href="#">
+                    <img src="/holiday-emotions/images/login.png" alt="login-icon"> Login
+                </a>
+            </div>
+            <div class="p-3">
+                <button class="sign-up-btn">Sign up</button>
+            </div>
+            <div class="p-3">
+                <a class="header-links" href="#">
+                    <img src="/holiday-emotions/images/on-off.png" alt="on-off-icon"> EN
+                </a>
+            </div>
+            <div class="p-3">
+                <a class="social-media-icons" href="#">
+                    <i class="fab fa-facebook-f"></i></a>
+                <a class="social-media-icons" href="#" target="_blank">
+                    <i class="fab fa-instagram"></i></a>
+                <a class="social-media-icons" href="#" target="_blank">
+                    <i class="fab fa-youtube"></i></a>
+                <a class="social-media-icons" href="#" target="_blank">
+                    <i class="fab fa-twitter"></i></a>
+                <a class="social-media-icons" href="#" target="_blank">
+                    <i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+      </div>
+      <nav class="container-fluid p-0 d-md-flex d-lg-none d-flex flex-row mobile-nav" style="min-height: 11vh;">
+        <div class="container-fluid logo-search-container d-flex justify-content-around align-items-start">
+            <a href="/holiday-emotions/index.html"><div class="logo-mobile"></div></a>
+            <div class="mobile-input-container mt-1" style="background-color: #EFA00BE5;">
+                <i class="fa-solid fa-magnifying-glass" style="color: #00000067;"></i>
+                <input type="text" class="mobile-input hotels-input-change">
+            </div>
+            <div class="container-fluid m-0 mt-2 p-0 d-flex align-items-center justify-content-center filter-icon-sizing">
+                <i class="fa-solid fa-filter mobile-filters"></i>
+            </div>
+            <div class="container-fluid m-0 mt-2 p-0 d-flex align-items-center justify-content-center filter-icon-sizing">
+                <i class="fa-solid fa-magnifying-glass hotels-input-mag-glass mobile-multi-search"></i>
+            </div>
+        </div>
+            <ul class="nav-links p-0">
+                <!-- <div class="mobile-nav-top-grp"> -->
+                    <div class="nav-bar-container-one container p-0 d-flex flex-row flex-wrap align-items-center justify-content-start">
+                        <div class="d-flex align-items-center mob-menu-height">
+                            <a class="header-links-mobile" href="#">
+                                <img class="img-space-fix" src="/holiday-emotions/images/on-off.png" alt="on-off-icon"> EN
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center mob-menu-height">
+                            <a class="header-links-mobile" href="#">
+                                <img class="img-space-fix" src="/holiday-emotions/images/cart.png" alt="cart"> Cart
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center mob-menu-height">
+                            <a class="header-links-mobile" href="#">
+                                <img class="img-space-fix" src="/holiday-emotions/images/login.png" alt="login-icon"> Login
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center mob-menu-height">
+                            <button class="sign-up-btn-mobile">Sign up</button>
+                        </div>
+                    </div>
+                    <div class="nav-bar-container-two d-flex flex-row align-items-center justify-content-start">
+                        <div class="mob-menu-height d-flex align-items-center">
+                            <a class="header-links-mobile" href="#">
+                                <img class="img-space-fix" src="/holiday-emotions/images/phone.png" alt="phone"> +30 210 22 08 297
+                            </a>
+                        </div>
+                        <div class="mob-menu-height d-flex align-items-center">
+                            <a class="header-links-mobile" href="#">
+                                <img class="img-space-fix" src="/holiday-emotions/images/business-center.png" alt="business-center"> Small Business
+                            </a>
+                        </div>
+                    </div>
+            <!-- </div> -->
+                <div class="mobile-nav-bottom-grp d-flex flex-column justify-content-around align-items-center">
+                    <div class="nav-bar-container-three">
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Activites</a></li>
+                        <li><a href="#">Dental Holidays</a></li>
+                        <li><a href="#">Gastronomy</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Shopping</a></li>
+                    </div>
+                    <div class="nav-bar-container-four">
+                        <a class="social-media-icons" href="#">
+                            <i class="fab fa-facebook-f"></i></a>
+                        <a class="social-media-icons" href="#" target="_blank">
+                            <i class="fab fa-instagram"></i></a>
+                        <a class="social-media-icons" href="#" target="_blank">
+                            <i class="fab fa-youtube"></i></a>
+                        <a class="social-media-icons" href="#" target="_blank">
+                            <i class="fab fa-twitter"></i></a>
+                        <a class="social-media-icons" href="#" target="_blank">
+                            <i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </ul>
+            <div class="burger d-md-flex d-lg-none d-flex flex-column justify-content-center align-items-center">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="hotels-mobile p-0">
+                <div class="mobile-nav-top-grp container-fluid p-0">
+                    <div class="nav-bar-container-one container-fluid p-0 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                        <div class="d-flex align-items-center flex-column overlay-hotel">
+                            <i class="fas fa-hotel"></i>
+                            HOTELS
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center close-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-nav-bottom-grp d-flex flex-column justify-content-around align-items-center">
+                    <div class="hotels-overlay-container container d-flex flex-wrap align-items-center justify-content-start">
+                        <div class="nav-location">
+                            <span><i class="fa-solid fa-location-pin"></i></span>
+                            <input class="nav-location-txt" type="text" name="nav-location-text" placeholder="City, Place, Property">
+                        </div>
+                        <div class="nav-checkin">
+                            <span><i class="fas fa-calendar-alt"></i></span>
+                            <input class="nav-checkin-txt" type="text" name="nav-checkin-text" placeholder="Check in - Check out">
+                        </div>
+                        <div class="hotels-overlay-dropdown-menu">
+                            <div class="btn-group dropup p-3">
+                                    <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Rooms
+                                    </button>
+                                    <div class="dropdown-menu">
+                                    <ul>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            <div class="btn-group dropup p-3">
+                                    <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Adults
+                                    </button>
+                                    <div class="dropdown-menu">
+                                    <ul>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            <div class="btn-group dropup p-3">
+                                    <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Children
+                                    </button>
+                                    <div class="dropdown-menu">
+                                    <ul>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            <div class="btn-group dropup p-3">
+                                    <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Order by
+                                    </button>
+                                    <div class="dropdown-menu">
+                                    <ul>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="hotels-overlay-search-btn-container pb-5 text-center">
+                        <button class="hotels-overlay-search-btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                    </div>
+                </div>
+            </ul>
+            <ul class="cars-mobile p-0">
+                <div class="mobile-nav-top-grp container-fluid p-0">
+                    <div class="nav-bar-container-one container-fluid p-0 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                        <div class="d-flex align-items-center flex-column overlay-cars">
+                            <i class="fas fa-car-alt"></i>
+                            CARS
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center close-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-nav-bottom-grp d-flex flex-column justify-content-around align-items-center">
+                    <div class="cars-overlay-container container d-flex flex-column flex-wrap align-items-start justify-content-around">
+                        <div class="nav-location">
+                            <span><i class="fa-solid fa-location-pin"></i></span>
+                            <p class="m-0 pad-left">Pickup Location</p>
+                        </div>
+                        <div class="pickup-container container p-0 d-flex flex-wrap align-items-center justify-content-start">
+                            <div class="nav-country p-2">
+                                <select class="location-menu-style" name="country" id="country">
+                                    <option value="Greece">GR</option>
+                                    <option value="Belgium">BE</option>
+                                    <option value="Bulgaria">BG</option>
+                                    <option value="Czech Republic">CZ</option>
+                                    <option value="Denmark">DK</option>
+                                    <option value="Germany">DE</option>
+                                    <option value="Estonia">EE</option>
+                                    <option value="Ireland">IE</option>
+                                    <option value="Spain">ES</option>
+                                    <option value="France">FR</option>
+                                    <option value="Croatia">HR</option>
+                                    <option value="Italy">IT</option>
+                                    <option value="Cyprus">CY</option>
+                                    <option value="Latvia">LV</option>
+                                    <option value="Lithuania">LT</option>
+                                    <option value="Luxembourg">LU</option>
+                                    <option value="Hungary">HU</option>
+                                    <option value="Malta">MT</option>
+                                    <option value="Netherlands">NL</option>
+                                    <option value="Austria">AT</option>
+                                    <option value="Poland">PL</option>
+                                    <option value="Portugal">PT</option>
+                                    <option value="Romania">RO</option>
+                                    <option value="Slovenia">SI</option>
+                                    <option value="Slovensko">SK</option>
+                                    <option value="Finland">FI</option>
+                                    <option value="Sweden">SE</option>
+                                </select>
+                            </div>
+                                <div class="nav-area p-2">
+                                        <select class="location-menu-style" name="area" id="area">
+                                            <option value="" disabled selected>AREA</option>
+                                            <option value="Attica">Attica</option>
+                                            <option value="Thessaloniki">Thessaloniki</option>
+                                            <option value="Volos">Volos</option>
+                                            <option value="Kefalonia">Kefalonia</option>
+                                            <option value="Rethymno">Rethymno</option>
+                                        </select>
+                                </div>
+                                <div class="nav-city">
+                                    <select class="location-menu-style-city" name="city" id="city">
+                                    <option value="" disabled selected> </option>
+                                        <option value="PH">PH</option>
+                                        <option value="PH">PH</option>
+                                        <option value="PH">PH</option>
+                                        <option value="PH">PH</option>
+                                        <option value="PH">PH</option>
+                                    </select>
+                                </div>
+                                    <div class="nav-pickup p-2">
+                                        <span><i class="fas fa-calendar-alt"></i></span>
+                                        <input class="nav-pickup-txt location-menu-style" type="text" name="nav-pickup" placeholder="Pickup">
+                                    </div>
+                                    <div class="nav-dropoff p-2">
+                                        <span><i class="fas fa-calendar-alt"></i></span>
+                                        <input class="nav-dropoff-txt location-menu-style" type="text" name="nav-dropoff" placeholder="Drop off">
+                                    </div>
+                                    <div class="dropoff-toanother p-2">
+                                        <div class="form-check d-flex justify-content-center align-items-center">
+                                            <input class="form-check-input mr-2 dr-off" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label label-width" for="flexCheckDefault">
+                                            Drop Off <br> to another location
+                                            </label>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="nav-location">
+                                <span><i class="fa-solid fa-location-pin"></i></span>
+                                <p class="m-0 pad-left">Return Location</p>
+                            </div>
+                            <div class="return-container container d-flex flex-wrap align-items-center justify-content-start">
+                                <div class="nav-area">
+                                    <select class="location-menu-style" name="area" id="area">
+                                        <option value="" disabled selected>AREA</option>
+                                        <option value="Attica">Attica</option>
+                                        <option value="Thessaloniki">Thessaloniki</option>
+                                        <option value="Volos">Volos</option>
+                                        <option value="Kefalonia">Kefalonia</option>
+                                        <option value="Rethymno">Rethymno</option>
+                                    </select>
+                                </div>
+                                <div class="nav-city">
+                                    <select class="location-menu-style-city" name="city" id="city">
+                                    <option value="" disabled selected> </option>
+                                        <option value="PH">PH</option>
+                                        <option value="PH">PH</option>
+                                        <option value="PH">PH</option>
+                                        <option value="PH">PH</option>
+                                        <option value="PH">PH</option>
+                                    </select>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="cars-overlay-search-btn-container pb-5 text-center">
+                        <button class="cars-overlay-search-btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                    </div>
+                </div>
+            </ul>
+            <ul class="stay-drive-mobile p-0">
+                <div class="mobile-nav-top-grp container-fluid p-0">
+                    <div class="nav-bar-container-one container-fluid p-0 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                        <div class="d-flex align-items-center flex-column overlay-stay-drive">
+                            <div class="stay-bundle">
+                                <i class="fas fa-bed"></i>
+                                <i class="fas fa-car-alt"></i>
+                            </div>
+                              STAY & DRIVE
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center close-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-nav-bottom-grp d-flex flex-column justify-content-around align-items-center">
+                    <div class="stay-drive-overlay-container container d-flex flex-wrap align-items-center justify-content-start">
+                        <div class="nav-location">
+                            <span><i class="fa-solid fa-location-pin"></i></span>
+                            <input class="nav-location-txt" type="text" name="nav-location-text" placeholder="City, Place, Property">
+                        </div>
+                        <div class="nav-checkin">
+                            <span><i class="fas fa-calendar-alt"></i></span>
+                            <input class="nav-checkin-txt" type="text" name="nav-checkin-text" placeholder="Check in - Check out">
+                        </div>
+                        <div class="stay-drive-overlay-dropdown-menu">
+                            <div class="btn-group dropup p-3">
+                                    <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Rooms
+                                    </button>
+                                    <div class="dropdown-menu">
+                                    <ul>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            <div class="btn-group dropup p-3">
+                                    <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Adults
+                                    </button>
+                                    <div class="dropdown-menu">
+                                    <ul>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            <div class="btn-group dropup p-3">
+                                    <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Children
+                                    </button>
+                                    <div class="dropdown-menu">
+                                    <ul>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            <div class="btn-group dropup p-3">
+                                    <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Order by
+                                    </button>
+                                    <div class="dropdown-menu">
+                                    <ul>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                        <li class="bottom-nav-list">test</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="stay-drive-overlay-search-btn-container pb-5 text-center">
+                        <button class="stay-drive-overlay-search-btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                    </div>
+                </div>
+            </ul>
+            <ul class="emotions-mobile p-0">
+                <div class="mobile-nav-top-grp container-fluid p-0">
+                    <div class="nav-bar-container-one container-fluid p-0 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                        <div class="d-flex align-items-center flex-column overlay-emotions">
+                            <i class="far fa-grin"></i>
+                            EMOTIONS
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center close-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-nav-bottom-grp d-flex flex-column justify-content-around align-items-center">
+                    <div class="emotions-overlay-container container d-flex flex-wrap align-items-center justify-content-start">
+                            <div class="nav-location">
+                                <span><i class="fa-solid fa-location-pin"></i></span>
+                                <input class="nav-location-txt" type="text" name="nav-location-text" placeholder="City / Area">
+                            </div>
+                            <div class="all-places">
+                                <div class="form-check d-flex justify-content-center align-items-center">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label label-width" for="flexCheckDefault">
+                                      All Places
+                                    </label>
+                                  </div>
+                            </div>
+                                <div class="type">
+                                    <select class="location-menu-style-city" name="type" id="type">
+                                        <option value="ph" disabled selected> Type</option>
+                                        <option value="ph">ph</option>
+                                        <option value="ph">ph</option>
+                                        <option value="ph">ph</option>
+                                    </select>
+                                </div>
+                                <div class="all-types">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label label-width" for="flexCheckDefault">
+                                          All Types
+                                        </label>
+                                      </div>
+                                </div>
+                                <div class="available-dates">
+                                    <span><i class="fa-solid fa-calendar-alt"></i></span>
+                                    <input class="nav-available-dates" type="text" name="available-dates" placeholder="Available Dates">
+                                </div>
+                    </div>
+                    <div class="emotions-overlay-search-btn-container pb-5 text-center">
+                        <button class="emotions-overlay-search-btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                    </div>
+                </div>
+            </ul>
+            <ul class="filters-mobile p-0">
+                <div class="mobile-nav-top-grp container-fluid p-0">
+                    <div class="nav-bar-container-one container-fluid p-0 d-flex flex-row flex-wrap align-items-center justify-content-end">
+                        <div class="d-flex align-items-center justify-content-center close-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <aside class="mobile-filter-aside">
+                    <h3 class="text-start fw-bold fs-6">FILTER YOUR RESULTS</h3>
+                    <div class="container budget">
+                        <p>Available Budget</p>
+                            <div class="mobile-slider-track-container">
+                                <div class="mobile-slider-track"></div>
+                                <input type="range" min="165" max="6154" value="165" id="mobile-slider-1" oninput="mobileSlideOne()">
+                                <input type="range" min="165" max="6154" value="6154" id="mobile-slider-2" oninput="mobileSlideTwo()">
+                            </div>
+                            <div class="mobile-values">
+                                <span id="mobile-range1">
+                                    0
+                                </span>
+                                <span>→</span>
+                                <span id="mobile-range2">
+                                    100€
+                                </span>
+                            </div>
+                    </div>
+                    <div class="filter-property-star-rating">
+                        <p class="rating-titles">Property Star Rating</p>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <i class="fa-solid fa-star"></i>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                             <p class="no-stars m-0">no stars</p>
+                        </label>
+                    </div>
+                    <div class="filter-property-meal-type mt-3">
+                        <p class="rating-titles m-0">Meal Type</p>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Room Only</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Bed & Breakfast</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Buffet Breakfast</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Breakfast</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Half Board</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Full Board</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">European Plan</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Self Catering</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">As Brochured</p>
+                        </label>
+                    </div>
+                    <div class="filter-property-star-rating mt-3">
+                        <p class="rating-titles m-0">Property Type</p>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Hotel</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Boutique Hotel</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Other</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Furnished Apartments</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Apartments</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">City Hotel</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Luxury Hotel</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Suites</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Suites & Apartments</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Design Hotel</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Historic Accommodation</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Luxury Beach Resort</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Luxury Suits</p>
+                        </label>
+                        <label class="container filter-checkbox-container">
+                            <input class="filter-checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="meal-type-para m-0">Villa</p>
+                        </label>
+                    </div>
+                </aside>
+            </ul>
+            <ul class="hotels-multi-search-mobile p-0">
+                <div class="mobile-nav-top-grp container-fluid p-0">
+                    <div class="nav-bar-container-one container-fluid p-0 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                        <div class="d-flex align-items-center flex-column justify-content-around">
+                            <ul class="nav d-flex justify-content-around" id="hotels-multi-search-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active d-flex flex-column align-items-center hotels-multi-search-btns" id="hotels-multi-search-hotel-tab" data-bs-toggle="tab" data-bs-target="#hotels-multi-search-hotel" type="button" role="tab" aria-controls="home" aria-selected="true">
+                                      <i class="fas fa-hotel"></i>
+                                        HOTELS
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link d-flex flex-column align-items-center hotels-multi-search-btns" id="hotels-multi-search-cars-tab" data-bs-toggle="tab" data-bs-target="#hotels-multi-search-cars" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                      <i class="fas fa-car-alt"></i>
+                                        CARS
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link d-flex flex-column align-items-center hotels-multi-search-btns" id="hotels-multi-search-emotions-tab" data-bs-toggle="tab" data-bs-target="#hotels-multi-search-emotions" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                                      <i class="far fa-grin"></i>
+                                        EMOTIONS
+                                    </button>
+                                </li>
+                              </ul>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center close-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-nav-bottom-grp d-flex flex-column justify-content-around align-items-center">
+                    <div class="tab-content" id="hotels-multi-search-tab-content">
+                        <div class="tab-pane fade show active" id="hotels-multi-search-hotel" role="tabpanel" aria-labelledby="hotels-multi-search-hotel-tab">
+                            <div class="hotels-overlay-container container d-flex flex-wrap align-items-center justify-content-start">
+                                <div class="nav-location">
+                                    <span><i class="fa-solid fa-location-pin"></i></span>
+                                    <input class="nav-location-txt" type="text" name="nav-location-text" placeholder="City, Place, Property">
+                                </div>
+                                <div class="nav-checkin">
+                                    <span><i class="fas fa-calendar-alt"></i></span>
+                                    <input class="nav-checkin-txt" type="text" name="nav-checkin-text" placeholder="Check in - Check out">
+                                </div>
+                                <div class="hotels-overlay-dropdown-menu">
+                                    <div class="btn-group dropup p-3">
+                                            <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Rooms
+                                            </button>
+                                            <div class="dropdown-menu">
+                                            <ul>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    <div class="btn-group dropup p-3">
+                                            <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Adults
+                                            </button>
+                                            <div class="dropdown-menu">
+                                            <ul>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    <div class="btn-group dropup p-3">
+                                            <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Children
+                                            </button>
+                                            <div class="dropdown-menu">
+                                            <ul>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    <div class="btn-group dropup p-3">
+                                            <button type="button" class="btn  dropdown-toggle bottom-nav-buttons" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Order by
+                                            </button>
+                                            <div class="dropdown-menu">
+                                            <ul>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                                <li class="bottom-nav-list">test</li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="hotels-overlay-search-btn-container p-5 text-center">
+                                <button class="hotels-overlay-search-btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="hotels-multi-search-cars" role="tabpanel" aria-labelledby="hotels-multi-search-cars-tab">
+                            <div class="mobile-nav-bottom-grp d-flex flex-column justify-content-around align-items-center">
+                                <div class="cars-overlay-container container d-flex flex-column flex-wrap align-items-start justify-content-around">
+                                    <div class="nav-location">
+                                        <span><i class="fa-solid fa-location-pin"></i></span>
+                                        <p class="m-0 pad-left">Pickup Location</p>
+                                    </div>
+                                    <div class="pickup-container container p-0 d-flex flex-wrap align-items-center justify-content-start">
+                                        <div class="nav-country p-2">
+                                            <select class="location-menu-style" name="country" id="country">
+                                                <option value="Greece">GR</option>
+                                                <option value="Belgium">BE</option>
+                                                <option value="Bulgaria">BG</option>
+                                                <option value="Czech Republic">CZ</option>
+                                                <option value="Denmark">DK</option>
+                                                <option value="Germany">DE</option>
+                                                <option value="Estonia">EE</option>
+                                                <option value="Ireland">IE</option>
+                                                <option value="Spain">ES</option>
+                                                <option value="France">FR</option>
+                                                <option value="Croatia">HR</option>
+                                                <option value="Italy">IT</option>
+                                                <option value="Cyprus">CY</option>
+                                                <option value="Latvia">LV</option>
+                                                <option value="Lithuania">LT</option>
+                                                <option value="Luxembourg">LU</option>
+                                                <option value="Hungary">HU</option>
+                                                <option value="Malta">MT</option>
+                                                <option value="Netherlands">NL</option>
+                                                <option value="Austria">AT</option>
+                                                <option value="Poland">PL</option>
+                                                <option value="Portugal">PT</option>
+                                                <option value="Romania">RO</option>
+                                                <option value="Slovenia">SI</option>
+                                                <option value="Slovensko">SK</option>
+                                                <option value="Finland">FI</option>
+                                                <option value="Sweden">SE</option>
+                                            </select>
+                                        </div>
+                                            <div class="nav-area p-2">
+                                                    <select class="location-menu-style" name="area" id="area">
+                                                        <option value="" disabled selected>AREA</option>
+                                                        <option value="Attica">Attica</option>
+                                                        <option value="Thessaloniki">Thessaloniki</option>
+                                                        <option value="Volos">Volos</option>
+                                                        <option value="Kefalonia">Kefalonia</option>
+                                                        <option value="Rethymno">Rethymno</option>
+                                                    </select>
+                                            </div>
+                                            <div class="nav-city">
+                                                <select class="location-menu-style-city" name="city" id="city">
+                                                <option value="" disabled selected> </option>
+                                                    <option value="PH">PH</option>
+                                                    <option value="PH">PH</option>
+                                                    <option value="PH">PH</option>
+                                                    <option value="PH">PH</option>
+                                                    <option value="PH">PH</option>
+                                                </select>
+                                            </div>
+                                                <div class="nav-pickup p-2">
+                                                    <span><i class="fas fa-calendar-alt"></i></span>
+                                                    <input class="nav-pickup-txt location-menu-style" type="text" name="nav-pickup" placeholder="Pickup">
+                                                </div>
+                                                <div class="nav-dropoff p-2">
+                                                    <span><i class="fas fa-calendar-alt"></i></span>
+                                                    <input class="nav-dropoff-txt location-menu-style" type="text" name="nav-dropoff" placeholder="Drop off">
+                                                </div>
+                                                <div class="dropoff-toanother p-2">
+                                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                                        <input class="form-check-input mr-2 dr-off" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label label-width" for="flexCheckDefault">
+                                                        Drop Off <br> to another location
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="nav-location">
+                                            <span><i class="fa-solid fa-location-pin"></i></span>
+                                            <p class="m-0 pad-left">Return Location</p>
+                                        </div>
+                                        <div class="return-container container d-flex flex-wrap align-items-center justify-content-start">
+                                            <div class="nav-area">
+                                                <select class="location-menu-style" name="area" id="area">
+                                                    <option value="" disabled selected>AREA</option>
+                                                    <option value="Attica">Attica</option>
+                                                    <option value="Thessaloniki">Thessaloniki</option>
+                                                    <option value="Volos">Volos</option>
+                                                    <option value="Kefalonia">Kefalonia</option>
+                                                    <option value="Rethymno">Rethymno</option>
+                                                </select>
+                                            </div>
+                                            <div class="nav-city">
+                                                <select class="location-menu-style-city" name="city" id="city">
+                                                <option value="" disabled selected> </option>
+                                                    <option value="PH">PH</option>
+                                                    <option value="PH">PH</option>
+                                                    <option value="PH">PH</option>
+                                                    <option value="PH">PH</option>
+                                                    <option value="PH">PH</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="cars-overlay-search-btn-container p-5 text-center">
+                                    <button class="cars-overlay-search-btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="hotels-multi-search-emotions" role="tabpanel" aria-labelledby="hotels-multi-search-emotions-tab">
+                            <div class="mobile-nav-bottom-grp d-flex flex-column justify-content-around align-items-center">
+                                <div class="emotions-overlay-container container d-flex flex-wrap align-items-center justify-content-start">
+                                        <div class="nav-location">
+                                            <span><i class="fa-solid fa-location-pin"></i></span>
+                                            <input class="nav-location-txt" type="text" name="nav-location-text" placeholder="City / Area">
+                                        </div>
+                                        <div class="all-places">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label label-width" for="flexCheckDefault">
+                                                  All Places
+                                                </label>
+                                              </div>
+                                        </div>
+                                            <div class="type">
+                                                <select class="location-menu-style-city" name="type" id="type">
+                                                    <option value="ph" disabled selected> Type</option>
+                                                    <option value="ph">ph</option>
+                                                    <option value="ph">ph</option>
+                                                    <option value="ph">ph</option>
+                                                </select>
+                                            </div>
+                                            <div class="all-types">
+                                                <div class="form-check d-flex justify-content-center align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label label-width" for="flexCheckDefault">
+                                                      All Types
+                                                    </label>
+                                                  </div>
+                                            </div>
+                                            <div class="available-dates">
+                                                <span><i class="fa-solid fa-calendar-alt"></i></span>
+                                                <input class="nav-available-dates" type="text" name="available-dates" placeholder="Available Dates">
+                                            </div>
+                                </div>
+                                <div class="emotions-overlay-search-btn-container p-5 text-center">
+                                    <button class="emotions-overlay-search-btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-fluid d-flex d-none d-lg-flex justify-content-center align-items-center flex-wrap p-1">
+        <div class="destinations-container p-2 d-flex justify-content-center align-items-center">
+            <div class="destinations-icon-container">
+                <img src="/holiday-emotions/images/destinations-icon.svg" alt="destinations-icon">
+            </div>
+            <a href="#" class="second-links">Destinations</a>
+        </div>
+        <div class="activities-container p-2 d-flex justify-content-center align-items-center">
+            <div class="activities-icon-container">
+                <img src="/holiday-emotions/images/activities-icon.svg" alt="activities-icon">
+            </div>
+            <a href="#" class="second-links">Activities</a>
+        </div>
+        <div class="dental-holidays-container p-2 d-flex justify-content-center align-items-center">
+            <div class="dental-holidays-icon-container">
+                <img src="/holiday-emotions/images/dental-holidays-icon.svg" alt="dental-holidays-icon">
+            </div>
+            <a href="#" class="second-links">Dental Holidays</a>
+        </div>
+        <div class="gastronomy-container p-2 d-flex justify-content-center align-items-center">
+            <div class="gastronomy-icon-container">
+                <img src="/holiday-emotions/images/gastronomy-icon.svg" alt="gastronomy-icon">
+            </div>
+            <a href="#" class="second-links">Gastronomy</a>
+        </div>
+        <div class="entertainment-container p-2 d-flex justify-content-center align-items-center">
+            <div class="entertainment-icon-container">
+                <img src="/holiday-emotions/images/entertainment-icon.svg" alt="entertainment-icon">
+            </div>
+            <a href="#" class="second-links">Entertainment</a>
+        </div>
+        <div class="shopping-container d-flex justify-content-center align-items-center">
+            <div class="shopping-icon-container">
+                <img src="/holiday-emotions/images/shopping-icon.svg" alt="shopping-icon">
+            </div>
+            <a href="#" class="second-links">Shopping</a>
+        </div>
+    </div>
+    <div class="cotainer-fluid activities-search-background d-none d-lg-block">
+        <div class="container-fluid hotels-utilities d-flex flex-column align-items-center justify-content-center">
+            <ul class="d-flex align-items-end justify-content-between p-0 m-3 activities-logo-width">
+                <div class="activities-container p-2 d-flex justify-content-center align-items-center">
+                    <div class="activities-icon-container">
+                        <img src="/holiday-emotions/images/destination-logo-white.svg" alt="activities-icon">
+                    </div>
+                   <h2 class="text-white">Activities</h2>
+                </div>
+                  <div class="carnmotion-activities-logo-container">
+                    <img class="carnmotion-logo" src="/holiday-emotions/images/carnmotion-logo.svg" alt="">
+                    <p class="mb-1 text-white text-center text-uppercase" style="font-size: 10px; font-weight: 100;">Search Sponsor</p>
+                </div>  
+              </ul>
+              <div class="d-none d-lg-flex d-flex justify-content-center">
+                    <div class="emotions">
+                        <div class="container-fluid">
+                            <div class="d-flex justify-content-between align-items-center bottom-search-nav">
+                                <div class="nav-location">
+                                    <span><i class="fa-solid fa-location-pin"></i></span>
+                                    <input class="nav-location-txt" type="text" name="nav-location-text" placeholder="City / Area">
+                                </div>
+                                <div class="all-places">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label label-width" for="flexCheckDefault">
+                                          All Places
+                                        </label>
+                                      </div>
+                                </div>
+                                    <div class="type">
+                                        <select class="location-menu-style-city" name="type" id="type">
+                                            <option value="ph" disabled selected> </option>
+                                            <option value="ph">ph</option>
+                                            <option value="ph">ph</option>
+                                            <option value="ph">ph</option>
+                                        </select>
+                                    </div>
+                                    <div class="all-types">
+                                        <div class="form-check d-flex justify-content-center align-items-center">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label label-width" for="flexCheckDefault">
+                                              All Types
+                                            </label>
+                                          </div>
+                                    </div>
+                                    <div class="available-dates">
+                                        <span><i class="fa-solid fa-calendar-alt"></i></span>
+                                        <input class="nav-available-dates" type="text" name="available-dates" placeholder="Available Dates">
+                                    </div>
+                                <button class="nav-submit"><span class="search-span"><i class="fa-solid fa-magnifying-glass"></i></span>SEARCH</button>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+              </div>
+              <p class="text-center p-2 m-0 text-white">The booking form will expire in 29:59 minutes.</p>
+    </div>
+    <section>
+        <div class="container">
+            <h1 class="text-center">Search results for 6 days</h1>
+            <div class="container d-flex flex-row justify-content-around flex-wrap">
+                <div class="mini-car-results-container-first d-flex align-items-center justify-content-center">
+                    <p class="m-0">ALL</p>
+                </div>
+                <div class="mini-car-results-container d-flex flex-row justify-content-around align-items-center">
+                    <div class="p-1">
+                        <img src="/holiday-emotions/images/sr-car-small.svg" alt="">
+                    </div>
+                    <p class="m-0 p-2">small</p>
+                    <div class="car-result-number">
+                        19
+                    </div>
+                </div>
+                <div class="mini-car-results-container d-flex flex-row justify-content-around align-items-center">
+                    <div class="p-1">
+                        <img src="/holiday-emotions/images/sr-car-medium.svg" alt="">
+                    </div>
+                    <p class="m-0 p-2">MEDIUM</p>
+                    <div class="car-result-number">
+                        19
+                    </div>
+                </div>
+                <div class="mini-car-results-container d-flex flex-row justify-content-around align-items-center">
+                    <div class="p-1">
+                        <img src="/holiday-emotions/images/sr-car-big.svg" alt="">
+                    </div>
+                    <p class="m-0 p-2">BIG & SUV</p>
+                    <div class="car-result-number">
+                        0
+                    </div>
+                </div>
+                <div class="mini-car-results-container d-flex flex-row justify-content-around align-items-center">
+                    <div class="p-1">
+                        <img src="/holiday-emotions/images/sr-car-minivan.svg" alt="">
+                    </div>
+                    <p class="m-0 p-2">MINIVAN</p>
+                    <div class="car-result-number">
+                        13
+                    </div>
+                </div>
+                <div class="mini-car-results-container d-flex flex-row justify-content-around align-items-center">
+                    <div class="p-1">
+                        <img src="/holiday-emotions/images/sr-car-auto.svg" alt="">
+                    </div>
+                    <p class="m-0 p-2">AUTO</p>
+                    <div class="car-result-number">
+                        13
+                    </div>
+                </div>
+                <div class="mini-car-results-container d-flex flex-row justify-content-around align-items-center">
+                    <div class="p-1">
+                        <img src="/holiday-emotions/images/sr-car-diesel.svg" alt="">
+                    </div>
+                    <p class="m-0 p-2">DIESEL</p>
+                    <div class="car-result-number">
+                        4
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button onclick="topFunction()" id="scroll-to-top-btn" title="Go to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <div class="container d-none d-lg-block mt-5">
+        <div class="pages d-flex flex-row justify-content-center align-items-center">
+            <a href="#"><div class="page">1</div></a>
+            <a href="#"><div class="page">2</div></a>
+            <a href="#"><div class="page">3</div></a>
+            <a href="#"><div class="page">4</div></a>
+            <a href="#"><div class="page">5</div></a>
+            <a href="#"><div class="page">6</div></a>
+            <a href="#"><div class="page">7</div></a>
+        </div>
+    </div>
+    <div class="container d-none d-lg-block mt-3">
+        <p class="ratings-reviews-provided-by">Ratings & Reviews Powered By TripAdvisor</p>
+    </div>
+    <section class="">
+        <div class="container-fluid mt-5 p-0 pb-5 hotel-awards-ratings-bg-color">
+            <div class="container p-4 d-flex align-items-start justify-content-start flex-column align-items-lg-center flex-lg-row bottom-border flex-wrap">
+                <div class="bottom-page-links bpl-p-right pt-3 d-none d-lg-block"><img src="/holiday-emotions/images/he-logo.png" alt=""></div>
+                <h2 class="d-md-block d-lg-none">Holiday Emotions</h2>
+                <div class="bottom-page-links bpl-p-right pt-3"> <a class="insta-follow-link" href="#">About us</a></div>
+                <div class="bottom-page-links bpl-p-right pt-3"> <a class="insta-follow-link" href="#">Loyalty program</a></div>
+                <div class="bottom-page-links bpl-p-right pt-3"> <a class="insta-follow-link" href="#">Terms of use</a></div>
+                <div class="bottom-page-links bpl-p-right pt-3"> <a class="insta-follow-link" href="#">Collaborate with us</a></div>
+                <div class="bottom-page-links bpl-p-right pt-3"> <a class="insta-follow-link" href="#">Partners terms and conditions</a></div>
+            </div>
+            <div class="container-fluid m-lg-0 align-items-start justify-content-start justify-content-lg-center d-flex flex-column flex-lg-row pt-5">
+                <div class="awards d-flex align-items-start align-items-lg-center flex-column">
+                        <p class="bottom-page-par m-0 p-3" >Awarded by</p>
+                    <div class="awards-image-container d-flex flex-row">
+                        <div class="awards-image-sub-container pt-3"><img class="bpl-p-right " src="/holiday-emotions/images/Group 23.png" alt=""></div>
+                        <div class="awards-image-sub-container pt-3"><img class="bpl-p-right " src="/holiday-emotions/images/Group 24.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="ratings d-flex flex-column align-items-start align-items-lg-center">
+                        <p class="bottom-page-par m-0 p-3" >Ratings & reviews powered by</p>
+                    <div class="awards-image-container d-flex flex-wrap align-items-start align-items-lg-center justify-content-start">
+                        <div class="awards-image-sub-container pt-3"><img class="bpl-p-right " src="/holiday-emotions/images/Group 133.png" alt=""></div>
+                        <div class="awards-image-sub-container pt-3"><img class="bpl-p-right " src="/holiday-emotions/images/Group 134.png" alt=""></div>
+                        <div class="awards-image-sub-container pt-3"><img class="bpl-p-right " src="/holiday-emotions/images/Group 135.png" alt=""></div>
+                        <div class="awards-image-sub-container pt-3"><img class="bpl-p-right " src="/holiday-emotions/images/Group 136.png" alt=""></div>
+                        <div class="awards-image-sub-container pt-3"><img class="bpl-p-right " src="/holiday-emotions/images/Group 137.png" alt=""></div>
+                        <div class="awards-image-sub-container pt-3"><img class="bpl-p-right " src="/holiday-emotions/images/Group 138.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid footer d-flex align-items-center justify-content-center">
+            <p class="footer-para text-center mb-0" >Copyright Holiday Emotions 2019 - Design by <a class="footer-link" href="#"><strong> ASK Digital</strong></a>, Development by <strong> Holiday Emotions</strong></p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/holiday-emotions/slick/slick.min.js"></script>
+    <script src="/holiday-emotions/script.js"></script>
+    <script>
+        mybutton = document.getElementById("scroll-to-top-btn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 340 || document.documentElement.scrollTop > 340) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+</html>

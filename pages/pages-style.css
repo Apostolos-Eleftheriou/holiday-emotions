@@ -1544,3 +1544,14 @@ input[type="range"]:active::-webkit-slider-thumb{
     border-top: solid 1px #DCDFE4;
     border-bottom: solid 1px #DCDFE4;
 }
+
+.activities-search-background {
+    background: url('/holiday-emotions/images/green-mountains.jpg') no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    
+}
+
+.activities-logo-width {
+    width: 865px;
+}
