@@ -1668,3 +1668,41 @@ input[type="range"]:active::-webkit-slider-thumb{
     color: #64697A;
     padding: 10px 0 20px 0;
 }
+
+.activities-bottom-page-width-change {
+    width: 323px;
+    border-radius: 15px;
+}
+
+.tourism-biz-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #CEF7B4;
+}
+
+.tourism-biz-para {
+    font-size: 14px;
+    color: #CEF7B4;
+}
+
+.tourism-biz-btn {
+    width: 136px;
+    height: 31px;
+    color: #CEF7B4;
+    background-color: transparent;
+    border-radius: 15px;
+    border: solid 1px white;
+    font-size: 14px;
+}
+
+.tourism-biz-btn:hover {
+    background-color: #28ca00;
+}
+
+.activities-green-bg {
+    background-color: #2BA030;
+}
+
+.acitivities-logo-width {
+    width: 125px;
+}
