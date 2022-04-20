@@ -1043,8 +1043,91 @@
                     </select>
                 </div>
               </div>
-              
     </div>
+    <section>
+        <div class="container-fluid d-none d-lg-flex d-flex flex-column align-items-center">
+            <h2 class="carousel-title">COMPLETE HOLIDAY EXPERIENCE</h2>
+            <div class="carousel-container container-fluid">
+                <div class="carousel-activities-page d-flex flex-row align-items-center">
+                    <div class="carousel-image-containers d-flex">
+                        <a href="#"><div class="activities-carousel-image-container" 
+                            style="background: url('/holiday-emotions/images/surfing.jpeg');
+                                   background-size: cover;
+                                   background-position: bottom;
+                                   width: 399px;
+                                   height: 315px;
+                                   border-radius: 14px;"></div></a>
+                        <div class="container">
+                            <h3 class="carousel-activites-image-titles">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                            <p class="carousel-image-subtext">Proin vehicula elit ut leo rhoncus, ac vulputate odio volutpat. Aliquam a blandit enim, eu finibus tortor. Nam rutrum nisi eget sollicitudin consectetur.</p>
+                            <div class="container">
+                                <div class="d-flex align-items-center mb-3"><img src="/holiday-emotions/images/metro-section.svg" style="padding: 0 12px 0 3px;" alt="">
+                                    <p class="m-0 activities-carousel-para-color"><strong>Category:</strong> Culutral Turism</p>
+                                </div>
+                                <p class="activities-carousel-para-color mb-2"><i class="fa-solid fa-location-arrow activities-carousel-icons"></i><strong>Location:</strong> Patras</p>
+                               <div class="container p-0 d-flex align-items-center mb-2">
+                                    <p class="activities-carousel-para-color m-0"><i class="fa-solid fa-euro-sign activities-carousel-icons"></i><strong>Price Starts from:</strong> 220€</p>
+                                    <div class="container p-0 m-1 d-flex light-blue-bg flex-row justify-content-around align-items-center">
+                                        <p class="m-2 text-uppercase text-center activities-he-cashback">7€ HE Cash Back</p>
+                                    </div>
+                               </div>
+                            </div>
+                            <button class="hotel-book-now text-uppercase">Book now</button>
+                        </div>
+                    </div>
+                    <div class="carousel-image-containers">
+                        <div class="carousel-txt-container overlay-left">
+                            <h3 class="carousel-image-titles">Santorini</h3>
+                            <p class="carousel-image-subtext">The Cosmopolitan island of the Cyclades…</p>
+                        </div>
+                        <a href="#"><img src="/holiday-emotions/images/athens.png" alt="athens"></a>
+                    </div>
+                    <div class="carousel-image-containers">
+                        <a href="#"><img src="/holiday-emotions/images/kefalonia.png" alt="kefalonia"></a>
+                        <div class="carousel-txt-container overlay-right">
+                            <h3 class="carousel-image-titles">Evia</h3>
+                            <p class="carousel-image-subtext">Anything is possible on Evia…</p>
+                        </div>
+                    </div>
+                    <div class="carousel-image-containers">
+                        <div class="carousel-txt-container overlay-left">
+                            <h3 class="carousel-image-titles">Kefalonia</h3>
+                            <p class="carousel-image-subtext">A “paradise” in the Ionian Sea</p>
+                        </div>
+                        <a href="#"><img src="/holiday-emotions/images/evia.png" alt="evia"></a>
+                    </div>
+                    <div class="carousel-image-containers">
+                        <a href="#"><img src="/holiday-emotions/images/santorini.png" alt="santorini"></a>
+                        <div class="carousel-txt-container overlay-right">
+                            <h3 class="carousel-image-titles">Athens</h3>
+                            <p class="carousel-image-subtext">The historic center of Athens</p>
+                        </div>
+                    </div>
+                    <div class="carousel-image-containers">
+                        <div class="carousel-txt-container overlay-left">
+                            <h3 class="carousel-image-titles">Santorini</h3>
+                            <p class="carousel-image-subtext">The Cosmopolitan island of the Cyclades…</p>
+                        </div>
+                        <a href="#"><img src="/holiday-emotions/images/athens.png" alt="athens"></a>
+                    </div>
+                    <div class="carousel-image-containers">
+                        <a href="#"><img src="/holiday-emotions/images/kefalonia.png" alt="kefalonia"></a>
+                        <div class="carousel-txt-container overlay-right">
+                            <h3 class="carousel-image-titles">Evia</h3>
+                            <p class="carousel-image-subtext">Anything is possible on Evia…</p>
+                        </div>
+                    </div>
+                    <div class="carousel-image-containers">
+                        <div class="carousel-txt-container overlay-left">
+                            <h3 class="carousel-image-titles">Kefalonia</h3>
+                            <p class="carousel-image-subtext">A “paradise” in the Ionian Sea </p>
+                        </div>
+                        <a href="#"><img src="/holiday-emotions/images/evia.png" alt="evia"></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
     <section>
         <div class="container">
             <h1 class="text-center">Search results for 6 days</h1>
@@ -1186,6 +1269,15 @@
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel-activities-page').slick({
+                slidesToShow: 2, slidesToScroll: 2,
+                prevArrow:  '<i class="fa-solid fa-chevron-left"></i>',
+                nextArrow: '<i class="fa-solid fa-chevron-right"></i>'
+            });
+        });
     </script>
 </body>
 </html>

@@ -1594,3 +1594,27 @@ input[type="range"]:active::-webkit-slider-thumb{
 #activities-select option {
     color: black;
 }
+
+.carousel-activites-image-titles {
+    font-size: 25px;
+    color: #0074A0;
+    font-weight: bold;
+}
+
+.activities-carousel-icons {
+    padding-right: 10px;
+    color: #64697A;
+    font-size: 16px;
+}
+
+.activities-carousel-para-color {
+    color: #64697A;
+    font-size: 14px;
+    padding-right: 15px;
+}
+
+.activities-he-cashback {
+    font-size: 10px;
+    font-weight: bold;
+    color: #6d717e;
+}
