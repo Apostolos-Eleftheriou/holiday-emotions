@@ -1736,3 +1736,98 @@ input[type="range"]:active::-webkit-slider-thumb{
     background-color: #000;
     color: white;
 }
+
+.snd-carousel-city-links {
+    width: 109px;
+    height: 31px;
+    border-radius: 23px;
+    background-color: rgba(27, 43, 72, .5);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+.snd-carousel-city-links:hover {
+    color: white;
+    background-color: rgba(27, 43, 72, 1);
+}
+
+.mini-snd-results-container {
+    background-color: #EDEFF1;
+    border-radius: 23px;
+    width: 130px;
+    height: 31px;
+    margin: 5px;
+    cursor: pointer;
+    color: #64697A;
+    font-size: 14px;
+}
+
+.mini-snd-results-container:hover {
+    background-color: #DCDFE4;
+}
+
+.snd-card-header {
+    color: black;
+    font-size: 30px;
+    text-align: start;
+}
+
+.snd-card-header-adress {
+    color: #64697A;
+    font-size: 14px;
+    text-align: start;
+}
+
+.snd-card-header-adress .fa-location-pin {
+    color: black;
+    font-size: 12px;
+    margin: 0 10px 0 0;
+}
+
+.snd-he-cashback {
+    border-radius: 5px;
+    background-color: rgba(27, 171, 226, .3);
+    color: #0074A0;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.snd-car-big-overlay::after {
+    content: "";
+    position: absolute;
+    background: url('/holiday-emotions/images/yaris-overlay.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    right: -40px;
+    bottom: -40px;;
+    width: 286px;
+    height: 151px;
+}
+
+.snd-car-medium-overlay::after {
+    content: "";
+    position: absolute;
+    background: url('/holiday-emotions/images/yaris-overlay.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    right: -30px;
+    bottom: -30px;;
+    width: 212px;
+    height: 111px;
+}
+
+.snd-car-small-overlay::after {
+    content: "";
+    position: absolute;
+    background: url('/holiday-emotions/images/yaris-overlay.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    right: -19px;
+    bottom: -20px;;
+    width: 151px;
+    height: 79px;
+}
