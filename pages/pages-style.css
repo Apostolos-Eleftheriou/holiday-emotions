@@ -498,6 +498,7 @@
 
 .hotel-book-now:hover {
     background-color: #b7ffa4;
+    color: #2BA030;
 }
 
 .hotels-aside {
@@ -1891,6 +1892,10 @@ input[type="range"]:active::-webkit-slider-thumb{
     color: #1B2B48;
     text-decoration: none;
     font-weight: bold;
+}
+
+.snd-checkout-see-fewer-options:hover {
+    color: #EFA00B;
 }
 
 .snd-car-name {
