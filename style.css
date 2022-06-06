@@ -1428,7 +1428,7 @@ textarea:focus, input:focus{
   }
 
   .bottom-border {
-      border-bottom: solid 2px #DCDFE4;
+      border-bottom: solid 2px #c6c6c66b;
   }
 
   .bpl-p-right {

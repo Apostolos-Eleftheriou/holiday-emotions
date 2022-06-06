@@ -1737,6 +1737,8 @@ input[type="range"]:active::-webkit-slider-thumb{
     color: white;
 }
 
+/* APO EDW KAI KATW TO NEO CSS GIA SND */
+
 .snd-carousel-city-links {
     width: 109px;
     height: 31px;
@@ -1818,4 +1820,68 @@ input[type="range"]:active::-webkit-slider-thumb{
     bottom: -20px;;
     width: 151px;
     height: 79px;
+}
+
+.snd-blue-bg {
+    background-color: #1BABE2;
+    min-height: 95px;
+    border-radius: 15px 15px 0 0;
+}
+
+.snd-steps {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.snd-steps-number {
+    border-radius: 100px;
+    width: 62px;
+    height: 62px;
+    background-color: #CEF7B4;
+    font-size: 36px;
+    padding: 7px 20px;
+    color: #0074A0;
+    font-weight: bold;
+}
+
+.snd-steps-trans {
+    color: rgba(255, 255, 255, .5);
+}
+
+.snd-beige-bg {
+    border-radius: 0 0 15px 15px;
+    background-color: #E7BA1E33;
+}
+
+.accomodation-text {
+    font-size: 16px;
+    color: #64697A;
+}
+
+.snd-room-title {
+    font-size: 18px;
+    color: #014A7C;
+}
+
+.snd-room-info-p {
+    font-size: 14px;
+    color: black;
+}
+
+.snd-checkout-select-btn {
+    background-color: #1BABE2;
+    color: white;
+    text-decoration: none;
+    border-radius: 100px;
+    padding: 4px 44px;
+}
+
+.snd-checkout-select-btn:hover {
+    background-color: #1A9CCE;
+    color: white;
+}
+
+.snd-checkout-row-border-bottom {
+    border-bottom: solid 1px #7b7b7b36;
 }
