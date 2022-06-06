@@ -1796,36 +1796,24 @@ input[type="range"]:active::-webkit-slider-thumb{
     padding: 5px;
 }
 
-.snd-car-big-overlay::after {
-    content: "";
+.snd-car-big-overlay {
     position: absolute;
-    background: url('/holiday-emotions/images/yaris-overlay.png') no-repeat;
-    background-size: contain;
-    background-position: center;
     right: -40px;
     bottom: -40px;;
     width: 286px;
     height: 151px;
 }
 
-.snd-car-medium-overlay::after {
-    content: "";
+.snd-car-medium-overlay {
     position: absolute;
-    background: url('/holiday-emotions/images/yaris-overlay.png') no-repeat;
-    background-size: contain;
-    background-position: center;
     right: -30px;
     bottom: -30px;;
     width: 212px;
     height: 111px;
 }
 
-.snd-car-small-overlay::after {
-    content: "";
+.snd-car-small-overlay{
     position: absolute;
-    background: url('/holiday-emotions/images/yaris-overlay.png') no-repeat;
-    background-size: contain;
-    background-position: center;
     right: -19px;
     bottom: -20px;;
     width: 151px;
