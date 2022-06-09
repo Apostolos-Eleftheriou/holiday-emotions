@@ -1909,3 +1909,13 @@ input[type="range"]:active::-webkit-slider-thumb{
     font-size: 16px;
     color: #64697A;
 }
+
+@media screen and (max-width: 767px){
+    .snd-car-big-overlay {
+    position: absolute;
+    right: 5px;
+    bottom: -26px;
+    width: 185px;
+    height: 101px;
+    }
+}
