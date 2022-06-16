@@ -1919,3 +1919,25 @@ input[type="range"]:active::-webkit-slider-thumb{
     height: 101px;
     }
 }
+
+.checkout_car_info_bg_color {  
+    background-color: #fdf8e9;
+}
+
+.checkout_car_info_bg_color_darker {
+    background-color: #fbf2d5;
+}
+
+.cart-border {
+    border: solid 1px #6d717e;
+    border-radius: 8px;
+}
+
+.cart-border-bottom {
+    border-bottom: solid 1px black;
+}
+
+.snd-room-title {
+    font-size: 18px;
+    color: #014A7C;
+}
