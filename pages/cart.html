@@ -244,9 +244,68 @@
                         </div>
                         <div class="container mt-2">
                             <div class="row">
-                                <div class="col-7 fs-5 fw-bold">Είσοδος στο Μουσείο της Ακρόπολης</div>
-                                <div class="col-5 fs-5 fw-bold text-start">Τεμ <span>4</span>
+                                <div class="col-9 col-lg-7 fs-5 fw-bold">Είσοδος στο Μουσείο της Ακρόπολης:</div>
+                                <div class="col-3 col-lg-5 fs-5 fw-bold text-start">Τεμάχια <span>4</span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-5 pb-2 pb-lg-0">
+                        <div class="row pb-3">
+                            <div class="container col-10 col-lg-10 d-flex flex-column align-items-start">
+                                <div class="container p-0 p-0 d-flex flex-column align-items-center justify-content-center">
+                                    <div class="container p-0 d-flex flex-row align-items-center flex-wrap flex-md-nowrap justify-content-lg-between justify-content-center">
+                                        <div class="container text-md-end text-start p-0 pe-2">
+                                            <p class="m-0">
+                                                Εκπτωτικό κουπόνι
+                                            </p>
+                                        </div>
+                                        <div class="container m-0 d-flex align-items-center p-0 justify-content-center">
+                                            <input name="ctl00$masterbody$couponcode" type="text" id="couponcode" class="m-0 w-100" placeholder="Εισαγωγή κωδικού" data-trans="placeholder" data-transid="eisagwgi_kwdikou_kouponiou">
+                                            <input type="hidden" id="coupon_ID" name="coupon_ID">
+                                            <input type="hidden" id="coupon_Disc" name="coupon_Disc">
+                                            <button type="button" class="m-2 hotel-cash-in-btn" id="applycoupon">
+                                                Εξαργυρωση</button>
+                                        </div>
+                                    </div>
+                                    <div class="container p-0 d-flex flex-row flex-wrap align-items-center justify-content-between d-none">
+                                        <p class="m-0">
+                                            Επιστροφή χρημάτων
+                                        </p>
+                                        <div class="container m-0 p-0 d-flex align-items-center">
+                                            <input name="ctl00$masterbody$checkout_cashback_redeem" type="text" id="checkout_cashback_redeem" class="m-0" placeholder="Εισαγωγή κωδικού" data-trans="placeholder" data-transid="eisagwgi_kwdikou_kouponiou">
+                                            <button type="button" class="m-2 hotel-cash-in-btn">
+                                                Εξαργύρωση</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container col-2 col-lg-2 p-0 text-end d-flex flex-column justify-content-around">
+                                <p class="fw-bold m-2"><span id="coupon_amount">0</span> €</p>
+                                <p class="fw-bold m-2 d-none"><span id="cb_coupon_amount">0</span> €</p>
+                            </div>
+                        </div>
+                        <div class="container p-0 hotel-youpay-background-color">
+                            <div class="container d-flex align-items-center justify-content-center p-0 col-3 d-none">
+                                <div class="container p-0 m-1 d-flex light-blue-bg flex-row justify-content-center align-items-center hotel-information">
+                                    <p class="m-2 text-uppercase">75€ HE Cash Back</p>
+                                </div>
+                            </div>
+                            <div class="container text-end p-0 col-4 m-0 w-100">
+                                <p class="m-0 fs-4">
+                                    Ποσό πληρωμής:
+                                    <span class="title-first-part car-price m-2" id="cart_price">
+                                        <strong id="finalsum" data-original="200,00">200,00</strong>
+                                    </span>
+                                    <span class="d-inline-block title-first-part"><strong>€</strong></span>
+                                    <span id="premium_new_driver_price" class="d-none">0</span>
+                                    <span id="em_extra_checkout" class="d-none">0</span>
+                                    <span id="cashback_discount" class="d-none">0</span>
+                                    
+                                </p>
+                                <p class="incl-vat-para">
+                                    Περιλαμβάνεται 24% ΦΠΑ
+                                </p>
                             </div>
                         </div>
                     </div>
