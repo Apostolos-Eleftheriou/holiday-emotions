@@ -30,10 +30,10 @@
 <body>
 
     <section id="checkout_cart_main_content">
-        <div class="container">
+        <div class="container-fluid destination-max-width pt-5">
             <div class="row m-0">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-9 checkout_car_info_bg_color cart-border">
-                    <h2 class="checkout_car_info_bg_color_darker">Το καλάθι σου είναι έτοιμο</h2>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 checkout_car_info_bg_color cart-border">
+                    <h2 class="checkout_car_info_bg_color_darker mt-3">Το καλάθι σου είναι έτοιμο</h2>
                     <div class="container">
                         <div class="row shop_rec_title_wrap checkout_car_info_bg_color_darker">
                             <div class="col-6 fs-4 text-start">1. Πακέτο Stay & Drive</div>
@@ -308,10 +308,92 @@
                                 </p>
                             </div>
                         </div>
+                        <div class="container mt-3">
+                            <div class="container mt-3 text-center">
+                                <p class="fs-5">
+                                    Επιλογή τρόπου πληρωμής
+                                </p>
+                            </div>
+                            <div class="container mb-3">
+                                <div class="d-flex flex-row flex-wrap justify-content-md-around justify-content-center">
+                                    <div class="container d-flex flex-row payment-method-max-width-one m-0">
+                                        <label id="cards_label" for="cc_payment">
+                                            <div class="visa-icon-container p-1">
+                                                <img src="/holiday-emotions/images/visa-icon.svg" alt="visa icon">
+                                            </div>
+                                            <div class="mastercard-icon-container p-1">
+                                                <img src="/holiday-emotions/images/mastercard-icon.svg" alt="mastercard icon">
+                                            </div>
+                                            <div class="maestro-icon-container p-1">
+                                                <img src="/holiday-emotions/images/maestro-icon.svg" alt="maestro icon">
+                                            </div>
+                                        </label>
+                                        <label class="container filter-checkbox-container m-0" style="width: 22px;">
+                                            <input class="filter-checkbox payment-method" type="checkbox" checked="checked" data-type="cc" id="cc_payment">
+                                            <span class="checkmark" style="top: 19px; left: 9px;"></span>
+                                        </label>
+                                    </div>
+                                    <div class="container d-flex flex-row payment-method-max-width-two m-0">
+                                        <label for="paypal_payment" id="paypal_payment_label">
+                                            <div class="paypal-icon-container p-1">
+                                                <img src="/holiday-emotions/images/paypal-icon.svg" alt="paypal icon">
+                                            </div>
+                                        </label>
+                                        <label class="container filter-checkbox-container m-0" style="width: 22px;">
+                                            <input class="filter-checkbox payment-method" type="checkbox" data-type="pp" id="paypal_payment">
+                                            <span class="checkmark" style="top: 19px; left: 9px;"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 color-primary font-weight-bold">
+                                <div class="form-check-inline">
+                                    <label for="terms">
+                                        <input type="checkbox" class="form-check-input req" id="terms" name="terms">
+                                        Έχω διαβάσει και αποδέχομαι τους όρους συναλλαγών της Holiday Emotions
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 color-primary font-weight-bold">
+                                <div class="form-check-inline">
+                                    <label for="terms">
+                                        <input type="checkbox" class="form-check-input req" id="terms" name="terms">
+                                        Θέλω να ενημερώνομαι για προσφορές και διαγωνισμούς της Holiday Emotions
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-0 pb-3 mt-3">
+                            <div class="d-flex justify-content-end flex-wrap">
+                                <button type="submit" id="checkout_buy_now" class="hotel-payment-next-btn text-uppercase">
+                                    Αγορα
+                                </button>
+                                <input type="hidden" name="payment" id="payment" value="cc">
+                                <input type="hidden" name="ccc" id="ccc" value="piraeus">
+                            </div>
+                        </div>
                     </div>
+                   
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
-
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 checkout_car_info_bg_color_darker cart-border">
+                    <div class="container mt-3 p-0">
+                        <p class="cars-search-results-list">Συνδεθείτε στον λογαριασμό σας για να προχωρήσετε στην αγορά σας. Εάν δεν έχετε λογαριασμό στη holiday emotions, πατήστε εγγραφή για να δημιουργησετε. Η δημιουργία λογαριασμού είναι απαραίτηση για την ολοκλήρωση της κράτησής σας.</p>
+                        <div class="container p-0 d-flex flex-wrap align-items-center justify-content-around mb-3">
+                            <button class="cart-signup-login-btn text-uppercase" type="button">
+                                Συνδεση
+                            </button>
+                            <button class="cart-signup-login-btn text-uppercase" type="submit">
+                                Εγγραφη
+                            </button>
+                        </div>
+                        <div class="container text-end">
+                            <a href="#" class="cart-forgot-password">Ξέχασα τα στοιχεία πρόσβασης στο λογαριασμό μου</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

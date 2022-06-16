@@ -939,8 +939,8 @@ input[type="range"]:active::-webkit-slider-thumb{
     font-size: 18px;
     border: none;
     padding: 5px;
-    width: 157px;
-    margin: 20px 0;
+    width: 245px;
+    margin: 20px;
 }
 
 .hotel-payment-next-btn:hover {
@@ -1910,6 +1910,11 @@ input[type="range"]:active::-webkit-slider-thumb{
     color: #64697A;
 }
 
+.snd-room-title {
+    font-size: 18px;
+    color: #014A7C;
+}
+
 @media screen and (max-width: 767px){
     .snd-car-big-overlay {
     position: absolute;
@@ -1919,6 +1924,10 @@ input[type="range"]:active::-webkit-slider-thumb{
     height: 101px;
     }
 }
+
+
+/* apo dw kai katw pernoume css gia cart */
+
 
 .checkout_car_info_bg_color {  
     background-color: #fdf8e9;
@@ -1930,14 +1939,26 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 .cart-border {
     border: solid 1px #6d717e;
-    border-radius: 8px;
 }
 
 .cart-border-bottom {
     border-bottom: solid 1px black;
 }
 
-.snd-room-title {
-    font-size: 18px;
-    color: #014A7C;
+.cart-signup-login-btn {
+    background-color: black;
+    padding: 3px 18px 3px 18px !important;
+    border: 2.5px solid #EFA00B;
+    border-radius: 20px;
+    color: #EFA00B;
+}
+
+.cart-forgot-password {
+    font-size: 16px;
+    color: #6d717e;
+    text-decoration: none;
+}
+
+.cart-forgot-password:hover {
+    color: #EFA00B;
 }
