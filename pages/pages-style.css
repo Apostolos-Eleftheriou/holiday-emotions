@@ -1962,3 +1962,16 @@ input[type="range"]:active::-webkit-slider-thumb{
 .cart-forgot-password:hover {
     color: #EFA00B;
 }
+
+/* apo dw kai pera gia business profile css */
+
+.business-profile-contact-info-color {
+    color: #EFA00B;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.business-profile-contact-info-para {
+    font-size: 14px;
+    color: black;
+}
