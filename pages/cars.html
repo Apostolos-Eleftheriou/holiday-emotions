@@ -1341,7 +1341,7 @@
     <section>
         <div class="container">
             <h1 class="text-center">Search results for 6 days</h1>
-            <div class="container d-flex flex-row justify-content-around flex-wrap">
+            <div class="container d-flex flex-row justify-content-around flex-wrap test1">
                 <div class="mini-car-results-container-first d-flex align-items-center justify-content-center">
                     <p class="m-0">ALL</p>
                 </div>
@@ -2082,6 +2082,20 @@
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
+        $(document).ready(function() {
+            if (window.matchMedia("(max-width: 768px)").matches) {
+                $('.test1').slick({
+                    variableWidth: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    dots: false,
+                    prevArrow: false,
+                    nextArrow: false,
+                    infinite: true
+                });
+            };
+        })
     </script>
 </body>
 </html>

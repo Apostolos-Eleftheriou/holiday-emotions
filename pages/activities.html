@@ -1180,7 +1180,7 @@
     <section id="activities_search_results_section">
         <div class="container">
             <h1 class="text-center p-3">Select Activity</h1>
-            <div class="container d-flex flex-row justify-content-around flex-wrap">
+            <div class="container d-flex flex-row justify-content-around flex-wrap test1">
                 <div class="mini-car-results-container-first d-flex align-items-center justify-content-center">
                     <p class="m-0">ALL</p>
                 </div>
@@ -1753,6 +1753,48 @@
                 }
                 ]
             });
+
+            if (window.matchMedia("(max-width: 768px)").matches) {
+                $('.test1').slick({
+                    variableWidth: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    dots: false,
+                    prevArrow: false,
+                    nextArrow: false,
+                    infinite: true
+                });
+            };
+
+            // $('.test1').slick({
+            //     responsive: [
+            //         {
+            //         breakpoint: 992,
+            //         settings: {
+            //             slidesToShow: 3
+            //         }
+            //         },{
+            //         breakpoint: 930,
+            //         settings: {
+            //             slidesToShow: 3
+            //         }
+            //         },
+            //         {
+            //         breakpoint: 670,
+            //         settings: {
+            //             slidesToShow: 2
+            //         }
+            //         },
+            //         {
+            //         breakpoint: 600,
+            //         settings: {
+            //             slidesToShow: 2
+            //         }
+            //         }
+            //     ]
+
+            // });
         });
     </script>
 </body>
