@@ -1975,3 +1975,24 @@ input[type="range"]:active::-webkit-slider-thumb{
     font-size: 14px;
     color: black;
 }
+
+/* apo dw kai pera gia extra cars css */
+
+
+
+@media screen and (min-width:994px) {
+    .car-img-container-max-width {
+        max-width: 394px;
+        height: 212px;
+    }
+}
+
+.car-booking-duration-para-mobile {
+    font-size: 14px;
+    color: #64697A;
+}
+
+.cars-car-name-mobile {
+    font-size: 28px;
+    font-weight: bold;
+}
