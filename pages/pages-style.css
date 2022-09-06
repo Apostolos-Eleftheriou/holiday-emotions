@@ -2006,3 +2006,9 @@ input[type="range"]:active::-webkit-slider-thumb{
     font-weight: 500;
     max-width: 670px;
 }
+
+.destination-management-para-two {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
