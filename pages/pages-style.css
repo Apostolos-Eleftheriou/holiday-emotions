@@ -2020,3 +2020,45 @@ input[type="range"]:active::-webkit-slider-thumb{
         margin: 0 auto;
     }
 }
+
+
+.loading .title,
+.loading .sub_title,
+.loading .thumbnail{
+    position: relative;
+    margin: 3px;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+}
+.loading .title, 
+.loading .sub_title{
+    height: 25px;
+}
+.loading .title:after,
+.loading .sub_title::after,
+.loading .thumbnail::after{
+    content: "";
+    position: absolute;
+    /* background: #434343; */
+    background: #b8b8b8;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+    /* background: linear-gradient(130deg, #434343 50%, #4f4c4c 60%, #4f4c4c 61%, #434343 70%); */
+    background-image: linear-gradient( to left, transparent, rgba(255,255,255,.5),transparent);
+    background-size: 200%;
+    background-position: 100% 0;
+    animation: waves 1s linear infinite;
+}
+.loading .sub_title:after{
+    width: 90%;
+}
+@keyframes waves {
+    100%{
+        background-position: -100%;
+    }
+    
+}

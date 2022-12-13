@@ -33,6 +33,35 @@
                     <input class="search-txt" type="text" name="search" placeholder="SEARCH">
                 </div>
             </div>
+            <div class=""container p-0 mb-3"" id=""snd-steps-hotels-scrollbar"">"
+
+                '<p class=""snd-room-info-p m-0"">" & ro.rates.First.description & "</p>
+                Dim rcnt As Integer = 1
+                Dim the_rooms = If(is_multiroom, Hotels_avail.multiroom_rate_html_constructor_V3(P, H.rooms, H.code, H.source), H.rooms)
+                For Each ro In the_rooms
+                    rs += "              <div class=""row room-row" & If(rcnt > 2, " d-none more", "") & " d-flex justify-content-between snd-checkout-row-border-top pb-2 pt-2 me-1 ms-1"">
+                                            <div class=""col-sm-12 col-lg-6"">
+                                                <div class=""user-container mt-1 mx-2 d-flex"">
+                                                        <h5 class=""snd-room-title text-center text-xl-start m-0 me-2"">" & ro.title & "</h5>
+                                                        <i class=""fa-solid me-1 mt-1 fa-user""></i>
+                                                        <i class=""fa-solid me-1 mt-1 fa-user""></i>
+                                                </div>
+                                                <div class=""container-fluid p-0 d-flex flex-row align-items-start justify-content-center justify-content-xl-start hotel-information flex-wrap"">
+                                                    <div class=""container p-0 m-1 d-flex yellow-bg flex-row justify-content-center align-items-center"">" & board_tag(ro.rates.First, lu) & "</div>
+                                                    <div class=""container p-0 m-0 d-flex flex-row mw-120 justify-content-start align-items-center"">" & room_info_tag(ro.rates.First, ro, lu) & "</div>
+                                                </div>
+                                                <div class=""snd_results_hotel_amenites mt-2"">Parking, Μπάνιο ή Ντουζ, Τηλέφωνο, Δωρεάν internet</div>
+                                            </div>
+                                            <div class=""col-sm-12 col-lg-12 col-xl-6 text-center mt-2 d-flex align-items-end justify-content-center flex-column"">
+                                                    <div class=""align-items-end d-flex flex-column justify-content-center mb-2"">
+                                                        <div class=""snd_result_hotel_price_for"">Τιμή για 2 βράδια</div>
+                                                        <div class=""price-only-for-snd"">Τιμή μόνο για Stay & Drive</div>
+                                                        <div class=""snd_result_hotel_price"">450 €</div>
+                                                    </div>
+                                                <a href=""#"" class=""text-uppercase snd-checkout-select-btn snd-steps-hotel-select"" data-code=""" & H.code & """ data-source=""" & H.source & """ data-bus=""" & bus.id & """ data-room=""" & ro.code & """ data-rate=""" & ro.rates.First.id & """ data-pricing=""" & ro.rates.First.retail.ToString(System.Globalization.CultureInfo.InvariantCulture) & """ data-original=""" & ro.rates.First.original.ToString(System.Globalization.CultureInfo.InvariantCulture) & """>" & no_tones(HE.Translations.epilogi_global(lu)) & "</a>
+                                            </div>
+                                            </div>
+                                        </div>
             <div class="d-flex align-items-center">
             <div class="p-3">
                 <a class="header-links" href="#">
