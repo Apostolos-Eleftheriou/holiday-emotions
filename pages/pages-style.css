@@ -2062,3 +2062,105 @@ input[type="range"]:active::-webkit-slider-thumb{
     }
     
 }
+
+.check-out-blue-text {
+    font-size: 18px;
+    color: #014A7C;
+    font-weight: 500;
+}
+
+.snd-hotel-amenity-tile-green {
+    font-size: 12px;
+    color: white;
+    padding: 5px;
+    background-color: #00874e;
+    border-radius: 4px;
+    font-weight: 500;
+    margin: 5px 5px 0;
+    text-align: center;
+}
+
+.snd-hotel-amenity-tile-blue {
+    font-size: 12px;
+    color: white;
+    padding: 5px;
+    background-color: #0074a0;
+    border-radius: 4px;
+    font-weight: 500;
+    margin: 5px 5px 0;
+    text-align: center;
+}
+
+.cart-border-bottom {
+    border-bottom: solid 1px #DCDFE4;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.car-deets-red {
+    color:  #9a2744;
+    font-weight: 500;
+}
+
+.got-coupon{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cart-text-red {
+    font-size: 16px;
+    color: #9a2744;
+    font-weight: 500;
+}
+
+.cart-text-red-bigger {
+    font-size: 20px;
+    color: #9a2744;
+    font-weight: bold;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fa-credit-card {
+    font-size: 49px;
+    color: #4b4a45;
+}
+.checkout-labels-sizing {
+    font-size: 12px;
+    color: #64697A;
+    margin-bottom: 7px;
+    margin-top: 15px;
+}
+
+.viva-img, .iris-img  {
+    width: 46px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.fa-credit-card, .fa-cc-paypal, .fa-building-columns {
+    font-size: 33px;
+    color: #4b4a45;
+}
+
+
+.payment-method-checked {
+    border: solid 1px #bdbdbd;
+    /* padding: 10px; */
+    border-radius: 6px;
+    box-shadow: 0px 11px 20px 6px #dcdcdc;
+}
+
+.payment-method-label {
+    cursor: pointer;
+    padding: 7px;
+    height: 79px;
+}
+
+.payment-methods-width {
+    width: 135px;
+}
